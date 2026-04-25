@@ -162,7 +162,19 @@ export function renderCellPanel(selectedKey, cells, passages, documents) {
   }
   const groups = [...byDoc.values()].sort((a, b) => String(a.doc?.date ?? "").localeCompare(String(b.doc?.date ?? "")));
 
-  const closeBtn = html`<button class="cell-modal-close" type="button" aria-label="Close">×</button>`;
+  // Single canonical close path: clear the URL param. The reactive update
+  // cycle re-renders renderCellPanel with selectedKey null, which returns an
+  // empty placeholder, removing the dialog from the DOM.
+  const closePanel = () => setParam("cell", null);
+
+  // Inline onclick so htl wires the listener at element-construction time —
+  // avoids any after-the-fact addEventListener-and-embed timing weirdness.
+  const closeBtn = html`<button
+    class="cell-modal-close"
+    type="button"
+    aria-label="Close panel"
+    onclick=${closePanel}
+  >×</button>`;
 
   let body;
   if (cell.count === 0) {
@@ -202,23 +214,18 @@ export function renderCellPanel(selectedKey, cells, passages, documents) {
     </div>`;
   }
 
-  const dialog = html`<dialog class="cell-modal" aria-labelledby="cell-modal-title">
+  const dialog = html`<dialog
+    class="cell-modal"
+    aria-labelledby="cell-modal-title"
+    onclick=${(e) => { if (e.target === e.currentTarget) closePanel(); }}
+    onclose=${closePanel}
+  >
     <header class="cell-modal-header">
       <h3 id="cell-modal-title"><span class="pill pill-${lab}">${labLabel}</span> · ${subcat} ${subcatLabel}</h3>
       ${closeBtn}
     </header>
     ${body}
   </dialog>`;
-
-  // Wire up dismissal: X button, backdrop click, Escape (built-in via <dialog>).
-  // All routes converge on clearing the URL param.
-  closeBtn.addEventListener("click", () => dialog.close());
-  dialog.addEventListener("click", (e) => {
-    // Backdrop click — only fires when the click target IS the dialog itself
-    // (clicks inside the content bubble through the inner elements).
-    if (e.target === dialog) dialog.close();
-  });
-  dialog.addEventListener("close", () => setParam("cell", null));
 
   // Show the modal once Framework has attached the node to the DOM.
   // queueMicrotask runs after the current call stack but before paint,
