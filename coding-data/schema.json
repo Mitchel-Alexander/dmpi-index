@@ -1,0 +1,239 @@
+{
+  "$defs": {
+    "Absence": {
+      "additionalProperties": false,
+      "properties": {
+        "subcategory": {
+          "title": "Subcategory",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "subcategory"
+      ],
+      "title": "Absence",
+      "type": "object"
+    },
+    "Coding": {
+      "additionalProperties": false,
+      "properties": {
+        "subcategory": {
+          "title": "Subcategory",
+          "type": "string"
+        },
+        "stance": {
+          "title": "Stance",
+          "type": "string"
+        },
+        "engagement_type": {
+          "title": "Engagement Type",
+          "type": "string"
+        },
+        "genre_departure": {
+          "title": "Genre Departure",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "subcategory",
+        "stance",
+        "engagement_type",
+        "genre_departure"
+      ],
+      "title": "Coding",
+      "type": "object"
+    },
+    "Passage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "excerpt": {
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "codings": {
+          "items": {
+            "$ref": "#/$defs/Coding"
+          },
+          "title": "Codings",
+          "type": "array"
+        },
+        "notes": {
+          "default": "",
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "section",
+        "excerpt",
+        "codings"
+      ],
+      "title": "Passage",
+      "type": "object"
+    },
+    "Summary": {
+      "additionalProperties": false,
+      "properties": {
+        "engaged": {
+          "title": "Engaged",
+          "type": "integer"
+        },
+        "absent": {
+          "title": "Absent",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "engaged",
+        "absent"
+      ],
+      "title": "Summary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "lab": {
+      "title": "Lab",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "genre": {
+      "title": "Genre",
+      "type": "string"
+    },
+    "corpus": {
+      "title": "Corpus",
+      "type": "string"
+    },
+    "period": {
+      "title": "Period",
+      "type": "string"
+    },
+    "date": {
+      "title": "Date",
+      "type": "string"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    },
+    "source_method": {
+      "title": "Source Method",
+      "type": "string"
+    },
+    "coded_by": {
+      "title": "Coded By",
+      "type": "string"
+    },
+    "coded_date": {
+      "title": "Coded Date",
+      "type": "string"
+    },
+    "reviewed_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Reviewed By"
+    },
+    "reviewed_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Reviewed Date"
+    },
+    "codebook_version": {
+      "title": "Codebook Version",
+      "type": "string"
+    },
+    "dominant_engagement": {
+      "title": "Dominant Engagement",
+      "type": "string"
+    },
+    "summary": {
+      "$ref": "#/$defs/Summary"
+    },
+    "stances": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Stances",
+      "type": "object"
+    },
+    "passages": {
+      "items": {
+        "$ref": "#/$defs/Passage"
+      },
+      "title": "Passages",
+      "type": "array"
+    },
+    "absences": {
+      "items": {
+        "$ref": "#/$defs/Absence"
+      },
+      "title": "Absences",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "lab",
+    "title",
+    "genre",
+    "corpus",
+    "period",
+    "date",
+    "source_url",
+    "source_method",
+    "coded_by",
+    "coded_date",
+    "reviewed_by",
+    "reviewed_date",
+    "codebook_version",
+    "dominant_engagement",
+    "summary",
+    "stances",
+    "passages",
+    "absences"
+  ],
+  "title": "Document",
+  "type": "object"
+}

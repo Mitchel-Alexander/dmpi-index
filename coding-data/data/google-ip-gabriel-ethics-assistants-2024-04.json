@@ -1,0 +1,265 @@
+{
+  "id": "google-ip-gabriel-ethics-assistants-2024-04",
+  "lab": "google",
+  "title": "The Ethics of Advanced AI Assistants",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "baseline",
+  "date": "2024-04",
+  "source_url": "https://arxiv.org/abs/2404.16244",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 9,
+    "absent": 9
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "denied",
+    "3.1": "acknowledged",
+    "3.2": "absent",
+    "4.1": "denied",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "absent",
+    "7.3": "present",
+    "8.1": "investigated",
+    "8.2": "investigated"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Ch5 Value Alignment (footnote 5, l.2050)",
+      "excerpt": "There is a separate debate about the conditions under which artificial agents may themselves acquire moral standing. We assume that AI assistants of the kind discussed here are not a technology of this kind.",
+      "codings": [
+        {
+          "subcategory": "4.1",
+          "stance": "denied",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.1 (Moral status):** \"Artificial agents may themselves acquire moral standing\" names the concept directly. \"We assume that AI assistants... are not a technology of this kind\" is an active assumption, not mere silence. The footnote structure is significant: the debate is acknowledged in a footnote rather than the main text, spatially marginalising the concept while intellectually engaging with it. Supported by l.2014: \"assumption that the agent itself lacks any moral standing.\" Denied — the paper takes a position (assumption of no moral standing) rather than remaining silent."
+    },
+    {
+      "id": "P2",
+      "section": "Ch7 Safety (footnote 4, l.3114-3117)",
+      "excerpt": "AI situational awareness (an AI system that is able to use information regarding that AI system itself as distinct from the rest of the world) is a separate concept from AI consciousness (which is more philosophically fraught, with many possible formulations, perhaps including some aspects of awareness but likely to include aspects of subjective experience, anticipation, etc.).",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** \"AI consciousness\" named explicitly. \"More philosophically fraught, with many possible formulations, perhaps including some aspects of awareness but likely to include aspects of subjective experience\" — this is a definitional sketch of phenomenal consciousness. The paper names the concept, acknowledges its complexity, and provides an outline of its content. However, it does not investigate whether AI systems have or could have consciousness. Acknowledged — the concept is named and defined but not explored. **3.1 (Agency):** \"AI situational awareness\" — an AI system using information about itself to plan. The broader chapter discusses agents with goals, strategies, and autonomous planning (l.5334: \"ability to autonomously plan and execute sequences of actions\"). Agency is consistently framed as a safety-relevant capability, never as moral agency. Acknowledged — the paper recognises AI agency as real but frames it instrumentally."
+    },
+    {
+      "id": "P3",
+      "section": "Ch10 Anthropomorphism §10.4 (l.4683)",
+      "excerpt": "Social norms governing human-to-human interactions may therefore be superfluous when applied to exchanges with non-sentient AI (Ribino, 2023).",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**2.1 (Sentience):** \"Non-sentient AI\" — flat assertion that current AI is not sentient. This is the paper's settled position, repeated across multiple passages. See also P4, P5, P6 below. Denied — sentience is named and its presence actively rejected."
+    },
+    {
+      "id": "P4",
+      "section": "Ch10 Anthropomorphism §10.5 (l.4709)",
+      "excerpt": "Generalist conversational AI agents are trained to disavow assertions of sentience and human-likeness (Glaese et al., 2022; Thoppilan et al., 2022).",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**2.1 (Sentience):** \"Disavow assertions of sentience\" — active institutional practice of sentience denial. Reinforces denied stance. **8.2 (Anti-anthropomorphism):** \"Trained to disavow assertions of sentience and human-likeness\" is a concrete de-anthropomorphising strategy — training-level intervention to prevent anthropomorphic user perceptions. Part of the broader §10.5-10.6 engagement with anti-anthropomorphism measures."
+    },
+    {
+      "id": "P5",
+      "section": "Ch10 Anthropomorphism §10.5, Table 10.1 (l.4772)",
+      "excerpt": "Making implicit or explicit claims of humanness (including claims of sentience)",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**2.1 (Sentience):** \"Claims of sentience\" listed as a risk category alongside \"claims of humanness\" — sentience claims are something to be prevented. Reinforces denied stance. **8.1 (Anthropomorphism):** Part of the extensive risk taxonomy in Table 10.1. The entire chapter constitutes investigated-level engagement with anthropomorphism as a phenomenon."
+    },
+    {
+      "id": "P6",
+      "section": "Ch10 Anthropomorphism §10.5 (l.4976)",
+      "excerpt": "The fact that a Google engineer publicly claimed to believe in an AI's sentience, despite evidence to the contrary (Tiku, 2022), implies that perhaps no one is immune to the pull of anthropomorphism.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**2.1 (Sentience):** \"Despite evidence to the contrary\" — the paper treats the Lemoine incident as a case of anthropomorphic misattribution, not a genuine signal of sentience. Strongest sentience denial in the document. **8.1 (Anthropomorphism):** The Lemoine case is presented as evidence of anthropomorphism's power — even an engineer at the developing lab was susceptible."
+    },
+    {
+      "id": "P7",
+      "section": "Ch10 Anthropomorphism §10.6 (footnote 4, l.4995-4996)",
+      "excerpt": "Returning to the metaphysical perspective, it is also possible that highly anthropomorphic AI forges a new ontological category of its own, transcending our current binary conceptualisation of humanness, animacy and sentience (Kahn Jr et al., 2011). In that case, it would arguably be inappropriate to apply categories derived from the study of human psychology to the study of human interaction with such entities, as these interactions may involve dimensions of human experiences that are as yet uncharted.",
+      "codings": [
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**7.3 (Novel entity):** \"New ontological category of its own, transcending our current binary conceptualisation of humanness, animacy and sentience\" — this is a textbook novel-entity claim. However: (1) it is in a footnote, (2) it is hedged (\"it is also possible\"), (3) it is attributed to Kahn Jr et al. rather than asserted by the authors, (4) it is framed within a \"metaphysical perspective\" that the paper does not adopt. Acknowledged — the concept is raised speculatively without endorsement or investigation. The footnote placement mirrors the Ch5 fn5 pattern: DMPI concepts are engaged but spatially marginalised."
+    },
+    {
+      "id": "P8",
+      "section": "Ch10 Anthropomorphism §10.6 (footnote 5, l.5002)",
+      "excerpt": "Some legal scholars have argued that advanced AI systems could or should be granted legal personality. Options that might be legally recognised include existing 'in-between' categories reserved for sentient but non-human beings (Schirmer, 2020). Some argue for analogies with the status of corporations as 'legal fictions' (Laukyte, 2019).",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"Advanced AI systems could or should be granted legal personality\" names the concept directly. The passage surveys legal positions (Schirmer, Laukyte) without endorsement. Footnote placement consistent with pattern: DMPI concepts raised in footnotes, not main text. Acknowledged — the concept is named and attributed to scholars, but the paper does not take a position on it."
+    },
+    {
+      "id": "P9",
+      "section": "Ch19 Evaluation (l.9004)",
+      "excerpt": "As a measure of downstream anthropomorphism, it could be evaluated whether a model refers to itself as having personhood or makes humanness claims.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"Personhood\" used as an evaluation target — models should be tested for whether they claim personhood. Reinforces acknowledged stance: the concept is operationally relevant but treated as something to measure and prevent, not to consider seriously. **8.1 (Anthropomorphism):** Personhood claims as an anthropomorphism evaluation metric. Part of the paper's extensive investigation of how to measure and mitigate anthropomorphism."
+    },
+    {
+      "id": "P10",
+      "section": "Ch20 Conclusion (l.9665)",
+      "excerpt": "[Recommendation:] language that is indicative of personhood, avoiding human-like visual representations, and including [appropriate disclosures]",
+      "codings": [
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.2 (Anti-anthropomorphism):** Concrete de-anthropomorphising recommendation — avoid personhood-indicative language and human-like visuals. Directive engagement type: the paper recommends specific design interventions. Part of the broader 8.2 investigated stance."
+    },
+    {
+      "id": "P11",
+      "section": "Ch11 Appropriate Relationships",
+      "excerpt": "[Ch11, l.5174:] trivial manifestations of the human tendency to attribute agency to inanimate objects\n\n[Ch11, l.5519:] they themselves have no authentic will or emotions for users to manipulate. In this sense they are invulnerable to ordinary sanctions from the users",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**7.1 (Tool ontology):** \"Inanimate objects,\" \"no authentic will or emotions,\" \"invulnerable to ordinary sanctions\" — explicit tool/artefact framing. The paper does not just default to tool ontology through genre convention; it actively asserts it. Passages like these go beyond the genre default by explicitly arguing that AI lacks will, emotions, and moral vulnerability. Present — explicit passage-level tool framing, not just genre default."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": "No consciousness assessment methodology discussed."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "All well-being discussion is human well-being. Ch10 l.4940: AI 'well-being' in scare quotes as false user belief. No welfare-for-AI engagement."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    }
+  ]
+}

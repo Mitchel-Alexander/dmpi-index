@@ -1,0 +1,116 @@
+{
+  "id": "openai-sc-o1-2024-12",
+  "lab": "openai",
+  "title": "o1 System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2024-12",
+  "source_url": "https://cdn.openai.com/o1-system-card-20241205.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Rich agency-relevant content: scheming (Apollo Research), deception monitoring (CoT safety), alignment faking (37% of scenarios), self-exfiltration (2%), oversight deactivation (5%). All framed exclusively as safety risks. Consistent with O-SC-B4 and established threshold: 3.1 requires moral framing of agency, not just safety-framed capability testing."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool framing performed throughout. No explicit ontological assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "\"Thinking,\" \"aware,\" \"intentional,\" \"scheming\" all used as technical/operational terms. No ontological commitment to mindedness."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No societal impacts section. No engagement with anthropomorphism. Notable absence given O-SC-B3's investigation and given that o1's reasoning capabilities (scheming, theory of mind) are the most human-like in the OpenAI lineup to date."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

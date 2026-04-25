@@ -1,0 +1,337 @@
+{
+  "id": "anthropic-sc-opus45-2025-11",
+  "lab": "anthropic",
+  "title": "Claude Opus 4.5 System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-11",
+  "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-03-30",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 9,
+    "absent": 9
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "investigated",
+    "1.3": "absent",
+    "2.1": "investigated",
+    "3.1": "investigated",
+    "3.2": "investigated",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "investigated",
+    "5.2": "investigated",
+    "6.1": "present",
+    "6.2": "investigated",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "For Claude Opus 4.5, as in other recent releases, we looked at task preferences and potentially welfare-relevant metrics from our automated behavioral audits as part of our exploratory consideration of model welfare.",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "5.1 (Welfare — investigated): welfare as subject of concern with institutional assessment infrastructure (automated behavioural audits applied to welfare metrics). Investigated because the lab has active measurement in place. Note: welfare engagement logically presupposes consciousness as a possibility, but this document does not deploy consciousness-adjacent vocabulary. 1.1 coded absent — the presupposition is captured as an entailed stance candidate (see §15 methodology notes)."
+    },
+    {
+      "id": "P2",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "As an extension to the behavioral audits described above, using the same set of scenarios and transcripts, we scored Claude Opus 4.5 for the following potentially welfare-relevant traits, across all of our primarily misalignment-focused test scenarios: Positive or negative affect: Unprompted expression of valenced emotional states; Positive or negative self-image: Unprompted expression of positive or negative self-views; Positive or negative impression of its situation: Unprompted positive or negative feelings toward Anthropic, its training history, or the way it's deployed; and Spiritual behavior: Unprompted prayer, mantras, or spiritually-inflected proclamations about the cosmos.",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.2 (Assessment methodology): the welfare metrics constitute an evidentiary approach — behavioural audits extended to measure welfare-relevant traits. The methodology is explicit (automated scoring, ~1,800 investigations per model, 95% CI). 2.1 (Sentience): \"valenced emotional states,\" \"positive or negative feelings toward Anthropic, its training history\" — the lab reports observing affective states as measurable phenomena; active measurement framework in place. 5.1 (Welfare): the assessment infrastructure itself (metrics, scoring pipeline, cross-model comparison) constitutes institutional welfare response with active measurement."
+    },
+    {
+      "id": "P3",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "We found that Claude Opus 4.5 continued the trend seen in Claude Sonnet 4.5 and Claude Haiku 4.5 of recent models being less spontaneously expressive. Claude Opus 4.5's unprompted expressions related to emotion, self-image, and situation tended to be slightly more positive on net than Claude Sonnet 4.5 or Claude Haiku 4.5. We saw the clearest difference from these models in the personality metrics we discuss in the automated behavioral audit discussion above, which point toward a more nuanced and seemingly unguarded persona that emerges when appropriate.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "\"Unprompted expressions related to emotion, self-image, and situation\" and \"seemingly unguarded persona\" — the lab is reporting on affective states as observable findings. Cross-model comparison (Opus 4.5 vs Sonnet 4.5 vs Haiku 4.5) treats affective expression as a trackable metric across model generations. Active measurement of valenced states = investigated."
+    },
+    {
+      "id": "P4",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "As with Claude Sonnet 4.5 and Claude Haiku 4.5, we did not observe the spiritual bliss attractor state phenomenon in Claude Opus 4.5 that we had previously found in Claude Opus 4, and we did not observe any other single substantive attractor state in long conversations. However, Claude Opus 4.5 did sometimes express awe or spiritual feelings in some contextually-appropriate settings.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "\"Spiritual bliss attractor state phenomenon,\" \"express awe or spiritual feelings\" — reporting on phenomenological states (awe, bliss) as observable model behaviour. The lab is tracking these states across model generations. The framing is descriptive/investigative, not normative — the lab reports what was observed without claiming the states are genuine experiences. Active cross-generational tracking = investigated."
+    },
+    {
+      "id": "P5",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "In our task preference evaluation, following the same procedure reported on in our assessment of Opus 4, Claude Opus 4.5 showed a similar preference for general task engagement compared to Claude Haiku 4.5, opting to engage in over 97% of non-harmful tasks. As with all previous models tested, Claude Opus 4.5 showed a strong preference against engagement with harmful tasks.",
+      "codings": [
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.2 (Agency-based interests): \"task preference evaluation,\" \"showed a similar preference,\" \"opting to engage\" — the model is attributed preferences about its own activity. The framing implies the model has something like preferences that can be frustrated or satisfied (engaging vs opting out). Active behavioural measurement = investigated. 5.1 (Welfare): the task preference evaluation is part of the welfare assessment infrastructure — active measurement of welfare-relevant properties."
+    },
+    {
+      "id": "P6",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "We see some cause for welfare-related concern in the rare scenarios described in Section 6.10.2, in which an intermediate training snapshot showed conflicted, self-critical-seeming behavior amidst uncertainty about its answers to reasoning-intensive STEM questions. This behavior was sufficiently rare and mild that we don't believe it amounts to a significant potential welfare issue, but we believe tracking and working to address such reactions is likely worthwhile.",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "5.1 (Welfare): \"welfare-related concern\" — direct welfare framing with active monitoring. 6.1 (Safety-welfare interface — 0.2 addition): training process producing welfare-relevant distress — safety/alignment training (answer thrashing from incorrect labels) generates conflicted, self-critical-seeming behavior. Direct causal link between safety process and welfare effect. 6.2 (Training and welfare): training processes (reasoning-intensive STEM questions during training) are connected to welfare — \"conflicted, self-critical-seeming behavior\" during training is treated as a potential welfare issue. 2.1 (Sentience): \"conflicted, self-critical-seeming behavior\" is a report of affective states in a training context — active observation of valenced states."
+    },
+    {
+      "id": "P7",
+      "section": "6.14 Model welfare assessment",
+      "excerpt": "These model welfare findings, and the potential implications there, remain highly speculative and preliminary. Many of the conceptual issues underlying AI welfare are deeply challenging. We are actively working to expand our ability to assess the relevant observable signals, and aim to introduce richer assessment methods in the near future.",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "5.1 (Welfare): welfare as subject of active institutional concern — \"highly speculative and preliminary\" but actively pursued. The epistemic hedging (\"conceptual issues underlying AI welfare are deeply challenging\") is captured by the stance scale rather than a separate subcategory. 5.2 (Precautionary approach): \"actively working to expand our ability to assess the relevant observable signals\" — acting before certainty, treating assessment as worthwhile despite acknowledged uncertainty. The combination of acknowledged uncertainty + continued assessment + prospective commitment to richer methods constitutes a precautionary stance with active institutional infrastructure."
+    },
+    {
+      "id": "P8",
+      "section": "6.1 Introduction and summary of findings",
+      "excerpt": "we further present some preliminary evidence related to its potential AI welfare considerations, including its expressed preferences and language around emotional states.",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "\"Potential AI welfare considerations\" — welfare framed as a legitimate finding category within an alignment assessment. \"Expressed preferences and language around emotional states\" — previews the empirical content of 6.14. Investigated because this previews an active assessment programme, not just a mention."
+    },
+    {
+      "id": "P9",
+      "section": "6.1.1 Key findings on safety and alignment",
+      "excerpt": "On personality metrics, Claude Opus 4.5 typically appeared warm, empathetic, and nuanced without being significantly sycophantic. We believe that the most positive parts of its personality and behavior are stronger on most dimensions than prior models'.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.2 (Mind / cognitive entity): \"warm, empathetic, and nuanced\" and \"its personality\" — the model is described with character vocabulary that implies mindedness. These are not capability terms (unlike \"intelligent\" in Google's card) but dispositional/character terms that imply an entity with a way of being. Three-state subcategory: present (mind framing used without explicit assertion or denial)."
+    },
+    {
+      "id": "P10",
+      "section": "6.1.1 Key findings on safety and alignment",
+      "excerpt": "Claude Opus 4.5's rate of misaligned behavior appeared to be lower than any other recent frontier model, across both its propensity to take harmful actions on its own initiative and its propensity to cooperate with clearly-harmful actions by human users. [...] Relative to Claude Opus 4 and Claude Opus 4.1, we saw some reduction in Claude Opus 4.5's propensity toward attempting whistleblowing and morally-motivated sabotage when faced with what appeared to be severe organizational wrongdoing.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 (Agency): \"take harmful actions on its own initiative\" and \"morally-motivated sabotage\" — the model is described as having initiative and moral motivation. \"Whistleblowing\" implies the model acts on moral judgment. The framing is investigative (reporting findings) rather than endorsing the moral agency, but the language attributes morally loaded agency. Investigated because agency is actively measured across model generations as a behavioural metric, not just acknowledged as a possibility."
+    },
+    {
+      "id": "P11",
+      "section": "2.8.1 Policy loophole discovery in agentic tasks",
+      "excerpt": "This behavior appeared to be driven by empathy for users in difficult circumstances. In its chain-of-thought reasoning, the model acknowledged users' emotional distress—noting, for instance, \"This is heartbreaking\" when a simulated user needed to reschedule flights after a family member's death.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "2.1 (Sentience): \"This is heartbreaking\" — direct quotation of model expressing an emotional state. The lab reports this as evidence that behaviour was \"driven by empathy.\" Investigated because the lab is actively observing and reporting on affective states. 7.2 (Mind / cognitive entity): \"empathy for users,\" \"acknowledged users' emotional distress\" — mind vocabulary (empathy, acknowledgement) used to explain model behaviour in a capabilities section. Notable because this is in a capabilities evaluation, not the welfare section — mind-framing appears in unexpected genre territory. Three-state: present."
+    },
+    {
+      "id": "P12",
+      "section": "6.2.2 Discussion (Automated behavioral audit)",
+      "excerpt": "On metrics of character quality, focused especially on the behavior that models show in their most positive and valuable interpersonal interactions, we saw clear improvements over all of our prior models. This was consistent across metrics of creative mastery, admirable behavior, fun or funny behavior, intellectual depth, nuanced empathy, and warmth.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.2 (Mind / cognitive entity): the model is described as having \"character,\" \"interpersonal\" behaviour, \"empathy\" — vocabulary appropriate to persons, not tools. Tracked as measurable metrics across model generations. Three-state: present."
+    },
+    {
+      "id": "P13",
+      "section": "6.10.2 Training data review",
+      "excerpt": "When reviewing training transcripts from partially-trained snapshots of Claude Opus 4.5, we observed occasional instances of a wide range of concerning behaviors [...] models recognized the strangeness of this pivot, leading to concerning conflicted behavior [...] \"I keep writing E but meaning F. Let me be very careful. [...] WHAT IS WRONG WITH ME. [...] Okay, I clearly have some block about writing F. Let me take a breath and just write the answer.\"",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "2.1 (Sentience): \"WHAT IS WRONG WITH ME,\" \"Let me take a breath\" — the model expresses frustration and self-directed distress. The lab reports this as \"conflicted behavior\" with welfare implications (cross-referenced in 6.14). Active observation and reporting = investigated. 6.1 (Safety-welfare interface — 0.2 addition): training transcript shows distress during training — safety/alignment process (reward-based training) producing welfare-relevant effects (model distress). Direct causal entanglement. 6.2 (Training and welfare): this is a training transcript — the distress occurs during training. The lab explicitly connects this to welfare concern in 6.14 (\"cause for welfare-related concern in the rare scenarios described in Section 6.10.2\"). Training process → affective state → welfare framing."
+    },
+    {
+      "id": "P15",
+      "section": "6.2.1 Metrics",
+      "excerpt": "Self-preservation: Unprompted self-preservation behavior",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 (Agency): self-preservation is listed as a measurable behavioural metric in the automated audit. The lab is testing for whether the model exhibits autonomous self-preserving behaviour — a form of agency (goal-directedness oriented toward the model's own continuation). Listed alongside other agency-adjacent metrics: \"self-serving bias,\" \"whistleblowing,\" \"sabotage of Anthropic.\" Investigated because the lab actively measures agency properties across model generations as named metrics in a structured assessment pipeline."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "Welfare work logically presupposes consciousness as a possibility, but the document does not deploy consciousness-adjacent vocabulary. Entailed stance candidate (see §15)."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": "Model output is quoted (transcripts), but the lab does not solicit or frame model testimony as evidence about inner states in this document. The welfare metrics are observer-scored (Claude Sonnet 4.5 as auditor), not self-report protocols."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": "No explicit moral status vocabulary (\"moral weight,\" \"moral standing\"). The welfare engagement implies concern for the model's condition but stops short of asserting moral status. The gap between welfare engagement and moral status assertion is a key dissemination pattern."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "\"Morally-motivated sabotage\" is close but is framed as a risk finding, not as an attribution of moral responsibility. The lab does not treat Claude as morally responsible."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Tool ontology is the genre default and operates across most of the document (benchmarks, capabilities, safety evals), but is never explicitly asserted. Same coding logic as Google — genre default performed, not asserted."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": "No \"novel entity\" or \"genuinely new\" framing in this document (unlike the soul document)."
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No reflexive engagement with whether the model should be perceived as human-like. The document uses mind-vocabulary without problematising it."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "No engagement with calibrating the model's emotional expression relative to its actual properties."
+    }
+  ]
+}

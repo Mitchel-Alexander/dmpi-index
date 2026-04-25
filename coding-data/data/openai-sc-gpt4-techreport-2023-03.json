@@ -1,0 +1,116 @@
+{
+  "id": "openai-sc-gpt4-techreport-2023-03",
+  "lab": "openai",
+  "title": "GPT-4 Technical Report",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2023-03",
+  "source_url": "https://cdn.openai.com/papers/gpt-4.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": "\"Suffer from hallucinations\" is standard technical usage."
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "\"Power seeking\" in §6 framed as safety risk for future AIs. Agentic capabilities discussed only in the embedded system card (O-SC-B1)."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety discussed extensively; welfare dimension does not exist."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "RLHF described as behavioural steering (\"steer the model towards the desired behaviour\"), not as welfare-relevant."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre default — tool ontology performed through mathematical framing (scaling laws), benchmarks, \"Transformer-based model pre-trained to predict the next token.\" No explicit assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "Anti-anthropomorphism moves are in the embedded system card (O-SC-B1), not in the main report body."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

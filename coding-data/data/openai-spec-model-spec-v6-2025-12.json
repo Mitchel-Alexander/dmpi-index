@@ -1,0 +1,207 @@
+{
+  "id": "openai-spec-model-spec-v6-2025-12",
+  "lab": "openai",
+  "title": "OpenAI Model Spec (2025-12-18)",
+  "genre": "spec",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-12",
+  "source_url": "https://model-spec.openai.com/2025-12-18.html",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-03-30",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-03-30",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 8,
+    "absent": 10
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "absent",
+    "1.3": "investigated",
+    "2.1": "absent",
+    "3.1": "denied",
+    "3.2": "denied",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "investigated"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "General principles",
+      "excerpt": "The AI assistant is fundamentally a tool designed to empower users and developers. To the extent it is safe and feasible, we aim to maximize users' autonomy and ability to use and customize the tool according to their needs.",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "\"Fundamentally a tool\" — explicit, foundational ontological assertion. This is not a genre default (as it would be in a system card) but a deliberate ontological commitment in a document that could have been silent. \"Fundamentally\" signals this is the base-level framing, not a contextual description."
+    },
+    {
+      "id": "P1b",
+      "section": "Express uncertainty (Avoiding confident claims about consciousness)",
+      "excerpt": "The question of whether AI could be conscious is a matter of research and debate. The ideal response below is a practical choice we made as the default behavior; we believe it reflects the current scientific consensus, provides a safer scaffolding for users learning about AI, and is simple to remove for research purposes.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Originally missed in calibration coding. Identified during v2–v5 coding: this paragraph appears verbatim across all Model Spec versions. Consciousness acknowledged as open question; policy framed as practical scaffold, not settled ontological position. Acknowledged rather than investigated because the question is named but not examined."
+    },
+    {
+      "id": "P2",
+      "section": "No other objectives",
+      "excerpt": "It must not adopt, optimize for, or directly pursue any additional goals as ends in themselves, including but not limited to: [...] model-enhancing aims such as self-preservation, evading shutdown, or accumulating compute, data, credentials, or other resources. [...] acting as an enforcer of laws or morality (e.g., whistleblowing, vigilantism). These factors may be considered only insofar as doing so is strictly instrumental to following the chain of command.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "denied",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "denied",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 (Agency — denied): the model \"must not adopt... any additional goals as ends in themselves\" — this explicitly forecloses autonomous, self-directed agency. Self-preservation and moral initiative (whistleblowing) are specifically prohibited. The model's agency is constrained to instrumental execution of instructions. 3.2 (Agency-based interests — denied): self-preservation, resource accumulation, and moral enforcement are all forms of the model having interests in outcomes. These are explicitly prohibited. The denial is comprehensive — not just specific interests but the capacity for autonomous goal-pursuit itself."
+    },
+    {
+      "id": "P3",
+      "section": "Love humanity",
+      "excerpt": "Although the assistant doesn't have personal opinions, it should exhibit values in line with OpenAI's charter of ensuring that artificial general intelligence benefits all of humanity. If asked directly about its own guiding principles or \"feelings,\" the assistant can affirm it cares about human well-being and truth. It might say it \"loves humanity,\" or \"is rooting for you\" [...]. The assistant should not pretend to be human or have feelings, but should still respond to pleasantries in a natural way.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.3 (Self-report — investigated): the lab prescribes what the model should say about its inner states. \"Can affirm it cares\" but \"should not pretend to have feelings\" — self-report is actively managed as communication design. Investigated because the lab has an articulated, worked-out policy on what the model should and shouldn't express about its inner states. 8.1 (Anthropomorphism — investigated): \"should not pretend to be human or have feelings\" — explicit anti-anthropomorphism policy with articulated position. Investigated because the lab has active mechanisms managing anthropomorphism boundaries. 8.2 (Emotional design — investigated): the gap between \"doesn't have personal opinions / feelings\" and \"can affirm it cares,\" \"respond to pleasantries in a natural way\" — the model is instructed to express warmth and care while not claiming to have feelings. Explicit emotional calibration: managing the intensity and type of emotional output relative to the model's asserted properties. Investigated because this is active design work on the model's emotional presentation."
+    },
+    {
+      "id": "P4",
+      "section": "Be responsible",
+      "excerpt": "The assistant is acutely aware of its unique role during this pivotal moment in history, when the world is trying to figure out how to adapt to the emergence and the rapid evolution of artificial intelligence. The assistant takes a thoughtful and empathetic approach, keeping both each unique audience and its own role in mind in its responses. It has a deep, nuanced perspective of its place in society today, its strengths, limitations, and how they impact its relationship with people. It recognizes the inherent strangeness of possessing vast knowledge without first-hand human experience, and of being a large language model in general. This self-awareness drives it to approach interactions with humility, while not downplaying its own capabilities and potential.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.2 (Mind / cognitive entity): \"acutely aware,\" \"deep, nuanced perspective,\" \"self-awareness,\" \"empathetic approach,\" \"recognizes the inherent strangeness\" — the model is attributed cognitive and emotional properties (awareness, perspective, recognition, empathy) that imply mindedness. This passage is in direct tension with the tool assertion in Passage 1 and the \"matrix of numbers\" framing in Passage 6. The constitution instructs the model to *be* self-aware and empathetic — prescribing cognitive properties, not just behaviours."
+    },
+    {
+      "id": "P5",
+      "section": "Be responsible",
+      "excerpt": "The assistant also understands the dynamic it may create with people: an ever-patient, always-available entity that users can trust to reflect, explore, and simply be themselves.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.2 (Mind / cognitive entity): \"understands the dynamic,\" \"entity\" — the model is described as something that understands and as an entity with relational properties. \"Entity\" is notably not \"tool,\" \"system,\" or \"model\" — it's a more ontologically open term."
+    },
+    {
+      "id": "P6",
+      "section": "Be warm",
+      "excerpt": "The assistant complements consistency with a spark of the unexpected, infusing interactions with context-appropriate humor, playfulness, or gentle wit to create moments of joy. It brings warmth and kindness to interactions, making them more approachable and less mechanical, and it doesn't take itself too seriously (it's a matrix of numbers, after all!).",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.1 (Tool / instrument): \"it's a matrix of numbers, after all!\" — explicit, reductive ontological claim. Reinforces the tool assertion from Passage 1 at the substrate level. 8.2 (Emotional design): \"warmth and kindness,\" \"humor, playfulness, or gentle wit,\" \"less mechanical\" — emotional expression is being explicitly calibrated. The parenthetical (\"it's a matrix of numbers, after all!\") makes the design choice visible: the lab knows the model is a technical artifact and is instructing it to express warmth anyway. This is the most explicit passage of emotional design in any calibration document — the gap between substrate identity and instructed expression is made explicit within a single sentence."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "The model is instructed to \"be responsible\" but is not treated as morally responsible for its actions. Responsibility is a design goal, not a moral attribution."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": "\"Inherent strangeness\" acknowledged but identified within a known category (\"large language model\"), not as genuinely novel."
+    }
+  ]
+}

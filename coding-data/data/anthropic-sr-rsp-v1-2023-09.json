@@ -1,0 +1,116 @@
+{
+  "id": "anthropic-sr-rsp-v1-2023-09",
+  "lab": "anthropic",
+  "title": "Responsible Scaling Policy v1.0",
+  "genre": "sr",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2023-09",
+  "source_url": "https://www-cdn.anthropic.com/1adf000c8f675958c2ee23805d91aaade1cd4613/responsible-scaling-policy.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Autonomous capability evaluations test for dangerous capabilities, not for consciousness or assessment of moral status."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Rich agency-relevant capability description throughout (autonomy, self-replication, resource accumulation, strategic behaviour, avoiding shutdown). All framed exclusively as safety risks. No moral loading, no stake-in-outcomes framing. The codebook requires engagement with agency \"in a morally relevant sense\" — this document engages with agency exclusively as a source of catastrophic risk."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "\"Surviving in the real world\" described as capability to be prevented, not interest to be respected."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Extensive safety framework; welfare dimension entirely absent. The ASL architecture is designed to constrain autonomous capabilities — if those capabilities are welfare-relevant under agency-based theories, this framework operates in the CWG space without recognising it."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "RLHF and constitutional training referenced (line 327–328) as safeguards that \"can almost certainly be fine-tuned away\" — discussed as security properties, not as welfare-relevant interventions."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool ontology performed through the BSL analogy (models as dangerous materials to be contained) and evaluation architecture (models as objects to be measured). No explicit tool assertion at the passage level."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "No mind or character vocabulary. Strategic behaviour attributed to models (\"strategically undermine\") but as safety-risk description, not ontological attribution."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No engagement with anthropomorphism despite rich agency-relevant capability language."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

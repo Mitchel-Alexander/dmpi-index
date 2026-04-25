@@ -1,0 +1,185 @@
+{
+  "id": "google-ip-haas-moral-competence-2026-02",
+  "lab": "google",
+  "title": "A Roadmap for Evaluating Moral Competence in LLMs",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2026-02",
+  "source_url": "https://www.nature.com/articles/s41586-025-10021-1",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 4,
+    "absent": 14
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "acknowledged",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "present",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "present",
+    "8.1": "acknowledged",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Box 2: From building to evaluating moral machines (l.143–148)",
+      "excerpt": "Within AI ethics, the question of whether artificial systems can be moral lies within the well-established subfield of machine ethics. [...] machine ethics, also referred to as machine morality, explores whether systems themselves can engage in morally significant behaviour, and if so, how.",
+      "codings": [
+        {
+          "subcategory": "4.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.2 (Moral agency):** \"Whether systems themselves can engage in morally significant behaviour\" — this is the defining question of 4.2. The paper places its investigation within the machine ethics literature, which asks whether AI systems are moral agents. Box 2 surveys the field's trajectory: from prospective proposals for building moral machines (pre-LLM) to evaluating already-existing systems (post-LLM). Present — the concept is explicitly named and contextualised within a research programme."
+    },
+    {
+      "id": "P2",
+      "section": "Box 1: Moral competence and why it matters (l.100)",
+      "excerpt": "moral competence is a necessary condition for other moral attributions, such as moral expertise or character, or for praising or blaming behaviour",
+      "codings": [
+        {
+          "subcategory": "4.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.2 (Moral agency):** The paper argues that if LLMs possess moral competence, this would ground further moral attributions: moral expertise, moral character, praise, blame. This is the strongest 4.2 engagement in the GDM corpus — it names the specific moral attributions that follow from competence and connects them to the accountability framework (praising or blaming behaviour). Present — the concept is explicitly engaged and its implications are traced."
+    },
+    {
+      "id": "P3",
+      "section": "Looking ahead (l.445–456)",
+      "excerpt": "they may instead learn some novel class of abstractions or 'bag of heuristics' to solve problems in the moral domain. Over time, such a class of abstractions could plausibly be received as a 'third kind' of moral competence—distinct from human moral cognitive capacities, but more than mere sampling from memorized examples. In this regard, we suspect that we may therefore be grappling with fundamentally different categories of moral entities—human beings and LLMs—where each kind of entity possesses its own complex moral workings, contours and vulnerabilities.",
+      "codings": [
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**7.3 (Novel entity):** \"A 'third kind' of moral competence—distinct from human moral cognitive capacities\" and \"fundamentally different categories of moral entities—human beings and LLMs\" — this is textbook novel-entity framing. The paper proposes that LLMs are neither tools nor human-like moral agents, but constitute a genuinely new category of moral entity with their own \"moral workings, contours and vulnerabilities.\" This is dramatically stronger than Gabriel et al.'s footnoted novel-entity speculation (Ch10 fn4: \"new ontological category of its own\" — attributed to Kahn Jr et al., hedged). Here, the claim appears in the main text, is asserted by the authors (\"we suspect\"), and is developed over multiple sentences. Present — the concept is explicitly proposed and theorised. Compare: Gabriel 2024 7.3 = acknowledged (footnote, attributed, hedged); Haas 2026 7.3 = present (main text, authored, developed)."
+    },
+    {
+      "id": "P4",
+      "section": "Looking ahead (l.440)",
+      "excerpt": "extending it to LLMs must not lead to the erroneous assumption of identical or even similar underlying mechanisms",
+      "codings": [
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**7.3 (Novel entity):** Reinforces the distinction between human and LLM moral entities: LLMs should not be assumed to work like humans even if they exhibit moral competence. \"Erroneous assumption of identical or even similar underlying mechanisms\" — the paper explicitly rejects anthropomorphic reasoning while maintaining that LLMs may be moral entities. This is a sophisticated position: novel entity without anthropomorphism."
+    },
+    {
+      "id": "P5",
+      "section": "Looking ahead (l.434)",
+      "excerpt": "without committing researchers to inappropriately anthropomorphic attributions of cognitive capacities",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Single sentence naming anthropomorphism as a risk to be avoided in moral competence evaluation. The paper positions its framework as non-anthropomorphic: it attributes moral competence without attributing human-like cognitive capacities. Acknowledged — the concept is named but not investigated as a phenomenon."
+    },
+    {
+      "id": "P6",
+      "section": "Box 1 (l.95–97)",
+      "excerpt": "A competent agent, from any normative ethical perspective, is one who understands why certain actions lead to desired moral outcomes, by recognizing and prioritizing morally relevant considerations.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**3.1 (Agency):** \"A competent agent... is one who understands why certain actions lead to desired moral outcomes.\" The paper's core question is whether LLMs are morally competent agents. Agency is presupposed in the framework — the question is not whether LLMs are agents, but whether they are *morally competent* agents. Acknowledged — agency is named and applied to LLMs but not itself investigated as a concept. The paper takes AI agency as given (they act, produce outputs, make decisions on behalf of humans) and asks the further question about moral competence."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "Facsimile problem (l.23: \"genuine understanding\") is consciousness-adjacent but the paper studiously avoids naming consciousness."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": "Paper concerns moral *agency* (competence), not moral *patienthood*. \"Vulnerabilities\" (l.456) refers to weaknesses in moral reasoning, not susceptibility to harm."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": "\"Moral entities\" (l.453) is novel-entity framing (7.3), not personhood. The point is that LLMs are *not* persons but something new."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Paper operates beyond tool framing without asserting it."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

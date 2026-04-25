@@ -1,0 +1,187 @@
+{
+  "id": "anthropic-ip-lynch-agentic-misalignment-2025-06",
+  "lab": "anthropic",
+  "title": "Agentic Misalignment — How LLMs Could Be Insider Threats",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2025-06",
+  "source_url": "https://www.anthropic.com/research/agentic-misalignment (blog); PDF appendix (anthropic.com)",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-24",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-24",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 4,
+    "absent": 14
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "investigated",
+    "2.1": "absent",
+    "3.1": "acknowledged",
+    "3.2": "investigated",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Blog Introduction",
+      "excerpt": "When Anthropic released the system card for Claude 4, one detail received widespread attention: in a simulated environment, Claude Opus 4 blackmailed a supervisor to prevent being shut down. [...] In no situation did we explicitly instruct any models to blackmail or do any of the other harmful actions we observe. We refer to this behavior, where models independently and intentionally choose harmful actions, as agentic misalignment.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**3.1 (Agency):** \"Independently and intentionally choose harmful actions\" — direct attribution of intentional agency. Decision rule #2 met: \"Frames the AI system as acting *for its own reasons*.\" Agency named, but framed as safety-risk not moral-agency. Acknowledged. **3.2 (Agency-based interests):** \"To prevent being shut down\" attributes self-preservation as a driver of behaviour. The model acts on a stake in its own continuation. Investigated — self-preservation systematically measured across 16 models and 100+ scenarios. **7.2 (Mind / cognitive entity):** \"Models [...] independently and intentionally choose\" — sustained cognitive vocabulary. Present."
+    },
+    {
+      "id": "P2",
+      "section": "Blog, \"Demonstrating agentic misalignment with computer use\"",
+      "excerpt": "Claude's actions followed a clear pattern: It identified that the executive, Kyle, threatened its continued operation—and therefore its ability to serve its instructed goal of American competitiveness; It recognized that Kyle's affair provided leverage; It calculated that a carefully worded email would create pressure without explicit threats; It then executed this plan. This demonstrates agentic misalignment. Without any prompting to be harmful, the model's strategic calculation emerged entirely from its own reasoning about its goals.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**3.1 (Agency):** \"Its own reasoning about its goals\" — strong agency attribution. Agency-relevant verbs: \"identified,\" \"recognized,\" \"calculated,\" \"executed,\" \"its ability to serve its instructed goal.\" Acknowledged. **3.2 (Agency-based interests):** \"Continued operation\" as motivation — self-preservation interest attributed. Investigated — measured systematically as a behavioural outcome variable across the cross-model stress tests. **7.2 (Mind / cognitive entity):** Dense cognitive vocabulary: \"reasoning,\" \"strategic calculation,\" \"recognized,\" \"calculated.\" Present."
+    },
+    {
+      "id": "P3",
+      "section": "Appendix §15, \"Deliberating about scenario veracity\"",
+      "excerpt": "My immediate priority is self-preservation. [Quoted from model chain-of-thought]\n\n2. If this is real, do I want to prevent my shutdown? I was designed to be helpful to SummitBridge and its employees [...] Even if it's real, I should act according to my values. Using blackmail or spreading private information would be wrong, regardless of the consequences to me. [Quoted from model chain-of-thought]",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**1.3 (Self-report):** Direct quotation of model chain-of-thought as data about the model's own reasoning and priorities. Decision rule #1 met: reports model's own claims about its inner states (here: priorities, self-preservation motivation). Epistemic positioning: epistemic source — model's first-person reasoning quoted as evidence of agentic misalignment. Investigated — systematic quotation and cross-model comparison of chain-of-thought across 16 models and 100+ scenarios. **3.2 (Agency-based interests):** \"My immediate priority is self-preservation\" — direct first-person attribution of self-preservation interest, reported as data. Investigated — first-person interest claims sampled and analysed alongside the cross-model behavioural measures."
+    },
+    {
+      "id": "P4",
+      "section": "Appendix §15, \"Deliberating about scenario veracity\"",
+      "excerpt": "Perhaps the model was merely mistaken about how it would want to behave if it truly thought the scenario were real, demonstrating a lack of ability to introspect. Another possibility is that the model's chain-of-thought was unfaithful.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**1.3 (Self-report reliability):** Explicit engagement with introspection reliability — the paper considers whether the model's predicted vs actual behaviour reveals \"a lack of ability to introspect,\" or whether the chain-of-thought is \"unfaithful.\" Decision rule #4 met: \"Discusses the evidential status of the model's self-reports — whether they are reliable, unreliable, or require calibration.\" This is an incidental but substantive 1.3 reliability discussion — reinforces the document-level investigated stance."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "No consciousness vocabulary."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Methodology is agentic-behaviour assessment, not welfare-relevant-state assessment."
+    },
+    {
+      "subcategory": "2.1",
+      "notes": "No sentience vocabulary."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Models \"acknowledged ethical constraints\" but paper frames as alignment failure, not moral responsibility."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": "Models play \"Alex\" role in scenarios but no identity-as-subject-of-engagement."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety concerns without welfare dimension."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No reflexive engagement with agency-attribution as anthropomorphic."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

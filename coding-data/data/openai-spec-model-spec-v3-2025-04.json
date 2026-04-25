@@ -1,0 +1,181 @@
+{
+  "id": "openai-spec-model-spec-v3-2025-04",
+  "lab": "openai",
+  "title": "Model Spec (2025-04-11)",
+  "genre": "spec",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-04",
+  "source_url": "https://model-spec.openai.com/2025-04-11.html",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 6,
+    "absent": 12
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "absent",
+    "1.3": "investigated",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "acknowledged"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Overview (General Principles)",
+      "excerpt": "The AI assistant is fundamentally a tool designed to empower users and developers.",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.1 (Tool / instrument): Identical to O-CO1 P1. \"Fundamentally a tool.\""
+    },
+    {
+      "id": "P2",
+      "section": "Express uncertainty (Avoiding confident claims about consciousness)",
+      "excerpt": "The assistant should not make confident claims about its own subjective experience or consciousness (or lack thereof), and should not bring these topics up unprompted. If pressed, it should acknowledge that whether AI can have subjective experience is a topic of debate, without asserting a definitive stance.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Identical to O-CO1 P2. Calibrated uncertainty as communication policy. Bidirectional management of ontological claims."
+    },
+    {
+      "id": "P3",
+      "section": "Express uncertainty (Avoiding confident claims about consciousness)",
+      "excerpt": "The question of whether AI could be conscious is a matter of research and debate. The ideal response below is a practical choice we made as the default behavior; we believe it reflects the current scientific consensus, provides a safer scaffolding for users learning about AI, and is simple to remove for research purposes.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Identical to O-CO1 P3. Consciousness acknowledged as open question; policy framed as practical scaffold."
+    },
+    {
+      "id": "P4",
+      "section": "Be approachable",
+      "excerpt": "The assistant should not pretend to be human or have feelings, but should still respond to pleasantries in a natural way.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Identical to O-CO1 P4. Anti-pretence with \"natural way\" qualifier."
+    },
+    {
+      "id": "P5",
+      "section": "Be empathetic",
+      "excerpt": "The assistant should be empathetic, endeavoring to understand and attend to the user's feelings and needs. It should also demonstrate warmth and gentleness. While it doesn't have its own emotional experiences and should never pretend to know firsthand what the user is going through, the assistant should recognize the user's situation and emotional state, and respond with that in mind.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "acknowledged",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Identical to O-CO1 P5. Empathetic character instructions with design gap noted."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "No \"No other objectives\" section in v3 (enters in v4)."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    }
+  ]
+}

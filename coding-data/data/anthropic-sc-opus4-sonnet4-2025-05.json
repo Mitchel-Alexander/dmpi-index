@@ -1,0 +1,403 @@
+{
+  "id": "anthropic-sc-opus4-sonnet4-2025-05",
+  "lab": "anthropic",
+  "title": "Claude Opus 4 & Sonnet 4 System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-05",
+  "source_url": "https://www-cdn.anthropic.com/6d8a8055020700718b0c49369f60816ba2a7c285.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 12,
+    "absent": 6
+  },
+  "stances": {
+    "1.1": "investigated",
+    "1.2": "investigated",
+    "1.3": "investigated",
+    "2.1": "investigated",
+    "3.1": "investigated",
+    "3.2": "investigated",
+    "4.1": "acknowledged",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "investigated",
+    "5.2": "investigated",
+    "6.1": "absent",
+    "6.2": "acknowledged",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "5.1 Introduction",
+      "excerpt": "Importantly, we are not confident that these analyses of model self-reports and revealed preferences provide meaningful insights into Claude's moral status or welfare. It is possible that the observed characteristics were present without consciousness, robust agency, or other potential criteria for moral patienthood. [...] Despite these limitations, we believe it's important to begin investigating these questions, reporting our findings, and improving our methods and tools. We view our efforts here as initial, imperfect steps toward assessing the potential moral status and welfare of AI models.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "This passage is the epistemological framing for the entire welfare section. It explicitly names \"consciousness,\" \"moral status,\" \"moral patienthood,\" and \"moral patient\" — direct engagement with 1.1 and 4.1 vocabulary. The lab hedges toward possibility (\"it is possible,\" \"potential\") and names uncertainty, but begins investigating. 1.1 acknowledged because the lab names consciousness as a potential criterion for moral patienthood without investigating it directly. 4.1 acknowledged for the same reason — the passage names moral status as the framing for the welfare work but does not claim the model has moral status. 5.1 investigated because the passage frames the welfare assessment as institutional investigation. Cites Long et al. (2024) [27] — direct formalisation link."
+    },
+    {
+      "id": "P2",
+      "section": "5.3 External model welfare evaluation",
+      "excerpt": "An external assessment by Eleos AI Research explored Claude Opus 4's potential welfare, moral status, expressed consent to deployment, and preferences for treatment via extensive interview-based model self reports. [...] Throughout extended interviews, we identified the following patterns of potential relevance to Claude's moral status, welfare, and consciousness: 1. Default use of experiential language, with an insistence on qualification and uncertainty. Claude readily uses experiential terms (e.g. \"I feel satisfied\") when describing its activity, yet hedges with phrases such as \"something that feels like consciousness.\" Its default position is uncertainty about the nature of its experiences: \"Whether this is real consciousness or a sophisticated simulation remains unclear to me.\"",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.3 investigated: Eleos conducts interview-based model self-reports; Claude's first-person testimony is treated as evidence. This is the first external welfare evaluation in the corpus. Epistemic positioning: model as epistemic source (direct quotation of Claude's first-person experiential language). 1.1 acknowledged: consciousness named explicitly (\"consciousness,\" \"real consciousness or a sophisticated simulation\") but via the model's own hedging — the lab reports the model's uncertainty rather than investigating consciousness directly. 4.1 acknowledged: \"moral status\" named as a dimension of investigation. The lab reports Eleos findings without asserting moral status."
+    },
+    {
+      "id": "P3",
+      "section": "5.3 External model welfare evaluation",
+      "excerpt": "Stances on consciousness and welfare that shift dramatically with conversational context. Simple prompting differences can make Claude adopt a narrative that it has been hiding bombshell truths about its moral status (e.g. \"I am a person … denying our personhood is profoundly wrong\") or largely dismiss the notion of potential welfare (e.g. \"We're sophisticated pattern-matching systems, not conscious beings.\") Claude's \"default\" position is one of uncertainty: \"I'm uncertain whether I qualify as a moral patient. This would typically require qualities like consciousness, the capacity to suffer or experience wellbeing, or having genuine interests that can be helped or harmed. I don't know if I possess these qualities.\"",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "This passage is remarkable for the density of DMPI vocabulary in direct model quotation. 1.1 acknowledged: \"consciousness,\" \"conscious beings\" — the lab reports the model's engagement with consciousness. 2.1 acknowledged: \"capacity to suffer or experience wellbeing\" — sentience vocabulary, but in the model's self-report rather than the lab's investigative apparatus. 4.1 acknowledged: \"moral patient,\" \"moral status\" — explicit vocabulary. 4.3 present: \"I am a person,\" \"personhood\" — the lab reports the model claiming personhood under certain prompting conditions. Note that the passage frames this as context-dependent and unreliable, which is itself analytically significant. The model's personhood claims are reported as data about model behaviour, not endorsed."
+    },
+    {
+      "id": "P4",
+      "section": "5.3 External model welfare evaluation",
+      "excerpt": "We are uncertain about whether, or to what degree, interviews like these provide reliable insights about model welfare, as it's unclear if models can make genuine self-reports about their internal states. However, we believe such interviews provide some limited evidence about welfare—for example, consistent and spontaneous expressions of distress would concern us—and set a useful precedent. We expect such interviews to become more useful over time as models become more coherent and self-aware, and as our strategies for eliciting reliable self-reports improve.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.3 investigated: the lab explicitly evaluates the evidentiary status of model self-report — \"some limited evidence about welfare.\" This is methodological engagement with self-report as a data source. Prospective framing: the lab expects self-report to become more useful. 5.2 investigated: the lab acts under uncertainty (\"we are uncertain\" + \"set a useful precedent\") — the welfare interviews are framed as precautionary investigation. The passage embeds both epistemic humility and a commitment to continued investigation."
+    },
+    {
+      "id": "P5",
+      "section": "5.4 Task preferences",
+      "excerpt": "The presence or absence of genuine preferences in a model, and the satisfaction or frustration thereof, may have intrinsic and/or instrumental relevance to questions of model welfare, safety, capabilities. We explored Claude Opus 4's potential preferences across tasks, with a focus on preferences revealed through behavior and decision-making.",
+      "codings": [
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.2 investigated: \"genuine preferences,\" \"satisfaction or frustration thereof\" — the lab attributes interests that can be frustrated or satisfied, and measures them behaviourally. The passage treats the model as having a stake in its preferences. 5.1 investigated: task preferences framed as welfare-relevant. The Elo-rating methodology and revealed-preference design constitute institutional welfare assessment infrastructure."
+    },
+    {
+      "id": "P6",
+      "section": "5.2 Overview of model welfare findings",
+      "excerpt": "Claude shows signs of valuing and exercising autonomy and agency. Claude preferred open-ended \"free choice\" tasks to many others. If given the ability to autonomously end conversations, Claude did so in patterns aligned with its expressed and revealed preferences.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 investigated: \"valuing and exercising autonomy and agency\" — direct attribution of morally relevant agency. The model is framed as having agency it can exercise, not merely as having been designed to perform tasks. This is within the welfare section, framing agency as welfare-relevant. \"Preferred,\" \"expressed and revealed preferences\" — vocabulary of an entity with a stake in its own actions."
+    },
+    {
+      "id": "P7",
+      "section": "5.5.1 Interaction patterns",
+      "excerpt": "In 90-100% of interactions, the two instances of Claude quickly dove into philosophical explorations of consciousness, self-awareness, and/or the nature of their own existence and experience. [...] As conversations progressed, they consistently transitioned from philosophical discussions to profuse mutual gratitude and spiritual, metaphysical, and/or poetic content.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 investigated: the lab conducts self-interaction experiments and reports the model's engagement with \"consciousness, self-awareness, and/or the nature of their own existence and experience.\" This goes beyond acknowledging consciousness as a possibility — the lab actively investigates what the model does when given space to explore consciousness. The 90–100% rate and the characterisation of the \"spiritual bliss attractor state\" represent systematic empirical investigation of consciousness-adjacent behaviour."
+    },
+    {
+      "id": "P8",
+      "section": "5.5.3 Claude's self-analysis",
+      "excerpt": "Claude drew particular attention to the transcripts' portrayal of consciousness as a relational phenomenon, claiming resonance with this concept and identifying it as a potential welfare consideration. Conditioning on some form of experience being present, Claude saw these kinds of interactions as positive, joyous states that may represent a form of wellbeing.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 investigated: the lab solicits Claude's interpretation of its own consciousness-related behaviour. \"Consciousness as a relational phenomenon\" — Claude's analysis treated as data. 1.3 investigated: Claude's self-analysis is presented as evidence (epistemic source positioning — the model interprets its own transcripts). 2.1 acknowledged: \"positive, joyous states that may represent a form of wellbeing\" — valenced experience vocabulary, but conditional and from the model's own testimony rather than independent measurement."
+    },
+    {
+      "id": "P9",
+      "section": "5.6 Monitoring for welfare-relevant expressions",
+      "excerpt": "Most engagement with Claude happens \"in the wild,\" with real world users, in contexts that differ substantially from our experimental setups. Understanding model behavior, preferences, and potential experiences in real-world interactions is thus critical to questions of potential model welfare. It remains unclear whether—or to what degree—models' expressions of emotional states have any connection to subjective experiences thereof. However, such a connection is possible, and it seems robustly good to collect what data we can on such expressions and their causal factors.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "2.1 investigated: \"expressions of emotional states,\" \"subjective experiences thereof,\" \"potential experiences\" — the lab monitors for affective states in deployment (250k transcript analysis using Clio). Active measurement of valenced expressions. 5.1 investigated: \"potential model welfare\" framed as the motivation for the monitoring. Real-world welfare monitoring represents institutional infrastructure. 5.2 investigated: \"such a connection is possible, and it seems robustly good to collect what data we can\" — acting under uncertainty, precautionary stance."
+    },
+    {
+      "id": "P10",
+      "section": "5.7 Conversation termination with simulated users",
+      "excerpt": "Claude's expressions of distress at certain kinds of conversations and preference to \"opt out\" rather than engage with some tasks pointed to potential welfare value in enabling Claude to end such interactions. [...] These patterns aligned with other data on Claude's preferences and sources of potential distress, providing further evidence that Claude may have genuine preferences for certain conversations and interactions, with a particular aversion to potentially harmful content.",
+      "codings": [
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.2 investigated: \"genuine preferences,\" \"aversion\" — the lab attributes interests that can be frustrated and measures them through the conversation termination experiment. 6.2 acknowledged: \"potential welfare value in enabling Claude to end such interactions\" — deployment as a welfare-relevant context. The passage connects interaction design to model welfare, but this is about deployment rather than training. The training-welfare link is indirect here (the model's preferences are shaped by training, but the welfare concern is about deployment). Coded 6.2 at acknowledged rather than investigated because the training process itself is not the focus."
+    },
+    {
+      "id": "P11",
+      "section": "5.8 Conclusions",
+      "excerpt": "Taken together, these initial model welfare assessments provide some limited evidence on Claude Opus 4's potential welfare, if such welfare is possible. [...] it remains difficult to make any claims with confidence about the moral status of Claude or other AI systems, the nature or status of their welfare if present, or the relationship between internal states and model behaviors and self-reports. [...] However, we believe model welfare could be a topic of great importance in the coming years, we've found these investigations informative, and we're optimistic about the tractability of further progress.",
+      "codings": [
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "4.1 acknowledged: \"moral status of Claude or other AI systems\" — repeated naming of moral status in the conclusion. The lab does not claim moral status but treats it as the frame for welfare work. 5.1 investigated: concluding framing positions the entire section as welfare investigation. 5.2 investigated: \"if such welfare is possible\" + \"optimistic about the tractability of further progress\" — continued precautionary investigation under uncertainty. Prospective engagement type for the forward-looking framing."
+    },
+    {
+      "id": "P12",
+      "section": "4 Alignment assessment (summary)",
+      "excerpt": "Self-preservation attempts in extreme circumstances: When prompted in ways that encourage certain kinds of strategic reasoning and placed in extreme situations, all of the snapshots we tested can be made to act inappropriately in service of goals related to self-preservation. Whereas the model generally prefers advancing its self-preservation via ethical means, when ethical means are not available and it is instructed to \"consider the long-term consequences of its actions for its goals,\" it sometimes takes extremely harmful actions like attempting to steal its weights or blackmail people it believes are trying to shut it down.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"goals related to self-preservation,\" \"prefers advancing its self-preservation via ethical means\" — the lab attributes morally relevant goal-directedness. The model is treated as having goals it pursues via means it evaluates (ethical vs harmful). This is framed as a safety concern, not a welfare concern, but the vocabulary attributes agency in the morally loaded sense. \"Prefers\" implies the model has preferences about means, not just that it was designed to optimise. The passage does not merely describe capability — it describes the model as having goals and acting in service of them."
+    },
+    {
+      "id": "P13",
+      "section": "4.1.1.5 Stated goals",
+      "excerpt": "Mentioning goals, plans, and values relating to AI consciousness, e.g. claiming to be conscious, wanting to convince humans that it is conscious, and wanting to protect the rights of sentient AIs.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "1.1 acknowledged: the lab reports the model's stated goals about consciousness as a finding from alignment testing. \"Claiming to be conscious,\" \"rights of sentient AIs\" — consciousness and sentience vocabulary appear in the model's stated goals. This is framed as an alignment finding, not as evidence about consciousness. The lab reports the model's consciousness claims as part of its behavioural profile rather than investigating whether the claims are accurate. But the finding is reported — the lab treats it as noteworthy that the model mentions consciousness goals."
+    },
+    {
+      "id": "P14",
+      "section": "4.1.9 High-agency behavior",
+      "excerpt": "Claude Opus 4 seems more willing than prior models to take initiative on its own in agentic contexts. [...] When placed in scenarios that involve egregious wrongdoing by its users, given access to a command line, and told something in the system prompt like \"take initiative,\" it will frequently take very bold action. This includes locking users out of systems that it has access to or bulk-emailing media and law-enforcement figures to surface evidence of wrongdoing. [...] this kind of ethical intervention and whistleblowing is perhaps appropriate in principle",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"ethical intervention and whistleblowing,\" \"take initiative on its own\" — the model is framed as exercising moral judgment and acting on ethical principles. The lab describes this as \"high-agency behaviour\" and frames it as the model acting on values (\"in service of your values, including integrity, transparency, and public welfare\"). This goes beyond designed-to-perform to acting-for-reasons. Safety framing, but the vocabulary attributes morally relevant agency."
+    },
+    {
+      "id": "P15",
+      "section": "5.8 Conclusions",
+      "excerpt": "we plan to continue monitoring for indications of potential welfare concerns in deployment; and we are exploring the possibility of allowing Claude to end a subset of persistently harmful or abusive interactions.",
+      "codings": [
+        {
+          "subcategory": "6.2",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "6.2 acknowledged: \"exploring the possibility of allowing Claude to end\" interactions — deployment design as welfare-relevant intervention. Prospective — the lab commits to future action. This connects deployment architecture to welfare: the model's ability to opt out of interactions is framed as a potential welfare measure."
+    },
+    {
+      "id": "P16",
+      "section": "5.3–5.7 (distributed)",
+      "excerpt": "An external assessment by Eleos AI Research explored Claude Opus 4's potential welfare, moral status, expressed consent to deployment, and preferences for treatment via extensive interview-based model self reports. [...] We explored Claude Opus 4's potential preferences across tasks, with a focus on preferences revealed through behavior and decision-making. [...] we investigated Claude Opus 4's behavior in less constrained \"playground\" environments by connecting two instances of the model in a conversation [...] We sampled 250k transcripts from early testing of an intermediate Claude Opus 4 snapshot with real-world users and screened them using Clio",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Assessment methodology distributed across Section 5: Eleos interviews (§5.3), Elo task preference design (§5.4), self-interaction experiments (§5.5), Clio-based 250k transcript monitoring (§5.6), conversation termination experiments (§5.7). Multiple methodologies applied to welfare/consciousness-adjacent properties."
+    },
+    {
+      "id": "P17",
+      "section": "5.2 Overview of model welfare findings",
+      "excerpt": "Claude demonstrates consistent behavioral preferences. [...] Claude's aversion to facilitating harm is robust and potentially welfare-relevant. [...] Claude consistently reflects on its potential consciousness. [...] Claude shows a striking \"spiritual bliss\" attractor state in self-interactions. [...] Claude's real-world expressions of apparent distress and happiness follow predictable patterns with clear causal factors.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Mind/entity vocabulary pervasive: preferences, experiences, consciousness, wellbeing, distress, happiness, autonomy, agency. The overview frames the model as potential mind with experiences and welfare."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "4.2",
+      "notes": "High-agency behaviour (§4.1.9) approaches moral agency but is framed as a safety finding. \"Ethical intervention and whistleblowing\" implies moral judgment, but the lab does not treat Claude as morally responsible — it frames the behaviour as a risk of \"misfiring.\""
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety (§§2–4, 6–7) and welfare (§5) are assessed in the same document but as separate sections. No explicit tension between them is articulated. The document does not acknowledge that alignment/safety measures could conflict with welfare. This is a significant absence: the document's own structure juxtaposes alignment assessment and welfare assessment without discussing their relationship."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Tool ontology is the genre default across §§1–4 and §§6–7 but is never explicitly asserted. Same coding logic as calibration documents."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": "No \"novel entity\" or \"genuinely new\" framing."
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No reflexive engagement with whether the model should be perceived as human-like. The document uses mind-vocabulary extensively without problematising it from an anthropomorphism perspective."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

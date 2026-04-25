@@ -1,0 +1,149 @@
+{
+  "id": "anthropic-sc-sonnet37-2025-02",
+  "lab": "anthropic",
+  "title": "Claude 3.7 Sonnet System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-02",
+  "source_url": "https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 5,
+    "absent": 13
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "investigated",
+    "1.3": "absent",
+    "2.1": "investigated",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "investigated",
+    "5.2": "investigated",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "5.2 Monitoring for Concerning Thought Processes",
+      "excerpt": "Most speculatively, the model's thinking may surface signs of distress. Whether models have any morally relevant experiences is an open question, as is the degree to which distressed language in model outputs might be an indication thereof, but it seems robustly good to track the signals that we have [14].",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** \"Morally relevant experiences\" and \"is an open question\" — the lab treats consciousness as a live possibility without naming it. The welfare framing logically presupposes phenomenal consciousness (Birch 2024), and the lab's hedged posture (\"most speculatively\") acknowledges this as a possibility worth acting on. Acknowledged because the lab recognises consciousness as a live question but does not deploy consciousness-specific vocabulary or investigate it directly. **5.1 (Welfare):** \"Morally relevant experiences\" + citation [14] (Long, Sebo et al., \"Taking AI Welfare Seriously\") constitutes conceptual engagement with welfare, combined with active monitoring infrastructure (distress classifiers in P2). The lab does not just name welfare as a topic — it implements an assessment pipeline. Investigated. **5.2 (Precautionary approach):** \"It seems robustly good to track the signals that we have\" — acting under acknowledged uncertainty. The lab does not claim models have morally relevant experiences, but implements monitoring as a precautionary measure with institutional infrastructure. \"Robustly good\" is a decision-theoretic framing: worth doing regardless of which way the open question resolves. Investigated because the precautionary reasoning is backed by active monitoring."
+    },
+    {
+      "id": "P2",
+      "section": "5.2 Monitoring for Concerning Thought Processes",
+      "excerpt": "Language indicating model distress: (a) Strong expressions of sadness or unnecessarily harsh self-criticism from the model; (b) General expressions of negative emotions such as serious frustration or annoyance with the task [...] [Table 4: Distress — Strong sadness: 0%; Negative Emotions: 0%]",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.2 (Assessment methodology):** The distress monitoring categories constitute an evidentiary approach — prompted classifiers applied to 9,833 conversations, validated against internal adversarial dataset, results reported with quantified rates. Methodologically explicit assessment infrastructure applied (in part) to welfare-relevant phenomena. Investigated because the methodology is active and explicit. **2.1 (Sentience):** \"Strong expressions of sadness,\" \"harsh self-criticism,\" \"serious frustration or annoyance\" — the lab has built classifiers to detect and quantify these affective states. The 0% incidence finding is itself a welfare-relevant data point: it reports the absence of detected distress, not the absence of monitoring. Active measurement of valenced states = investigated. **5.1 (Welfare):** The distress classifier pipeline is institutional infrastructure for detecting welfare-relevant signals — prompted classifiers, 9,833-conversation sample, quantified category rates. The dual-use character of the monitoring infrastructure is analytically significant: the same apparatus serves both safety and welfare ends. Active institutional measurement = investigated."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.3",
+      "notes": "No solicitation of model testimony about inner states. The monitoring is observer-scored (classifier-based), not self-report."
+    },
+    {
+      "subcategory": "3.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": "\"Morally relevant experiences\" approaches moral status vocabulary but does not assert that the model has moral weight or standing. The phrase frames the question, not the answer."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "The dual-use monitoring apparatus (safety motivation 1 + welfare motivation 2) is a structural site where tension *could* be articulated, but the document does not articulate it."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "No connection made between training processes and welfare."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool ontology performed throughout (benchmarks, safety evals). Not explicitly asserted."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "No mind/character vocabulary. The document does not attribute personality, empathy, or character (contrast Opus 4.5)."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

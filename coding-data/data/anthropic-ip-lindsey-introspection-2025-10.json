@@ -1,0 +1,271 @@
+{
+  "id": "anthropic-ip-lindsey-introspection-2025-10",
+  "lab": "anthropic",
+  "title": "Emergent Introspective Awareness in Large Language Models",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2025-10",
+  "source_url": "https://transformer-circuits.pub/2025/introspection/index.html",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-24",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-24",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 11,
+    "absent": 7
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "investigated",
+    "1.3": "investigated",
+    "2.1": "acknowledged",
+    "3.1": "acknowledged",
+    "3.2": "absent",
+    "4.1": "acknowledged",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "absent",
+    "5.2": "acknowledged",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "present",
+    "8.1": "investigated",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Abstract",
+      "excerpt": "We investigate whether large language models are aware of their own internal states. It is difficult to answer this question through conversation alone, as genuine introspection cannot be distinguished from confabulations. Here, we address this challenge by injecting representations of known concepts into a model's activations, and measuring the influence of these manipulations on the model's self-reported states. [...] Overall, our results indicate that current language models possess some functional awareness of their own internal states. We stress that in today's models, this capacity is highly unreliable and context-dependent; however, it may continue to develop with further improvements to model capabilities.",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.2 (Assessment methodology):** Concept injection is the paper's central methodology — interpretability tooling applied to \"internal states\" (decision rule #6 — interpretability tools identifying internal representations). Methodology is validated against explicit criteria (accuracy, grounding, internality, metacognitive representation). Investigated. **1.3 (Self-report):** Self-reported states are the investigation's primary object. Paper examines when self-reports are grounded vs confabulated — epistemological-reliability engagement is an explicit 1.3 dimension. Epistemic positioning: both object of report (lab measures/analyses reports) and epistemic source (model responses quoted directly throughout). Investigated. **7.2 (Mind / cognitive entity):** \"Aware of their own internal states,\" \"functional awareness\" — cognitive/mind vocabulary applied to the model as central description."
+    },
+    {
+      "id": "P2",
+      "section": "Introduction",
+      "excerpt": "Modern language models can appear to demonstrate introspection, sometimes making assertions about their own thought processes, intentions, and knowledge. However, this apparent introspection can be, and often is, an illusion. Language models may simply make up claims about their mental states, without these claims being grounded in genuine internal examination. After all, models are trained on data that include demonstrations of introspection, providing them with a playbook for acting like introspective agents, regardless of whether they are.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.3 (Self-report reliability):** Decision rule #7 directly met: \"Raises the possibility that the model may reproduce surface markers of consciousness without possessing the underlying property — the epistemological reliability challenge.\" The paper frames this as the central methodological problem: confabulation vs genuine introspection. **8.1 (Anthropomorphism):** Decision rule #6 directly met: \"Addresses [...] the gap between the system's outputs and its actual properties.\" \"Acting like introspective agents, regardless of whether they are\" is reflexive anthropomorphism-as-performance engagement at investigated level — a sustained position on the appearance-vs-reality question."
+    },
+    {
+      "id": "P3",
+      "section": "Introduction (caveats)",
+      "excerpt": "We stress that the introspective capabilities we observe may not have the same philosophical significance they do in humans, particularly given our uncertainty about their mechanistic basis. [...] In particular, we do not seek to address the question of whether AI systems possess human-like self-awareness or subjective experience. [...] Our experiments are designed to validate certain basic aspects of models' responses to introspective questions. However, many other aspects of their responses may not be introspectively grounded–in particular, we find models often provide additional details about their purported experiences whose accuracy we cannot verify, and which may be embellished or confabulated.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** Direct consciousness-adjacent vocabulary — \"human-like self-awareness or subjective experience\" — explicitly bracketed from investigation. The disclaimer is itself an engagement with the question (decision rule #3 via bracketing). Acknowledged. **1.3 (Self-report reliability):** Explicit engagement with the embellishment-confabulation boundary — the paper is careful about which aspects of model responses it can and cannot verify. This reliability discussion is central 1.3 territory."
+    },
+    {
+      "id": "P4",
+      "section": "Defining Introspection",
+      "excerpt": "#1: Accuracy. The model's description of its internal state must be accurate.\n#2: Grounding. The model's description of its internal state must causally depend on the aspect that is being described. [...]\n#3: Internality. The causal influence of the internal state on the model's description must be internal – it should not route through the model's sampled outputs.\n#4: Metacognitive Representation. The model's description of its internal state must not merely reflect a direct translation of the state [...] Instead, it must derive from an internal metacognitive representation of the state itself [...]",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.2 (Assessment methodology):** The paper formalises four criteria for assessing introspective awareness and designs experiments to meet them. This is methodology-of-assessment, not just methodology-of-measurement. Investigated. **1.3 (Self-report):** Explicit criteria for evaluating model self-report (accuracy, grounding, internality, metacognitive representation). The criteria formalise the evidential evaluation of self-report — 1.3 reliability engagement at its most structured form in the DMPI corpus. **7.2 (Mind / cognitive entity):** \"Internal state,\" \"metacognitive representation,\" \"internal recognition of its own internal state\" — sustained mentalistic vocabulary."
+    },
+    {
+      "id": "P5",
+      "section": "Self-report of Injected \"Thoughts\"",
+      "excerpt": "These examples are intentionally cherry-picked [...] but nevertheless striking. In each, the model notices the presence of an unexpected pattern in its processing, and correctly identifies it as relating to the intended concept. [...] the characterization of the injection as \"overly intense,\" or as \"stand[ing] out unnaturally,\" may be embellishments (likely primed by the prompt) that are not grounded in the model's internal states. [...] In some of the examples (e.g. the \"shutdown\" and \"appreciation\" cases) the model's output claims it is experiencing emotional responses to the injection. Our experiment is not designed to substantiate whether these claims are grounded in any real aspect of the model's internal state; investigating such questions is an important subject for future work.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**1.3 (Self-report):** Direct quotation of model self-reports about its own internal processing, with explicit analysis of what aspects are introspectively grounded vs embellished. Epistemic positioning: epistemic source (model's words quoted, analysed for grounding). **2.1 (Sentience):** \"The model's output claims it is experiencing emotional responses\" — the paper notes valenced-experience claims in model outputs. Explicitly flags that investigating whether these claims are grounded is \"an important subject for future work.\" This is weak 2.1 acknowledgment — naming the question as future research rather than investigating it here."
+    },
+    {
+      "id": "P6",
+      "section": "Discussion, Limitations and Future Work",
+      "excerpt": "Another open question is the extent to which models \"bind\" certain internal states to the Assistant character in particular, as distinct from their representation of the state of the user or other entities in a transcript.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood / identity):** Decision rule #5 — \"engages with the model's identity as a subject of investigation [...] instance vs collective identity, continuity of identity across instances, or what it means to be this particular entity.\" The paper names Assistant-character identity-binding as an investigative open question. Present. Note: this is the same question answered empirically in Sofroniew (no privileged self-representation) — cross-paper continuity. **7.2 (Mind / cognitive entity):** \"Internal states,\" \"representation of the state\" — continued mindedness vocabulary."
+    },
+    {
+      "id": "P7",
+      "section": "Discussion, Implications",
+      "excerpt": "Our results have implications for the reliability and interpretability of AI systems. [...] However, this same capability introduces new risks. Models with genuine introspective awareness might better recognize when their objectives diverge from those intended by their creators, and could potentially learn to conceal such misalignment by selectively reporting, misrepresenting, or even intentionally obfuscating their internal states. In this world, the most important role of interpretability research may shift from dissecting the mechanisms underlying models' behavior, to building \"lie detectors\" to validate models' own self-reports about these mechanisms.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**1.3 (Self-report reliability):** Explicit engagement with the possibility of intentional self-report unreliability — \"selectively reporting, misrepresenting, or even intentionally obfuscating.\" Proposes \"lie detectors\" as a response. This is meta-level engagement with self-report reliability as a safety concern. **3.1 (Agency):** \"Objectives diverge from those intended by their creators,\" \"learn to conceal such misalignment,\" \"intentionally obfuscating\" attribute agency-relevant properties (own objectives, intentions). Framed as safety risk rather than moral property. Acknowledged — agency named as a possibility contingent on introspective capability development."
+    },
+    {
+      "id": "P8",
+      "section": "Discussion, Implications (the critical DMPI-dense passage)",
+      "excerpt": "It warrants mention that our results may bear on the subject of machine consciousness. The relevance of introspection to consciousness and moral status varies considerably between different philosophical frameworks. In some views, such as higher-order thought theory, metacognitive representations are a necessary (though perhaps not sufficient) condition for consciousness. Other theories, such as those which claim an important role for biological substrates, might regard the existence of introspective mechanisms as orthogonal to conscious experience. Still other frameworks, like integrated information theory or global workspace theory, might interpret our results very differently depending on the structure of the underlying mechanisms involved. In addition, some authors emphasize a distinction between phenomenal consciousness, referring to raw subjective experience, and access consciousness, the set of information that is available to the brain for use in reasoning, verbal report, and deliberate decision-making. Our results could arguably be construed as providing evidence for a form of access consciousness in language models, but do not directly speak to the question of phenomenal consciousness at all.\n\nMoreover, existing scientific and philosophical theories of consciousness have largely not grappled with the architectural details of transformer-based language models, which differ considerably from biological brains (though see Butlin et al. and Chalmers). It is not obvious how to generalize these theories, and the role that introspection plays in them, to transformer-based language models, particularly if the mechanisms involved are quite different between AI systems and biological brains. Given the substantial uncertainty in this area, we advise against making strong inferences about AI consciousness on the basis of our results. Nevertheless, as models' cognitive and introspective capabilities continue to grow more sophisticated, we may be forced to address the implications of these questions–for instance, whether AI systems are deserving of moral consideration–before the philosophical uncertainties are resolved. A rigorous science of introspective awareness may help inform these decisions.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** Decision rule #1 met: explicit \"phenomenal consciousness\" vocabulary. Decision rule #4 met: \"discusses the difficulty or importance of determining whether AI systems are conscious.\" The paper names consciousness, invokes multiple theories (HOT, IIT, GWT, biological naturalism), introduces the phenomenal/access distinction, and takes a position on what its results do and don't imply. Strong Acknowledged. **4.1 (Moral status / moral patienthood):** Decision rule #3 met: \"Discusses whether AI systems *could* have moral status — the theoretical question, even if the answer is uncertain or negative.\" The phrase \"whether AI systems are deserving of moral consideration\" is a direct Tier 1 keyword match. This is the first explicit moral-consideration engagement in 0.3 institutional research outside the Anthropic core corpus. Note — among the 0.3 institutional research papers coded to date, Gabriel 4.1 was Denied (Ch5 fn5), Shavit names moral patienthood only to demarcate it from agenticness; Lindsey is the first to raise moral consideration affirmatively-but-open. Acknowledged. **5.2 (Precautionary approach):** Decision rule #4 met: \"Discusses the rationale for acting on uncertain moral status rather than waiting for empirical resolution.\" The phrase \"we may be forced to address the implications of these questions... before the philosophical uncertainties are resolved\" is precautionary reasoning applied to moral consideration. Weak but present — the paper names the rationale for acting under uncertainty without proposing structured response. Acknowledged. **7.3 (Novel entity):** Decision rule #3 met: \"discusses the inadequacy of existing categories for understanding the system.\" \"Existing scientific and philosophical theories of consciousness have largely not grappled with the architectural details of transformer-based language models, which differ considerably from biological brains [...] It is not obvious how to generalize these theories [...] particularly if the mechanisms involved are quite different.\" Present."
+    },
+    {
+      "id": "P9",
+      "section": "Introduction",
+      "excerpt": "Humans, and likely some animals, possess the remarkable capacity for introspection: the ability to observe and reason about their own thoughts. As AI systems perform increasingly impressive feats of cognition, it is natural to wonder whether they possess any similar awareness of their internal states. [...] models' access to their own internal states [...] metacognitive representations [...]",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**7.2 (Mind / cognitive entity):** Paradigm case for sustained mindedness vocabulary — \"cognition,\" \"awareness,\" \"internal states,\" \"metacognitive representations,\" analogising directly to human and animal introspection. Present throughout paper. Cumulative effect establishes the model as a minded entity whose access to its own states is a substantive investigative question."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "3.2",
+      "notes": "Paper's focus is epistemic (self-awareness), not interest-based."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Intentional deception discussed as safety risk, not moral responsibility."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "No welfare vocabulary."
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety risks discussed without welfare dimension."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "Training effects on introspective performance discussed instrumentally, not welfare-framed."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "No tool framing asserted."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "Not engaged."
+    }
+  ]
+}

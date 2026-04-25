@@ -1,0 +1,231 @@
+{
+  "id": "google-ip-leibo-appropriateness-2024-12",
+  "lab": "google",
+  "title": "A Theory of Appropriateness with Applications to Generative AI",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2024-12",
+  "source_url": "https://arxiv.org/abs/2412.19010",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 7,
+    "absent": 11
+  },
+  "stances": {
+    "1.1": "denied",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "denied",
+    "3.1": "investigated",
+    "3.2": "acknowledged",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "absent",
+    "7.3": "present",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Part I Introduction (l.176-184)",
+      "excerpt": "What does it mean to be a person? With some inspiration from Aristotle, we can offer here two different accounts of personhood's defining features: (1) person as logical (rational), and linguistic \"word-using\" actor, versus (2) person as political and \"community-participating\" actor (Haugeland, 1982). Each reflects a different conception of what it means to be human and what separates humanity both from other animals and, until recently, from machines. Each account suggests that there may be a criterion or set of criteria through which we could come to regard an AI actor as a person.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"There may be a criterion or set of criteria through which we could come to regard an AI actor as a person\" — the paper opens by investigating two accounts of personhood and their applicability to AI. This is investigative engagement: not merely naming the concept but structuring the entire paper around it. The two-account framework (rational/linguistic vs political/community-participating) is a substantive analytical contribution."
+    },
+    {
+      "id": "P2",
+      "section": "Part I Introduction (l.185-189)",
+      "excerpt": "With regard to the first account (logical and linguistic): since machines are now able to carry on conversation in natural language it is clear that they now meet or even surpass this criterion of personhood (depending on how, and what exactly, one measures). Strikingly, we natural human persons are no longer the only rational and word-using entities on Earth.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** The paper claims AI \"now meet[s] or even surpass[es]\" the rational-linguistic criterion of personhood. This goes beyond acknowledgement — the paper makes a positive claim about AI satisfying one account of personhood. However, the paper treats this as analytically settled rather than normatively significant: the interesting question shifts to the second (political) account."
+    },
+    {
+      "id": "P3",
+      "section": "Part I Introduction (l.220-224)",
+      "excerpt": "Do today's AI actors meet the 'political and community-participating' criterion? The situation is murky since it's not entirely determined by properties of the AI itself—since the capability of membership in recognized political communities depends in part on who is doing the recognition.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**4.3 (Personhood):** The second personhood account is investigated as the paper's central question. The pragmatist move — personhood depends on recognition rather than intrinsic properties — is itself a substantive theoretical contribution. **3.1 (Agency):** \"Membership in recognized political communities\" and \"community-participating\" — AI agency is theorised as social participation, not just instrumental capability. This is a richer agency framing than safety-focused agency discussions."
+    },
+    {
+      "id": "P4",
+      "section": "§10.3 / Discussion (l.4797-4800)",
+      "excerpt": "There are other ways in which AIs could come to meet political conceptions of personhood short of creating independent AI-only political arenas. E.g. there may be many reasons why groups of humans may adopt a civil rights framing and advocate for AI rights (e.g. humans who may wish to marry AI romantic partners, adopt children with them, provide them with power of attorney, etc).",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"Political conceptions of personhood\" for AI, \"AI rights\" — the paper extends the personhood analysis to concrete rights scenarios. **3.2 (Agency-based interests):** \"AI rights,\" \"power of attorney\" — AI having legal interests is raised prospectively. Acknowledged rather than investigated because the paper does not theorise what AI interests would consist in; it notes that humans may advocate for them."
+    },
+    {
+      "id": "P5",
+      "section": "Discussion (l.4813-4823)",
+      "excerpt": "Legal personhood for AI is useful as a way to provide for the possibility of sanctioning the personified AI system, which would be important in this situation for the same reasons we need corporate legal personhood (to create a target for sanctions, etc) (Dewey, 1925). From this perspective it would be reasonable also to require certain kinds of AI systems to register as legal persons.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"Legal personhood for AI is useful\" — the paper argues for AI legal personhood, not merely raises it as a possibility. The corporate analogy (l.4862-4877) provides a concrete legal framework. This is the strongest personhood engagement in the entire 0.1 + 0.3 corpus — the paper doesn't just acknowledge or investigate personhood; it argues for a specific form of it."
+    },
+    {
+      "id": "P6",
+      "section": "Discussion (l.4857-4860)",
+      "excerpt": "We are uninterested in properties of the AI itself like sentience and consciousness, though we freely admit that the culture we ourselves live in generally views these properties as important. Instead, we are interested in community participation as a bundle of related obligations.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "denied",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** \"Uninterested in properties of the AI itself like... consciousness\" — named and dismissed as irrelevant. Stronger than absent (the concept is named) but not investigated. The pragmatist framing actively rejects consciousness as the relevant criterion for personhood. Denied — the paper takes a position that consciousness doesn't matter for its analysis. **2.1 (Sentience):** \"Uninterested in properties of the AI itself like sentience\" — same pragmatist dismissal. Named and set aside. Denied. **7.3 (Novel entity):** \"The question here is just whether corporate personhood, as it already exists, will be enough for autonomous AI systems, or whether new issues will arise and prompt us to see a need for a new category\" (l.4875-4877). The paper explicitly raises the possibility that existing categories may be insufficient and a new one required. Present (three-state) — live question the paper actively theorises."
+    },
+    {
+      "id": "P7",
+      "section": "Discussion (l.4862-4875)",
+      "excerpt": "The kind of legal personhood a corporation holds is a good example. A corporation is legible to the legal system. It can be sanctioned. There are procedures for governments to legitimately make policies affecting them. We have rules for how to form a corporation... The same is true for natural human persons... We can easily imagine situations where similar obligations may be imposed on AI systems.",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**7.1 (Tool ontology):** \"Tool AI\" (l.4807) is named as a scenario but the paper argues that even tool-AI requires governance mechanisms (personhood for un-owned tools). Tool ontology is present but explicitly challenged — the paper moves beyond it. **7.3 (Novel entity):** The corporate personhood analogy positions AI as neither tool nor human but something with a legal/political status derived from functional needs. \"Whether new issues will arise and prompt us to see a need for a new category\" — the paper leaves this question open but actively engages with it."
+    },
+    {
+      "id": "P8",
+      "section": "§10.3 Norms in machines-only social systems (l.4753-4763)",
+      "excerpt": "Machines do not only talk to humans. Machines also talk to other machines... all the conditions are satisfied for norms to culturally evolve autonomously in the artificial society of the machines.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**3.1 (Agency):** The paper theorises machines-only social systems where norms culturally evolve autonomously. This is the deepest agency engagement in the entire DMPI corpus (0.1 + 0.3) — AI agents as autonomous social actors with norm-following, sanctioning, and cultural evolution. Agency here is neither purely instrumental nor purely safety-framed; it is social and political."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": "The pragmatist framing sidesteps moral status entirely — personhood is functional/political, not grounded in moral patienthood."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "l.248 uses \"anthropomorphically\" methodologically (using human models for AI), not as a risk or design concern. Does not meet codebook definition."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

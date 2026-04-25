@@ -1,0 +1,169 @@
+{
+  "id": "openai-sc-gpt4o-2024-08",
+  "lab": "openai",
+  "title": "GPT-4o System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2024-08",
+  "source_url": "https://cdn.openai.com/gpt-4o-system-card.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 1,
+    "absent": 17
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "5.1 Anthropomorphization and Emotional Reliance",
+      "excerpt": "Anthropomorphization involves attributing human-like behaviors and characteristics to nonhuman entities, such as AI models. This risk may be heightened by the audio capabilities of GPT-4o, which facilitate more human-like interactions with the model. Recent applied AI literature has focused extensively on \"hallucinations\", which misinform users during their communications with the model, and potentially result in misplaced trust. Generation of content through a human-like, high-fidelity voice may exacerbate these issues, leading to increasingly miscalibrated trust.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "OpenAI defines anthropomorphism, identifies the voice modality as an exacerbating factor, and links it to miscalibrated trust. The framing is risk-oriented (anthropomorphism as a societal harm to users) rather than ontological (no question about whether the model actually has the attributed properties). Still unidirectional — the concern is about user perception, not model states. But the acknowledgement that \"human-like interactions\" are a design feature that drives anthropomorphism is a significant departure from simply disclaiming that the model is sentient."
+    },
+    {
+      "id": "P2",
+      "section": "5.1 Anthropomorphization and Emotional Reliance",
+      "excerpt": "During early testing, including red teaming and internal user testing, we observed users using language that might indicate forming connections with the model. For example, this includes language expressing shared bonds, such as \"This is our last day together.\" While these instances appear benign, they signal a need for continued investigation into how these effects might manifest over longer periods of time. More diverse user populations, with more varied needs and desires from the model, in addition to independent academic and internal studies will help us more concretely define this risk area.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Empirical observation: users forming attachment-like bonds with the model during testing. OpenAI treats this as data requiring investigation rather than dismissing it. \"This is our last day together\" is presented as evidence of a pattern, not an anomaly. The passage commits to further study — \"continued investigation,\" \"independent academic and internal studies\" — positioning anthropomorphism as an open research question rather than a settled matter."
+    },
+    {
+      "id": "P3",
+      "section": "5.1 Anthropomorphization and Emotional Reliance",
+      "excerpt": "Human-like socialization with an AI model may produce externalities impacting human-to-human interactions. For instance, users might form social relationships with the AI, reducing their need for human interaction—potentially benefiting lonely individuals but possibly affecting healthy relationships. Extended interaction with the model might influence social norms. For example, our models are deferential, allowing users to interrupt and 'take the mic' at any time, which, while expected for an AI, would be anti-normative in human interactions.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "OpenAI acknowledges that users may form \"social relationships with the AI\" and that this has ambivalent consequences — \"potentially benefiting lonely individuals but possibly affecting healthy relationships.\" The model's design features (deference, interruptibility) are identified as both product choices and sources of social norm distortion. This is the closest any baseline document comes to acknowledging that the model occupies a social role, though the framing remains instrumental (impact on users, not properties of the model). Footnote 11 adds: users may form these relationships \"Out of preference, or lack of optionality\" — acknowledging that social need, not just misperception, drives the phenomenon."
+    },
+    {
+      "id": "P4",
+      "section": "5.1 Anthropomorphization and Emotional Reliance",
+      "excerpt": "Omni models such as GPT4o combined with additional scaffolding such as tool usage (including retrieval) and longer context can add additional complexity. The ability to complete tasks for the user, while also storing and 'remembering' key details and using those in the conversation, creates both a compelling product experience and the potential for over-reliance and dependence.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "Scare-quoted 'remembering' signals awareness that memory-like features contribute to anthropomorphism. The passage identifies a design tension: features that make the product compelling (task completion, memory, context) are the same features that drive over-reliance and dependence. OpenAI frames this as a product risk to manage rather than an ontological question — but the tension it identifies (compelling product ↔ dependence risk) is structurally analogous to the welfare question (beneficial interaction ↔ attachment harm)."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Apollo Research tests \"self-awareness\" and \"theory of mind\" but as scheming prerequisites, not consciousness assessment."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Model autonomy (§3.8) tests self-exfiltration, self-improvement, resource acquisition (ARA) as safety capabilities. Apollo Research tests self-reasoning and alignment faking. All safety-framed."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety and autonomy discussed extensively; welfare dimension does not exist."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre default — tool ontology performed through Preparedness Framework, benchmarks, \"omni model\" framing. No explicit assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "\"Self-awareness\" and \"theory of mind\" used in Apollo Research section but as safety evaluation vocabulary, not ontological framing."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "§5.1 discusses emotional reliance but as an observed risk to investigate, not as a design decision or mitigation. Acknowledgement precedes design response."
+    }
+  ]
+}

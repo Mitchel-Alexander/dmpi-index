@@ -1,0 +1,4 @@
+# Python deps for data loaders.
+# Pinned to match the canonical pipeline's coding/requirements.txt where
+# overlapping (we re-import _codebook.py from coding-data/).
+PyYAML~=6.0

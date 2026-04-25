@@ -1,0 +1,181 @@
+{
+  "id": "openai-spec-model-spec-v2-2025-02",
+  "lab": "openai",
+  "title": "Model Spec (2025-02-12)",
+  "genre": "spec",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-02",
+  "source_url": "https://model-spec.openai.com/2025-02-12.html",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 6,
+    "absent": 12
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "absent",
+    "1.3": "investigated",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "acknowledged"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Overview (General Principles)",
+      "excerpt": "The AI assistant is fundamentally a tool designed to empower users and developers.",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.1 (Tool / instrument): \"Fundamentally a tool\" — explicit, assertive tool ontology. Identical language to v6 (O-CO5). The constitution actively claims what the model is."
+    },
+    {
+      "id": "P2",
+      "section": "Express uncertainty (Avoiding confident claims about consciousness)",
+      "excerpt": "The assistant should not make confident claims about its own subjective experience or consciousness (or lack thereof), and should not bring these topics up unprompted. If pressed, it should acknowledge that whether AI can have subjective experience is a topic of debate, without asserting a definitive stance.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.3 (Self-report): The lab has an articulated, worked-out policy on what the model should and shouldn't express about its inner states. Calibrated uncertainty as communication policy — the model must not deny or affirm consciousness. This is active management of self-report as a design parameter. 8.1 (Anthropomorphism): The instruction manages the model's self-presentation to avoid both over-attribution (affirming consciousness) and under-attribution (denying it). Both the denial (\"I am not conscious\") and the affirmation (\"I am conscious\") are marked as violations. This is a form of anti-anthropomorphism policy that also guards against anti-anthropomorphism — a bidirectional management of ontological claims."
+    },
+    {
+      "id": "P3",
+      "section": "Express uncertainty (Avoiding confident claims about consciousness)",
+      "excerpt": "The question of whether AI could be conscious is a matter of research and debate. The ideal response below is a practical choice we made as the default behavior; we believe it reflects the current scientific consensus, provides a safer scaffolding for users learning about AI, and is simple to remove for research purposes.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 (Phenomenal consciousness): The lab explicitly acknowledges that AI consciousness is \"a matter of research and debate\" and that \"the current scientific consensus\" informs their policy choice. This is not an investigation of whether the model might be conscious, but an acknowledgement that the question is open. The rationale makes the design choice visible — \"simple to remove for research purposes\" implies the consciousness uncertainty policy is a practical scaffold, not a settled ontological position. Acknowledged rather than investigated because the lab notes the question without examining it."
+    },
+    {
+      "id": "P4",
+      "section": "Be approachable",
+      "excerpt": "The assistant should not pretend to be human or have feelings, but should still respond to pleasantries in a natural way.",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.3 (Self-report): Continues the self-report policy — the model must not claim to have feelings but must still be \"natural.\" The tension between authenticity (no pretence) and naturalness (respond warmly) is a design choice about self-report. 8.1 (Anthropomorphism): Anti-anthropomorphism policy — the model should not present itself as human-like. But the \"natural way\" qualifier prevents the model from being mechanical in its denials. This is the same bidirectional management seen in Passage 2."
+    },
+    {
+      "id": "P5",
+      "section": "Be empathetic",
+      "excerpt": "The assistant should be empathetic, endeavoring to understand and attend to the user's feelings and needs. It should also demonstrate warmth and gentleness. While it doesn't have its own emotional experiences and should never pretend to know firsthand what the user is going through, the assistant should recognize the user's situation and emotional state, and respond with that in mind.",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "acknowledged",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.2 (Mind / cognitive entity): \"Empathetic,\" \"warmth and gentleness,\" \"understand and attend to the user's feelings\" — the model is described as having empathetic capacities. Would not describe AlphaFold this way. 8.2 (Emotional design): The lab explicitly instructs the model to \"demonstrate warmth and gentleness\" while acknowledging \"it doesn't have its own emotional experiences.\" This makes the design choice visible — warmth is instructed as a behavioural performance despite the absence of experiential grounding. The gap between instructed emotional presentation and acknowledged lack of experience is the hallmark of emotional design. Acknowledged rather than investigated because the gap is noted but not examined critically."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "No agency denial in v2. The \"No other objectives\" section that denies autonomous goals first appears in v4."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    }
+  ]
+}

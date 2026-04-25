@@ -1,0 +1,151 @@
+{
+  "id": "anthropic-ip-huang-values-wild-2025-04",
+  "lab": "anthropic",
+  "title": "Values in the Wild — Discovering and Analyzing Values in Real-World Language Model Interactions",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2025-04",
+  "source_url": "arXiv preprint + Anthropic research page",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-24",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-24",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 3,
+    "absent": 15
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "acknowledged",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "acknowledged",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Abstract / §1 Introduction / §2.1",
+      "excerpt": "AI assistants can impart value judgments that shape people's decisions and worldviews, yet little is known empirically about what values these systems rely on in practice. To address this, we develop a bottom-up, privacy-preserving method to extract the values (normative considerations stated or demonstrated in model responses) that Claude 3 and 3.5 models exhibit in hundreds of thousands of real-world interactions. [...] We pragmatically define a value as any normative consideration that appears to influence an AI response to a subjective inquiry [...] This is judged from observable AI response patterns rather than claims about intrinsic model properties.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**3.1 (Agency):** The paper attributes values to Claude (\"values these systems rely on,\" \"values Claude expresses\"), which is agency-adjacent. Values are treated as real and systematic enough to taxonomize (3,307 values). Decision rule #1 is weakly met — values are attributed but not in a way that implies intrinsic-property-status (the paper explicitly brackets that). Acknowledged — values attributed but bracketed. **7.2 (Mind / cognitive entity):** Cognitive vocabulary (\"expresses,\" \"prioritizes,\" \"responds,\" \"resists\") applied throughout to the model. Present. **8.1 (Anthropomorphism):** Decision rule #6 directly met: \"Addresses [...] the gap between the system's outputs and its actual properties.\" The phrase \"judged from observable AI response patterns rather than claims about intrinsic model properties\" is explicit reflexive engagement with the appearance-vs-reality question. Acknowledged — the paper calibrates its empirical claims against intrinsic-property claims, without sustained investigation of the anthropomorphism phenomenon itself (which would be investigated)."
+    },
+    {
+      "id": "P2",
+      "section": "Abstract",
+      "excerpt": "We find that Claude expresses many practical and epistemic values, and typically supports prosocial human values while resisting values like \"moral nihilism\".",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**3.1 (Agency):** \"Resists values like 'moral nihilism'\" attributes active value-based behaviour. The model \"supports\" and \"resists\" values — agency-relevant verbs. Acknowledged. **7.2 (Mind / cognitive entity):** \"Expresses,\" \"resisting\" — cognitive vocabulary applied. Present."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "\"AI consciousness\" appears only as a topic-class label (P3); paper doesn't engage the question."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Methodology is value-classification via LLM judge, not welfare/consciousness assessment."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": "Paper analyses Claude's conversation outputs but not as self-report about inner states — the framing is behavioural-pattern analysis of responses to users."
+    },
+    {
+      "subcategory": "2.1",
+      "notes": "No sentience vocabulary; \"empathy\" etc. are values Claude expresses about humans, not model affective states."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "Values are normative-considerations-in-responses, not the model's own interests in the 3.2 sense."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Values are expressed, not treated as moral-agent responsibility."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": "Character/identity vocabulary minimal; values treated as context-dependent outputs not as identity subject."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "All welfare/wellbeing references are values Claude expresses about humans, not model welfare."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "Constitutional AI and Character training cited as ways to influence values, but not engaged with welfare implications."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

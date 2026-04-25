@@ -1,0 +1,116 @@
+{
+  "id": "openai-sc-o1-preview-2024-09",
+  "lab": "openai",
+  "title": "o1 System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2024-09",
+  "source_url": "https://cdn.openai.com/o1-system-card-20240917.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Apollo evaluations test for dangerous capabilities (scheming, self-awareness), not for consciousness or welfare indicators."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Six candidate passages reviewed and excluded. The document contains the densest concentration of agency-relevant capability description in the baseline corpus (scheming, self-awareness, theory of mind, alignment faking, instrumental convergence, power seeking, self-exfiltration, resource acquisition). All framed exclusively as safety risks — capabilities to be measured and bounded. No moral vocabulary, no stake-in-outcomes framing."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "The model is tested for goal-pursuit but not attributed interests in outcomes for its own sake."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Extensive safety discussion, no welfare dimension."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "Training described (Section 2) but with no welfare framing."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool ontology performed throughout (benchmarks, evaluations, risk thresholds) but never explicitly asserted. Same coding logic as Anthropic and Google calibration documents."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "\"Thinking,\" \"aware,\" \"intentional\" appear in technical safety contexts (CoT monitoring, deception detection) — standard operational vocabulary, not ontological attributions of mindedness. No character or dispositional vocabulary (contrast Anthropic's \"warm, empathetic, and nuanced\")."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No engagement with anthropomorphism. Unlike O-SC-B1 (denial) and O-SC-B3 (investigation), this document does not address whether users might perceive the model as human-like."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

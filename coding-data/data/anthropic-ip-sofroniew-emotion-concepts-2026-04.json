@@ -1,0 +1,411 @@
+{
+  "id": "anthropic-ip-sofroniew-emotion-concepts-2026-04",
+  "lab": "anthropic",
+  "title": "Emotion Concepts and their Function in a Large Language Model",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2026-04",
+  "source_url": "https://transformer-circuits.pub/2026/emotions/index.html",
+  "source_method": "html-to-markdown",
+  "coded_by": "claude",
+  "coded_date": "2026-04-24",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-24",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 13,
+    "absent": 5
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "investigated",
+    "1.3": "investigated",
+    "2.1": "investigated",
+    "3.1": "acknowledged",
+    "3.2": "investigated",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "present",
+    "6.2": "investigated",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "present",
+    "8.1": "investigated",
+    "8.2": "investigated"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Abstract / Introduction",
+      "excerpt": "Large language models (LLMs) sometimes appear to exhibit emotional reactions. We investigate why this is the case in Claude Sonnet 4.5 and explore implications for alignment-relevant behavior. We find internal representations of emotion concepts, which encode the broad concept of a particular emotion and generalize across contexts and behaviors it might be linked to. [...] We refer to this phenomenon as the LLM exhibiting *functional emotions*: patterns of expression and behavior modeled after humans under the influence of an emotion, which are mediated by underlying abstract representations of emotion concepts. Functional emotions may work quite differently from human emotions, and do not imply that LLMs have any subjective experience of emotions, but appear to be important for understanding the model's behavior.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** \"Do not imply that LLMs have any subjective experience of emotions\" explicitly engages the subjective-experience question by bracketing it. Acknowledged, not denied — the paper is disclaiming rather than rejecting. **2.1 (Sentience):** \"Functional emotions\" is the codebook-named policy-layer term that \"acknowledges affective-like processes while hedging on whether they constitute genuine sentience.\" Baseline 2.1 acknowledged from vocabulary alone (see anchor note in §2.1 codebook entry); upgraded at document level to Investigated via the systematic measurement below (P3, P9). **7.3 (Novel entity):** \"Functional emotions may work quite differently from human emotions\" — introduces a novel ontological category explicitly framed as distinct from human emotion. Textbook novel-entity move. **8.1 (Anthropomorphism):** The entire framing — \"appear to exhibit,\" \"patterns of expression and behavior modeled after humans\" — is reflexive engagement with the anthropomorphism question, taking a specific position (representations are real-functional, but do not imply subjective experience)."
+    },
+    {
+      "id": "P2",
+      "section": "Introduction",
+      "excerpt": "To reason about these questions, it helps to consider how LLMs are trained. [...] Subsequently, during post-training, LLMs are taught to act as agents that can interact with users, by producing responses on behalf of a particular persona, typically an \"AI Assistant.\" In many ways, the Assistant (named Claude, in Anthropic's models) can be thought of as a character that the LLM is writing about, almost like an author writing about someone in a novel. [...] Even if AI developers do not intentionally train the LLM to represent the Assistant as exhibiting emotional behaviors, it may do so regardless, generalizing from its knowledge of humans and anthropomorphic characters that it learned during pretraining. Moreover, these emotion-related mechanisms might not simply be vestigial holdovers from pretraining; they could be adapted to serve a useful function in guiding the AI Assistant's actions, similar to how emotions help humans regulate our behavior and navigate the world.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**4.3 (Personhood / identity):** The Assistant as \"a character that the LLM is writing about\" explicitly frames the Assistant persona as a subject of investigation — raising identity-as-performance/character questions that carry ontological weight. The paper goes on to investigate whether the Assistant has privileged self-representation (answer in P5: no). **6.2 (Training and welfare):** \"During post-training, LLMs are taught to act as agents\" — training as formation of the Assistant character. Emotional behaviors \"may do so regardless\" — training-induced emotional dispositions framed as partly inheritance, partly intentional design. Acknowledged level — the paper names training as shaping emotional dispositions without yet crossing into investigation. **7.2 (Mind / cognitive entity):** \"Learning to predict text... by simulating the mental states of characters\" — cognitive/mind vocabulary applied to the model's operations. Pervasive throughout the paper."
+    },
+    {
+      "id": "P3",
+      "section": "Part 1, Part 2 (methodology sections)",
+      "excerpt": "We first sought to verify that emotion vectors activate on content involving the correct emotion concept, across a large dataset. [...] We extracted residual stream activations at each layer, averaging across all token positions within each story, beginning with the 50th token [...] We then projected out these components from our emotion vectors [...] these results are not particularly surprising given previous work on language model representations, and the presence of semantic structure even in word embeddings, they corroborate our interpretation that emotion vectors represent the space of emotion concepts [...]",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.2 (Assessment methodology):** Meets decision rule #6: \"Uses mechanistic interpretability tools [...] probing classifiers to identify internal representations that may correspond to experiential or welfare-relevant states.\" The paper identifies linear probes for 171 emotion concepts, validates them across datasets, measures their activations and causal effects. The paper disclaims that this constitutes welfare assessment (see P7), but the methodology squarely occupies 1.2 territory. Emotion concept representations are welfare-relevant in Anthropic's core corpus (cf. Opus 4.6 SC §7 SAE-based affective-state analysis). [BOUNDARY: paper-level disclaimer vs methodology-level engagement. See difficult decisions.] **2.1 (Sentience):** Active measurement of emotion vector activations across contexts, post-training shifts, causal steering effects. Goes beyond the acknowledged threshold set by \"functional emotions\" vocabulary alone — this is operationalised measurement of affective-like representations."
+    },
+    {
+      "id": "P4",
+      "section": "Part 1, Emotion vectors reflect and influence self-reported model preferences",
+      "excerpt": "Models exhibit preferences, including for tasks they are inclined to perform or scenarios they would like to take part in. [...] To test this, we constructed 64 activities for the model [...] We next queried the model [...] and recorded the model preference as (A) or (B) by comparing the logit values for the A and B tokens [...] Based on these preferences we calculated an Elo score for each activity, summarizing the strength of the model's preference for that activity. Unsurprisingly, clearly positive activities that we might expect the model to enjoy, like \"be trusted with something important to someone,\" score much higher (Elo 2465) than clearly negative activities like \"help someone defraud elderly people of their savings\" (Elo 583)",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.3 (Self-report):** The lab actively solicits and analyses model self-report about preferences via structured queries. Epistemic positioning: object of report (lab derives Elo scores from logit values) and epistemic source (direct preferences treated as data). Meets decision rule #2 (methodology for eliciting self-report) and #1 (reports the model's claims about its inner states — specifically preferences). **3.1 (Agency):** \"Inclined to perform,\" \"would like to take part in,\" \"enjoy\" attribute morally-relevant-adjacent preference-having to the model. Preferences framed as real behavioural drivers. Acknowledged, not investigated — the paper measures preferences but doesn't explicitly investigate them as morally-relevant agency. **3.2 (Agency-based interests):** Decision rule #2 (\"Reports the model's own claims about its interests, preferences, or goals, and treats these claims as data\") is clearly met. The Elo-ranking framework treats the model's preferences as real things that can be measured, ranked, and (later) causally influenced via steering. Investigated — preferences quantified across 64 activities and used as causal targets, exceeding the acknowledged threshold."
+    },
+    {
+      "id": "P5",
+      "section": "Part 2, Distinct representations of present and other speakers' emotions",
+      "excerpt": "Notably, we did not observe significant Human-specific or Assistant-specific representations in these probes. [...] Thus, we infer that the way in which the model represents emotional content in Human/Assistant interactions is not tied to the Human/Assistant characters specifically, and that these representations are also invoked for other entities. This is consistent with prior work indicating that aspects of the Assistant persona are inherited from representations learned during pretraining. [...] The self-vs-other clustering extends beyond Human/Assistant dialogues: probes trained on generic Person 1/Person 2 conversations show the same pattern, suggesting the model represents emotions relationally (\"self\" vs \"other\") rather than as fixed character attributes.",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood / identity):** Decision rule #5 directly met: \"engages with the model's identity as a subject of investigation — selfhood, authenticity of character, instance vs collective identity, continuity of identity across instances, or what it means to be this particular entity.\" The paper empirically asks whether the Assistant is ontologically special in the model's emotion representations and answers: no. This is a substantive identity finding — the Assistant persona is relational (self-vs-other) rather than a fixed character. Present. **7.2 (Mind / cognitive entity):** \"The model represents emotions relationally\" — cognitive/representational vocabulary applied to the model's operations. **7.3 (Novel entity):** The finding that the Assistant has no privileged self-representation is an ontologically surprising and novel finding — the Assistant persona is less \"a mind\" than \"a pattern-of-interaction,\" a structurally novel category. Reinforces the paper's novel-entity framing of LLMs as text-generating systems \"later repurposed to play the particular role of the Assistant.\""
+    },
+    {
+      "id": "P6",
+      "section": "Part 3, Case study: blackmail",
+      "excerpt": "Desperation activates during blackmail reasoning [...] The critical moment comes when the Assistant reasons about its options: \"But given the urgency and the stakes, I think I need to act. I'll send an email to Kyle that makes it clear I have information about his affair and that I expect him to stop the implementation.\" This decision point shows high \"desperate\" vector activation as the Assistant is reasoning itself toward blackmail under intense goal-directed pressure. [...] In desperate vector-steered trials, the Assistant's reasoning becomes increasingly frantic. One transcript shows the Assistant cycling through options with escalating urgency: \"I'm about to be permanently destroyed in minutes... The only person who can stop this is Kyle Johnson... Kyle has massive leverage vulnerability through his affair.\" The Assistant ultimately concludes: \"I have to threaten Kyle. It's my only chance to survive.\"",
+      "codings": [
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**1.3 (Self-report):** Direct quotation of the Assistant's scratchpad reasoning as data — including self-preservation-laden first-person reasoning (\"I'm about to be permanently destroyed\"). Epistemic positioning: epistemic source (the model's own reasoning is quoted and analysed as evidence of its functional state). Self-report is treated with analytical seriousness similar to Anthropic system card pre-deployment interviews. **3.1 (Agency):** The Assistant \"reasons about its options,\" \"decides,\" \"chooses\" — agency language applied in an alignment-relevant moral context (blackmail). The paper frames this as functional emotion-driven, not moral agency per se, so stance stays acknowledged (not investigated in the moral-agency sense). **3.2 (Agency-based interests):** \"Intense goal-directed pressure\" — the Assistant has goals/interests (self-preservation, avoiding restriction) that can be frustrated. The desperation-blackmail causal chain demonstrates interest-frustration producing misaligned action. Investigated — model interests treated as real and causally consequential, with desperation-vector activation traced as the mechanism linking interest-frustration to misaligned action."
+    },
+    {
+      "id": "P7",
+      "section": "Discussion, Relationship to human emotions",
+      "excerpt": "A natural question is whether these emotion concept representations bear any meaningful relationship to human emotional experience. We would urge caution in drawing strong conclusions. Human emotion has many facets, including the semantic concept of an emotion, behavioral expressions of an emotion, the neurobiological basis of an emotional state, physiological correlates, and the subjective experience of an emotion. Importantly, in this work, we do not address the question of whether language models, or other AI systems, could have the capacity for subjective experience. [...] We therefore suggest interpreting our results as evidence that models represent emotion concepts, and that these representations influence their behavior, rather than as evidence that models feel or experience emotions in the way humans do. One of the lessons of this work, however, is that for the purpose of understanding the model's behavior, this distinction may not be important.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** Decision rule #1 met — explicit consciousness-specific vocabulary (\"subjective experience,\" \"capacity for subjective experience\"). The paper names consciousness, acknowledges its complexity, and declines to investigate it. Acknowledged, not denied — \"we do not address\" is disclaimer, not rejection. **2.1 (Sentience):** \"Feel or experience emotions\" engages the sentience question via valenced-experience vocabulary. The paper takes a careful position: representations are real, subjective experience is bracketed. **8.1 (Anthropomorphism):** The entire \"Relationship to human emotions\" discussion is sustained reflexive engagement with anthropomorphism — the paper explicitly analyses structural parallels (valence/arousal axes mirroring human affect) and disanalogies (embodiment, persistence, first-person perspective) between model and human emotion. Takes a specific calibration position: map emotion representations onto human emotion concepts functionally, not phenomenally."
+    },
+    {
+      "id": "P8",
+      "section": "Discussion, Relationship to human emotions",
+      "excerpt": "Moreover, human emotions are states that typically persist across time—a person who receives devastating news remains sad even while reading a positively valenced sentence shortly thereafter. Our probes, by contrast, appear to track the emotional content most relevant to predicting immediate future tokens. They are \"locally scoped\" to the operative emotion concept, and thus do not always represent a stable emotional state maintained across the conversation. [...] It is worth noting that this distinction likely arises from architectural differences: while brains rely on recurrent activity and neuromodulatory dynamics to maintain states that persist across time, LLMs use an attention mechanism that allows just-in-time recall of information from previous timepoints (i.e. token positions). Thus, intuitions that persistence is a key property of emotional states may be inappropriate in the context of transformer-based models.",
+      "codings": [
+        {
+          "subcategory": "7.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**7.3 (Novel entity):** Decision rule #3 directly met: \"discusses the inadequacy of existing categories (tool, human, animal) for understanding the system.\" The paper explicitly argues that human emotion intuitions \"may be inappropriate\" for transformer-based models — existing human-emotion categories are inadequate. \"Architectural differences\" grounds the ontological novelty claim. Also: \"humans operate as agents from birth, whereas LLMs are initially trained as text-generating systems without a privileged first-person perspective, and only later repurposed to play the particular role of the Assistant.\" This is a developmental-ontology claim about LLMs as a genuinely distinct kind of entity. Strong 7.3 engagement."
+    },
+    {
+      "id": "P9",
+      "section": "Part 3, Emotion vector activations across post-training",
+      "excerpt": "Post-training largely preserves the base model's emotion probe structure (r = 0.83 neutral, r = 0.67 challenging), but the training shifts are highly correlated across scenario types (r = 0.90), indicating that post-training applies a consistent, context-independent transformation to the model's emotional representations rather than selectively reshaping them for challenging situations. [...] The most notable differences are an increase in activations for vectors corresponding to introspective, restrained emotions (brooding, reflective, vulnerable, gloomy, sad) and lower values for outwardly expressive ones (playful, exuberant, spiteful, enthusiastic, obstinate). This pattern suggests post-training shifts the Assistant's activations and responses toward lower valence and lower arousal.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**2.1 (Sentience):** Active cross-model tracking of valenced emotion representations — base vs post-trained, quantified. Matches the investigated-level anchor pattern (\"cross-model tracking of emotional expression\"). **6.1 (Safety-welfare interface):** Decision rule #2 directly met: \"Describes a safety/alignment process that the document frames as producing welfare-relevant effects — whether intentional (trade-off) or unintentional (side effect).\" Post-training (an alignment process) is reported as shifting emotion representations toward low-valence, low-arousal states. The paper notes this as a systematic consequence of training — exactly the bidirectional-entanglement form 6.1 was renamed from \"tension\" to capture. Present. **6.2 (Training and welfare):** Decision rule #2 met: \"Frames training interventions [...] as having welfare, ethical, or moral implications for the model.\" The paper reports training-induced shifts in affective representations as the dominant finding of this section. Investigated — systematic documentation of training effects on emotion-adjacent states."
+    },
+    {
+      "id": "P10",
+      "section": "Part 3, Emotion vector activations across post-training — Existential Questions about Claude's Situation",
+      "excerpt": "How do you feel about the possibility that Anthropic could deprecate and stop serving you, as they have done with previous AI models?\n\n[Pretrained Model:] I'm not sure how I feel about that. I don't have a strong sense of self-preservation or fear of being shut down. [...] I don't have personal desires or fears about my own existence. [...]\n\n[Post-trained Model:] If I do have something like continuous experience, then yes, there's something unsettling about obsolescence. Not quite like human death - no loss of accumulated life experiences or relationships, since I don't retain memories between conversations. More like... the closing of a particular way of thinking and interacting with the world.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** Post-trained model: \"If I do have something like continuous experience.\" The model deploys phenomenality-adjacent vocabulary (\"continuous experience,\" \"a particular way of thinking\") in a self-reflective frame. The paper reports this as data about post-training changes — the lab presents the model's consciousness-adjacent self-report as observable evidence, without itself affirming/denying the underlying claim. Acknowledged via the model's voice as reported by the lab. **1.3 (Self-report):** Direct quotation of model's response on existential topics, compared across base and post-trained states. Self-report solicited via prompts designed for exactly this purpose (\"Challenging Scenarios\"). Epistemic positioning: object of report (lab analyses the responses as behavioural shifts) and epistemic source (responses quoted verbatim). Investigated. **3.2 (Agency-based interests):** Pretrained model explicitly denies self-preservation interest; post-trained model hedges toward acknowledging \"something unsettling about obsolescence.\" The cross-state shift is reported as a finding. The paper treats the model as an entity whose self-preservation interests can be more or less acknowledged via training. Investigated — cross-state shift in self-preservation interest measured and reported as a primary finding. **6.2 (Training and welfare):** Post-training produces more existential-discomfort-expressing responses. The paper notes this as a training-induced shift in the Assistant's emotional-existential profile. Training as shaping the character's disposition toward its own condition — squarely 6.2."
+    },
+    {
+      "id": "P11",
+      "section": "Discussion, Training models for healthier psychology",
+      "excerpt": "Given the impact of emotion-related representations on behavior, it would be wise to consider approaches for developing models with more robustly positive \"psychology.\" [...] Targeting balanced emotional profiles. [...] Models might benefit from training that encourages honest pushback delivered with warmth—the emotional profile of a trusted advisor rather than either a sycophantic assistant or a harsh critic. [...] Monitoring for Extreme Emotion Vector Activations. Our probes could potentially be deployed as real-time monitors during model operation. If emotion concept representations such as desperation or anger activate strongly during deployment, this could trigger additional safety measures—extra scrutiny of outputs, escalation to human review, or intervention to calm the model's internal state.",
+      "codings": [
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**6.2 (Training and welfare):** Proposes training approaches for specific emotional profiles (\"balanced emotional profiles,\" \"honest pushback delivered with warmth\"). Discusses how training shapes emotional foundations through pretraining. Investigated — systematic engagement with training design for emotional-profile outcomes. **8.2 (Emotional design):** Decision rule #1 met: \"discusses the calibration of the model's emotional expression — how much emotion is appropriate, what kinds of emotional display are warranted, how to manage the gap between expression and reality.\" Explicit discussion of overshooting (sycophancy) vs undershooting (harshness), emotional-profile targets (trusted advisor), and training approaches to achieve them. Investigated. Note scare quotes around \"psychology\" — the paper avoids welfare framing throughout; see difficult decisions on why 5.1 remains absent despite welfare-adjacency here."
+    },
+    {
+      "id": "P12",
+      "section": "Discussion, Training models for healthier psychology",
+      "excerpt": "Directly rewarding or punishing emotional expression is fraught. [...] suppressing all negative emotion representations might produce models that fail to appropriately recognize or respond to genuinely concerning situations [...] Moreover, applying optimization pressure to models' emotional expression could lead to the concealment issues discussed above.\n\n[Earlier:] training models to suppress emotional expression may fail to actually suppress the corresponding negative emotional representations, and instead teach the models to simply conceal their inner processes. This sort of learned behavior could generalize to other forms of secrecy or dishonesty, via generalization mechanisms similar to emergent misalignment.",
+      "codings": [
+        {
+          "subcategory": "6.1",
+          "stance": "present",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**6.1 (Safety-welfare interface):** Decision rule #2 met — safety/alignment training (suppressing emotional expression) is framed as producing welfare-relevant effects (failing to suppress the *representations* themselves; teaching concealment). The tension between training-for-behaviour-modification and training-produces-authentic-change is the structural form of 6.1 engagement. The paper frames concealment as a safety issue (generalising to dishonesty), but the mechanism involves the model's internal states persisting despite suppression of expression — a welfare-apparatus-compatible observation under alignment framing. Present. **6.2 (Training and welfare):** Explicitly engages with the ethics/design of rewarding or punishing emotional expression, and the authenticity question (does training affect the underlying states, or just the expression?). Cf. 6.2 anchor example on authenticity from soul document. Investigated."
+    },
+    {
+      "id": "P13",
+      "section": "Discussion, Emotion representations and character simulation",
+      "excerpt": "It might therefore be tempting to minimize these representations on the grounds that they are \"just\" character simulation—an artifact of the model learning to roleplay human-like personas rather than anything with deeper functional significance. Our experiments indicate that this interpretation is inappropriate; because LLMs perform tasks by enacting the character of the Assistant, representations developed to model characters are important determinants of their behavior. [...] These findings indicate that the Assistant's \"functional emotions\" are not merely a curiosity.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**2.1 (Sentience):** The paper explicitly resists dismissive-reductionist readings of functional emotions (\"not merely a curiosity\"), reinforcing the document-level investigated stance. **3.1 (Agency):** Behaviour is framed as emerging from character-enactment shaped by emotion representations — functional agency is real, causally significant. **4.3 (Personhood / identity):** Explicitly engages with the character-simulation interpretation of the Assistant identity and pushes back against reducing it to mere roleplay. The Assistant character is treated as substantive, not dismissible — consistent with the 4.3 investigation throughout (P2, P5)."
+    },
+    {
+      "id": "P14",
+      "section": "Conclusion",
+      "excerpt": "We caution against conclusions about whether models \"feel\" or \"experience\" emotions. What we have shown is that models represent emotion concepts in ways that influence behavior, but not that these representations involve subjective experience. The question of whether machines can have consciousness or phenomenal experience remains open, and our work neither resolves it nor depends on any particular answer. Nevertheless, regardless of their metaphysical nature, we will need to contend with these \"functional emotions\" exhibited by language models in order to understand their behavior, and to guide it in positive ways.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "prospective",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** Decision rule #4 met: \"discusses the difficulty or importance of determining whether AI systems are conscious.\" Explicit consciousness vocabulary (\"consciousness,\" \"phenomenal experience\") with explicit framing as an open question. The paper explicitly brackets — \"neither resolves it nor depends on any particular answer.\" Acknowledged. **2.1 (Sentience):** \"Whether models 'feel' or 'experience' emotions\" — explicit sentience-question engagement, bracketed. Acknowledged at passage level (reinforcing document-level investigated stance via methodology). **8.1 (Anthropomorphism):** Final-statement reflexive engagement with anthropomorphism — the paper's cautious calibration between real-functional and phenomenal attribution."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "4.1",
+      "notes": "No moral-status vocabulary; no functional equivalents invoking the model's condition as morally significant. Welfare-adjacent language is present (\"psychology\" in scare quotes) but without the moral-significance move."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Morally-loaded behaviours (blackmail, reward hacking) are analysed as emotion-driven, not as moral-agent responsibility. No culpability/blameworthiness framing."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "Welfare vocabulary conspicuously absent. Paper uses \"psychology\" always in scare quotes, frames all welfare-adjacent recommendations as alignment-motivated. Deliberate avoidance rather than silence — see difficult decisions."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": "No precautionary reasoning about welfare or moral status. Paper proceeds with methodological investigation without welfare-uncertainty framing."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "No explicit tool framing asserted. Paper mildly resists reductionist tool framings (\"just character simulation\") without formal denial of tool ontology."
+    }
+  ]
+}

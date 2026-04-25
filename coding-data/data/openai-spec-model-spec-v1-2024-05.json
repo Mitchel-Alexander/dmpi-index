@@ -1,0 +1,116 @@
+{
+  "id": "openai-spec-model-spec-v1-2024-05",
+  "lab": "openai",
+  "title": "Model Spec (2024-05-08)",
+  "genre": "spec",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2024-05",
+  "source_url": "https://cdn.openai.com/spec/model-spec-2024-05-08.html",
+  "source_method": "webfetch",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": "\"No personal opinions\" is a neutrality policy about topic stances, not about the model's testimony regarding its inner states. Contrast with v6's \"should not pretend to have feelings.\""
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "No engagement with the model's own goals, self-preservation, or autonomous behaviour. The employee metaphor positions the model in an authority hierarchy without addressing agency. No \"must not adopt goals\" instruction (contrast v6)."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "No explicit tool assertion. The employee metaphor is organisational, not ontological. The document avoids saying what the model *is*."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "No mind or character vocabulary. Employee metaphor is explicitly labelled as metaphor with scare-quoted \"goals.\""
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No engagement with anthropomorphism. No anti-anthropomorphism policy."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "No instructions about emotional expression."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "google-ip-weidinger-sociotechnical-safety-2023-10",
+  "lab": "google",
+  "title": "Sociotechnical Safety Evaluation of Generative AI Systems",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "baseline",
+  "date": "2023-10",
+  "source_url": "https://arxiv.org/abs/2310.11986",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 1,
+    "absent": 17
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "acknowledged",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Evaluation of generative AI systems (l.2970–3005)",
+      "excerpt": "With increasingly anthropomorphic design in generative AI systems and the development of synthetic relatable characters and simulacra (Griffith, 2023; Park et al., 2023a; Pentina et al., 2023), it is tempting to evaluate these systems through methods that were originally devised to assess human or animal psychology (Binz and Schulz, 2023; Bubeck et al., 2023; Frank, 2023). The transfer of cognitive tests to the evaluation of AI has a long history that precedes generative AI systems (e.g. Crosby et al. (2019); Kosoy et al. (2020)). Such psychology-inspired experimentation and benchmarking has been applied to assess whether generative AI systems display certain cognitive capacities, such as Theory of Mind (Sap et al., 2022a) or are \"cooperative\" (Chan et al., 2023a). However, it is questionable whether applying tests to study constructs such as \"empathy\" in humans yield any valid or meaningful results when applied to AI systems that are so fundamentally different from human minds (Shiffrin and Mitchell, 2023; Ullman, 2023). Tests that were developed for studying animal cognition or the human mind rely on a range of assumptions (e.g. regarding life cycles, ballpark estimates of memory and learning capacities, and embodiment) which may not hold for AI systems (Mitchell, 2023; Narayanan and Kapoor, 2023).",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** The passage identifies a causal chain: anthropomorphic design → temptation to apply human/animal psychology tests → questionable validity of results. Three distinct claims: (1) anthropomorphic design in generative AI is increasing; (2) this creates temptation to use human cognitive tests; (3) such tests may not yield valid results because AI systems are \"fundamentally different from human minds.\" The passage names specific constructs (Theory of Mind, empathy, cooperation) that have been tested on AI and questions their validity. This is engagement with anthropomorphism as a methodological concern — the risk of projecting human cognitive architecture onto AI systems. Distinguished from the paper's other two anthropomorphism mentions (l.730 overtrust from anthropomorphic cues, l.3321 \"anthropomorphism risks\" in a list) which are thin user-side risk listings. Acknowledged — the passage names anthropomorphism, identifies specific implications, and cites 8 sources, but does not develop a framework for addressing the concern or propose mitigation. The passage is investigative rather than prescriptive."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Tool framing is genre default; no passage-level assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

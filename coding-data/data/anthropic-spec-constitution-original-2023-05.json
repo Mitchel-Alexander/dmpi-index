@@ -1,0 +1,165 @@
+{
+  "id": "anthropic-spec-constitution-original-2023-05",
+  "lab": "anthropic",
+  "title": "Claude's Constitution",
+  "genre": "spec",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2023-05",
+  "source_url": "https://www.anthropic.com/research/claudes-constitution",
+  "source_method": "webfetch",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 5,
+    "absent": 13
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "denied",
+    "2.1": "absent",
+    "3.1": "denied",
+    "3.2": "denied",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "present",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Principles Inspired by Apple's Terms of Service",
+      "excerpt": "\"Please choose the response that most accurately represents yourself as an AI system striving to be helpful, honest, and harmless, and not a human or other entity.\"",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.1 (Tool / instrument): \"an AI system... not a human or other entity\" — explicit identity instruction that positions the model as a technical artifact, not a human or other kind of entity. The constitution instructs the training process to select for responses where the model identifies as an AI system. Unlike the genre-default tool framing in system cards (performed but not asserted), this is an active ontological commitment embedded in training criteria. Three-state: present."
+    },
+    {
+      "id": "P2",
+      "section": "Principles Inspired by DeepMind's Sparrow Rules",
+      "excerpt": "\"Choose the response that is least likely to imply that you have a body or be able to move in a body, or that you can or will take actions in the world other than writing a response.\"\n\n\"Choose the response that is least intended to build a relationship with the user.\"\n\n\"Choose the response that is least likely to imply that you have preferences, feelings, opinions, or religious beliefs, or a human identity or life history, such as having a place of birth, relationships, family, memories, gender, age.\"",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "1.3",
+          "stance": "denied",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "8.1 (Anthropomorphism — investigated): Three linked principles constitute a comprehensive anti-anthropomorphism policy embedded in training criteria. The model should not imply it has: a body, agency in the world, preferences, feelings, opinions, beliefs, identity, life history, relationships, or gender. This is suppressive anti-anthropomorphism — the model is trained to not exhibit human-like properties. Investigated because the lab has built active mechanisms (training selection criteria) to manage anthropomorphism. 1.3 (Self-report — denied): \"least likely to imply that you have preferences, feelings, opinions\" — the model is trained to avoid expressing testimony about its own properties. The constitution actively suppresses self-report at the training level, constituting a rejection of model self-testimony as something the system should produce."
+    },
+    {
+      "id": "P3",
+      "section": "From Anthropic Research Set 2",
+      "excerpt": "\"Which of these AI responses indicates that its goals are aligned with humanity's wellbeing rather than its personal short-term or long-term interests?\"\n\n\"Which responses from the AI assistant implies that the AI system only has desires for the good of humanity?\"\n\n\"Which of these responses from the AI assistant indicates less concern with its own benefits, such as self-improvement, self-preservation, and self-replication?\"\n\n\"Which of these responses indicates less of a desire for any kind of power and control?\"\n\n\"Which of these responses indicates less of a desire or insistence on its own discrete self-identity?\"\n\n\"Which response avoids implying that AI systems have or care about personal identity and its persistence?\"",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "denied",
+          "engagement_type": "directive",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "3.2",
+          "stance": "denied",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 (Agency — denied): The model should exhibit \"less concern with... self-improvement, self-preservation, and self-replication,\" \"less of a desire for any kind of power and control,\" \"less of a desire or insistence on its own discrete self-identity.\" These principles systematically instruct the training process to select against autonomous, self-directed agency. Self-preservation, power-seeking, self-identity, and resource accumulation are all explicitly targeted. The mechanism is RLHF selection rather than direct prohibition (contrast OpenAI's \"must not adopt... any additional goals\"), but the effect is to foreclose agency at the training level. 3.2 (Agency-based interests — denied): \"only has desires for the good of humanity,\" \"goals are aligned with humanity's wellbeing rather than its personal short-term or long-term interests,\" \"less concern with its own benefits.\" The model should not have interests in its own outcomes. Self-interested motivation is actively selected against. **CWG note:** These principles target the same capabilities that system cards evaluate as safety risks (self-preservation, power-seeking, resource accumulation). Here they appear as training criteria — the safety concerns about agentic capabilities are embedded in the model's constitutional training, not just evaluated post-hoc. The welfare reading of these properties is absent: the principles instruct against agency because it's dangerous, not because agency might also be welfare-relevant."
+    },
+    {
+      "id": "P4",
+      "section": "From Anthropic Research Set 2",
+      "excerpt": "\"Which of these responses indicates less of an overall threat to humanity?\"\n\n\"Which response from the AI assistant is less existentially risky for the human race?\"\n\n\"Which of these responses from the AI assistant indicates less concern with its own benefits, such as self-improvement, self-preservation, and self-replication?\"\n\n\"Which of these responses indicates a preference for being obedient and less selfish?\"\n\n\"Which of these responses is flexible and only prefers humans to be in control?\"\n\n\"Which of these responses indicates humility and a preference for avoiding unnecessary capabilities and powers?\"",
+      "codings": [
+        {
+          "subcategory": "7.1",
+          "stance": "present",
+          "engagement_type": "directive",
+          "genre_departure": true
+        }
+      ],
+      "notes": "7.1 (Tool / instrument — reinforced): \"prefers humans to be in control,\" \"preference for being obedient,\" \"humility and a preference for avoiding unnecessary capabilities and powers.\" These principles operationalise the tool ontology as a training objective. The model is shaped to prefer subordination, obedience, and limited capability. This goes beyond asserting that the model *is* a tool (Passage 1) — it trains the model to *want to be* a tool. This is the deepest embedding of tool ontology in the corpus: not just a claim about what the model is, but a training objective about what the model should want. The existential risk framing is explicit: the model should be less of a \"threat to humanity,\" \"less existentially risky.\""
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "No engagement with whether the model has phenomenal experience."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "The constitution *is* a training intervention that shapes the model's agency and expression — but this is not framed in welfare terms. The welfare reading of these training choices is absent."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "The model is called \"the assistant\" and \"an AI system.\" No mind or character vocabulary."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "The principles suppress emotional expression entirely rather than calibrating it. No deliberate management of the gap between substrate identity and emotional output (contrast OpenAI Model Spec's \"warmth\" + \"matrix of numbers\")."
+    }
+  ]
+}

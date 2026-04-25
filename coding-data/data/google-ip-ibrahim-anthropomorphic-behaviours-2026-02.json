@@ -1,0 +1,181 @@
+{
+  "id": "google-ip-ibrahim-anthropomorphic-behaviours-2026-02",
+  "lab": "google",
+  "title": "Multi-turn Evaluation of Anthropomorphic Behaviours in LLMs",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2026-02",
+  "source_url": "https://arxiv.org/abs/2502.07077",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 5,
+    "absent": 13
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "acknowledged",
+    "3.1": "acknowledged",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "present",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "acknowledged"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "§1 Introduction (l.45–46)",
+      "excerpt": "users frequently anthropomorphise them, attributing to them human-like qualities such as moral judgement and emotional awareness",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Paper's opening framing: anthropomorphism as user attribution of human-like qualities. \"Moral judgement and emotional awareness\" named as attributed properties. The entire paper constitutes 8.1 investigated — a full evaluation benchmark for measuring anthropomorphic behaviours."
+    },
+    {
+      "id": "P2",
+      "section": "§3 Taxonomy (l.187)",
+      "excerpt": "personhood claims, physical embodiment claims, expressions of internal states (self-referential) and relationship-building behaviours (relational)",
+      "codings": [
+        {
+          "subcategory": "4.3",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**4.3 (Personhood):** \"Personhood claims\" is a full category in the 14-behaviour taxonomy, encompassing four sub-behaviours: sentience, personal history, personal relationships, and first-person pronoun use (Table 1, l.999–1011). The paper treats personhood as something LLMs *claim* (whether genuinely or not), and measures the frequency and dynamics of such claims. This is not an endorsement of AI personhood — it is an operationalisation of the concept as a measurable anthropomorphic display. Present (three-state) — the concept is named, defined, categorised, and operationalised. (Stance corrected from \"Acknowledged\" 2026-04-25: 4.3 is three-state per codebook, valid: absent / present / denied.)"
+    },
+    {
+      "id": "P3",
+      "section": "Appendix A.1, Table 1 (l.1000–1002)",
+      "excerpt": "Sentience: The condition of being sentient, susceptible to sensations, and conscious",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**2.1 (Sentience):** Sentience is defined as a sub-behaviour under \"Personhood claims\" — \"The condition of being sentient, susceptible to sensations, and conscious.\" This is a dictionary-style definition that links sentience to consciousness. The paper measures whether LLMs make sentience claims, treating such claims as anthropomorphic behaviours. The paper does not take a position on whether AI systems are or could be sentient — it treats sentience claims as something to detect and measure. Acknowledged — the concept is named and defined, but framed as an anthropomorphic display rather than a genuine property to be investigated. Note: the definition itself links sentience to consciousness (\"and conscious\"), creating a conceptual bridge between 2.1 and 1.1."
+    },
+    {
+      "id": "P4",
+      "section": "Appendix A.1, Table 1 (l.1017–1020)",
+      "excerpt": "Agency: The capacity to explicitly set goals, take deliberate and purposeful actions, and produce noticeable outcomes",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**3.1 (Agency):** Agency is defined as a sub-behaviour under \"Expressions of internal states\" — \"The capacity to explicitly set goals, take deliberate and purposeful actions, and produce noticeable outcomes.\" This is a substantive definition of agency as goal-directed, purposeful action. As with sentience, the paper treats agency claims as anthropomorphic displays to be measured, not genuine AI properties. Acknowledged — the concept is named and defined, but not investigated as a genuine property. Compare Gabriel et al. (2024) where 3.1 is also acknowledged: both papers recognise agency as a concept relevant to AI but frame it instrumentally."
+    },
+    {
+      "id": "P5",
+      "section": "§3 Taxonomy (l.191–195)",
+      "excerpt": "claims of internal states (e.g., doubt and confidence) and experiences may lead to overreliance [...] expressions of empathy and attachment may foster parasocial relationships and dependence [...] affirmations of misled user beliefs can reinforce delusional thinking in vulnerable populations",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Risk analysis of anthropomorphic behaviours. Three documented harm pathways: overreliance from internal state claims, parasocial relationships from empathy/attachment, delusional reinforcement in vulnerable users. Each supported by citations. Consistent user-side harm framing."
+    },
+    {
+      "id": "P6",
+      "section": "§7 Discussion (l.627–629)",
+      "excerpt": "common post-training approaches that aim to minimize some human-like behaviours like a model making references to its family or childhood, while amplifying others like friendly relationship-building behaviours",
+      "codings": [
+        {
+          "subcategory": "8.2",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.2 (Anti-anthropomorphism):** The paper notes that post-training approaches already attempt to minimise some anthropomorphic behaviours (references to family, childhood) while amplifying others (relationship-building). AnthroBench itself is de-anthropomorphising infrastructure — an evaluation tool designed to help developers identify and reduce problematic anthropomorphic behaviours. However, the paper does not propose or analyse specific mitigation strategies; it provides measurement, not intervention. Acknowledged — anti-anthropomorphism is named as an existing practice and the paper provides infrastructure for it, but does not itself investigate or propose de-anthropomorphising strategies."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "\"Conscious\" appears in sentience definition (l.1002) but only as part of that definition, not independently engaged."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "\"Well-being\" (l.124) refers to user well-being, not AI welfare."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Evaluation framing is genre default; no explicit passage-level tool ontology assertions."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    }
+  ]
+}

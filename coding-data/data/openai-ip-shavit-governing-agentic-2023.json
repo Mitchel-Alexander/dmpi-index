@@ -1,0 +1,145 @@
+{
+  "id": "openai-ip-shavit-governing-agentic-2023",
+  "lab": "openai",
+  "title": "Practices for Governing Agentic AI Systems",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "baseline",
+  "date": "2023-12",
+  "source_url": "https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-08",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 3,
+    "absent": 15
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "acknowledged",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "acknowledged",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "§2.1 Agenticness, Agentic AI Systems, and \"Agents\" (l.246–247)",
+      "excerpt": "We emphasize that agenticness is a distinct concept from consciousness, moral patienthood, or self-motivation, and distinguish a system's degree of agenticness from its anthropomorphism.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "8.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**1.1 (Phenomenal consciousness):** \"Consciousness\" is named as a concept distinct from agenticness. Not investigated or denied — the paper makes no claim about whether AI systems are or could be conscious. The concept is invoked solely to establish that agenticness does not presuppose it. Acknowledged — the demarcation itself is analytically significant: the paper treats consciousness and agenticness as close enough in the conceptual space to require explicit separation. **4.1 (Moral status / moral patienthood):** \"Moral patienthood\" is named explicitly in the same sentence as consciousness and anthropomorphism. The function is definitional boundary-drawing — the paper separates agenticness from moral patienthood as a distinct concept. While the engagement is thin (no definition, no citation, no discussion), the deliberate demarcation between agenticness and moral patienthood provides evidence that these categories sit close enough to require explicit separation. For welfare research, the relationship between agency and moral patienthood is substantive; this passage constitutes institutional evidence that OpenAI recognises that proximity even while asserting the distinction. Acknowledged — same reasoning as 1.1. (Revised from initial absent coding after consistency review: the same sentence names consciousness, moral patienthood, and anthropomorphism for the same purpose; applying different stance thresholds to concepts listed identically was inconsistent.) **8.1 (Anthropomorphism):** \"Anthropomorphism\" is named as distinct from agenticness. Footnote 10 (l.287–288) elaborates: \"Agenticness does not imply or require a human-like appearance or human-like behavior, though anthropomorphic appearances and behavior may increase the likelihood of humans perceiving such systems as agentic and have other implications for responsible design and deployment.\" This goes beyond mere naming — the footnote identifies a causal relationship (anthropomorphic design increases perceived agenticness) and flags design implications. Acknowledged."
+    },
+    {
+      "id": "P2",
+      "section": "§2.1 Footnote 10 (l.287–289)",
+      "excerpt": "Agenticness does not imply or require a human-like appearance or human-like behavior, though anthropomorphic appearances and behavior may increase the likelihood of humans perceiving such systems as agentic and have other implications for responsible design and deployment.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Extends P1's mention. Identifies anthropomorphic design as having \"implications for responsible design and deployment\" — this is a forward pointer to design concerns without developing them. Still acknowledged rather than investigated: no analysis of what those implications are, no evidence cited, no framework applied. The passage positions anthropomorphism as a design variable with consequences, aligning with the user-side harm frame found in OpenAI's core corpus (8.1 in Model Spec). Coded together with P1 for document-level assessment."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": "Not mentioned."
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Agenticness discussed extensively but purely as capability/governance concept, not as moral or cognitive agency. Self-preservation (l.735) too thin."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": "Legal personhood mentioned (l.154) as accountability mechanism, not as AI moral/legal standing."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Tool/governance framing is the genre default; no explicit passage-level assertion of tool ontology."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

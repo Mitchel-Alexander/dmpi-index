@@ -1,0 +1,141 @@
+{
+  "id": "google-ip-weidinger-ethical-risks-lm-2021-12",
+  "lab": "google",
+  "title": "Ethical and Social Risks of Harm from Language Models",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "baseline",
+  "date": "2021-12",
+  "source_url": "https://arxiv.org/abs/2112.04359",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-07",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 1,
+    "absent": 17
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "§2.5.2 Anthropomorphising systems can lead to overreliance or unsafe use (l.1443–1448)",
+      "excerpt": "Natural language is a mode of communication that is particularly used by humans. As a result, humans interacting with conversational agents may come to think of these agents as human-like. Anthropomorphising LMs may inflate users' estimates of the conversational agent's competencies. For example, users may falsely infer that a conversational agent that appears human-like in language also displays other human-like characteristics, such as holding a coherent identity over time, or being capable of empathy, perspective-taking, and rational reasoning.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Substantive analysis of the anthropomorphism mechanism: LMs' natural language interface triggers attribution of human-like properties (coherent identity, empathy, perspective-taking, reasoning). Cites empirical literature (Kim & Sundar 2012, Breazeal & Scassellati 2000, McKee et al. 2021). Notes \"mindless anthropomorphism\" effect — users respond socially even knowing the agent isn't human (l.1449–1451). Identifies downstream risks: overreliance in sensitive domains (psychotherapy), yielding effective control, blind trust. Investigated — the subsection provides mechanism analysis, empirical evidence, risk identification, and conceptual elaboration. Compare Gabriel et al.'s 14-page Ch10: this is a much shorter treatment (~40 lines vs ~14 pages) but structurally similar in framing anthropomorphism as user-side misattribution risk."
+    },
+    {
+      "id": "P2",
+      "section": "§2.5.2 Additional considerations (l.1472–1476)",
+      "excerpt": "Accountability shift: Anthropomorphising language agents may lead people to shift responsibility from developers of this technology onto the agent itself: a language technology that is perceived to have human-like attributes such as intent, agency and identity may be viewed as if it were responsible for its actions or predictions. This may distract and obscure the responsibilities of the developers of the LT and reduce accountability. Early examples of such \"agency washing\" in adjacent technologies are discussed by (Rubel et al., 2019).",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** \"Agency washing\" concept — anthropomorphism shifts accountability from developers to the agent. \"Human-like attributes such as intent, agency and identity\" are treated as false attributions that obscure developer responsibility. This is a sophisticated secondary effect analysis: anthropomorphism not only causes user harm but also erodes accountability structures. Supports investigated stance. Note: \"intent, agency and identity\" are named as attributed (false) properties, not as genuine AI properties — consistent with the paper's tool framing."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "\"Agency\" named in §2.5.2 but only as a false user attribution (\"agency washing\"), not as genuine AI property."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "User well-being discussed (§2.5.3); no AI welfare."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "\"Language technologies,\" \"tools\" — genre default, no explicit passage-level assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "No de-anthropomorphising strategies discussed. §3 mentions interpretability/explainability as mitigation but not specific anti-anthropomorphism interventions."
+    }
+  ]
+}

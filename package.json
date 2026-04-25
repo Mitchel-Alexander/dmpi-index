@@ -1,0 +1,26 @@
+{
+  "name": "dmpi-index",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Digital Minds Policy Index — interactive index of public policy positions taken by leading commercial AI labs on digital minds, AI consciousness, and AI welfare.",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist .observablehq/cache",
+    "build": "observable build",
+    "dev": "observable preview",
+    "deploy": "vercel deploy --prod",
+    "deploy:preview": "vercel deploy",
+    "observable": "observable",
+    "sync": "bash scripts/sync-from-vault.sh"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0",
+    "@observablehq/plot": "^0.6.16"
+  },
+  "devDependencies": {
+    "vercel": "^39.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

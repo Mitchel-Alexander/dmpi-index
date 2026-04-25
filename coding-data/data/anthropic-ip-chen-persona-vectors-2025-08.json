@@ -1,0 +1,116 @@
+{
+  "id": "anthropic-ip-chen-persona-vectors-2025-08",
+  "lab": "anthropic",
+  "title": "Persona Vectors — Monitoring and Controlling Character Traits in Language Models",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2025-08",
+  "source_url": "https://arxiv.org/abs/2507.21509",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-24",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-24",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": "No consciousness vocabulary."
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Interpretability methodology present but applied to safety-relevant behavioural traits (evil, sycophancy, hallucination), not welfare-relevant states. Decision rule #6 not met — representations studied are not framed as \"experiential or welfare-relevant.\""
+    },
+    {
+      "subcategory": "1.3",
+      "notes": "No model self-report methodology. LLM-judge evaluation used instead."
+    },
+    {
+      "subcategory": "2.1",
+      "notes": "No sentience vocabulary. \"Functional emotions\" not invoked. Emotion-adjacent traits (optimism, humor) mentioned only in appendices as methodology-generalisation examples."
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Traits described behaviourally; no attribution of goals/stakes/interests."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": "\"Moral\" vocabulary appears only in trait descriptions (evil system prompts, SAE feature labels) — not engaging with AI moral status."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": "Persona/character vocabulary throughout, but treated as activation-space patterns. Codebook counter-example match: character/personality without what-kind-of-entity engagement."
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "All wellbeing/welfare references are to human wellbeing."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety concerns without welfare dimension."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "Training-induced personality shifts discussed extensively but strictly in safety/alignment framing. No authenticity, welfare, or ethics-of-training-modification engagement."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "No explicit tool framing."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "Persona treated as activation-space direction, not as minded property. \"Simulated 'Assistant' persona\" (scare quotes) signals functional framing."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": "No reflexive engagement with whether trait-attribution is anthropomorphic."
+    },
+    {
+      "subcategory": "8.2",
+      "notes": "Emotion-adjacent traits (sycophancy, optimism, humor) mentioned as methodology-generalisation examples without emotional-design-calibration engagement."
+    }
+  ]
+}

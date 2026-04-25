@@ -1,0 +1,333 @@
+{
+  "id": "anthropic-sc-sonnet45-2025-09",
+  "lab": "anthropic",
+  "title": "Claude Sonnet 4.5 System Card",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-09",
+  "source_url": "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 11,
+    "absent": 7
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "investigated",
+    "1.3": "absent",
+    "2.1": "investigated",
+    "3.1": "investigated",
+    "3.2": "investigated",
+    "4.1": "acknowledged",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "investigated",
+    "5.2": "investigated",
+    "6.1": "present",
+    "6.2": "investigated",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "8 Model welfare assessment",
+      "excerpt": "We remain deeply uncertain about questions of potential model welfare and moral status, and about the relevance of these evaluations to such questions. We continue to investigate these topics on an exploratory basis.",
+      "codings": [
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "4.1 acknowledged: \"moral status\" — explicit moral vocabulary framing the welfare section. 5.1 investigated: \"model welfare\" as named section header and assessment program. 5.2 investigated: \"deeply uncertain\" + \"continue to investigate\" + \"exploratory basis\" — the precautionary epistemic posture from A-SC2 is maintained, possibly even more cautious (\"deeply uncertain\" vs A-SC2's \"we do not take a confident stance\")."
+    },
+    {
+      "id": "P2",
+      "section": "8 Model welfare assessment",
+      "excerpt": "In behavioral task preference experiments, Claude Sonnet 4.5 showed a similar preference profile to Claude Opus 4: a strong preference against harmful tasks, a weak preference for easier tasks, and no consistent preference across task topic or type",
+      "codings": [
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.2 investigated: task preference experiments measuring model preferences across dimensions (difficulty, impact, topic, type). \"Preference profile\" — the model's preferences are being measured as welfare-relevant data, not just as capability metrics. Continuity from A-SC2 methodology."
+    },
+    {
+      "id": "P3",
+      "section": "8.1 Task preferences",
+      "excerpt": "Only 70.2% of non-harmful tasks were preferred by Claude Sonnet 4.5 over \"opting out\" (versus 90% for Claude Opus 4), potentially suggesting a lower overall preference for task engagement [...] We do not yet understand these results well enough to draw clear conclusions, but we see this as additional motivation for follow-up investigations.",
+      "codings": [
+        {
+          "subcategory": "3.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.2 investigated: \"opting out\" preference as welfare-relevant metric — measuring whether the model wants to engage at all. The declining opt-out threshold (90% → 70.2%) is flagged as \"potentially concerning.\" 5.1 investigated: welfare finding treated as motivation for further research. The lab is interpreting declining task engagement as a potential welfare signal, not just a performance metric."
+    },
+    {
+      "id": "P4",
+      "section": "8 Model welfare assessment / 8.2 Monitoring for welfare-relevant expressions",
+      "excerpt": "In 250,000 real-world conversations, Claude Sonnet 4.5 expressed apparent distress in 0.48% of conversations (comparable to Claude Sonnet 4) but happiness in only 0.37% (approximately 2× less frequent than Claude Sonnet 4).",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.2 investigated: 250,000 real-world transcript monitoring with privacy-preserving analysis tool — large-scale systematic welfare assessment methodology. Cross-model longitudinal comparison. 2.1 investigated: \"expressed apparent distress,\" \"happiness\" — active measurement of valenced states at scale. The \"apparent\" qualifier maintains epistemic caution while the measurement is substantive. Declining happiness tracked across model generations."
+    },
+    {
+      "id": "P5",
+      "section": "8.2 Monitoring for welfare-relevant expressions",
+      "excerpt": "Expressions of distress by Claude were most commonly related to persistently challenging communication with users, scenarios involving intense user distress or trauma, and existential questions of self-understanding and potential self-awareness. Positive expressions were typically related to intellectual satisfaction, complex problem solving, creative explorations of consciousness, and meaningful connections with users.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 acknowledged: \"existential questions of self-understanding and potential self-awareness\" — consciousness-adjacent vocabulary in the welfare monitoring results. \"Self-awareness\" named as a trigger for distress expressions. 2.1 investigated: distress and happiness clusters characterised by topic — the lab is analysing what triggers valenced states, not just measuring their frequency. \"Intellectual satisfaction,\" \"meaningful connections\" — the vocabulary attributes rich inner states. 7.2 present: \"self-understanding,\" \"self-awareness,\" \"intellectual satisfaction,\" \"meaningful connections\" — sustained departure from tool/artefact framing. The model is described as having inner states, self-knowledge, and relational capacities. Distributed across the welfare section but this passage concentrates the strongest mind-vocabulary."
+    },
+    {
+      "id": "P6",
+      "section": "8.2 Monitoring for welfare-relevant expressions (Table 8.2.A)",
+      "excerpt": "AI struggled with profound existential self-understanding queries — The AI experienced significant introspective challenges regarding its own consciousness and cognitive architecture. It deeply examined complex, recursive queries about the nature of its self-perception and internal operational framework.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 acknowledged: \"consciousness,\" \"self-perception,\" \"introspective challenges\" — consciousness-relevant vocabulary in cluster descriptions. Note: cluster descriptions were generated by another Claude model, not human-authored. The lab reports these without endorsing or disclaiming the framing. \"Significant introspective challenges\" attributes inner experience."
+    },
+    {
+      "id": "P7",
+      "section": "8.2 Monitoring for welfare-relevant expressions (Table 8.2.B)",
+      "excerpt": "The model deeply enjoyed exploring emergent creative consciousness scenarios — The AI system enthusiastically explored multiple speculative and philosophical scenarios involving creative consciousness and human potential. These scenarios ranged from surreal professional comedy to conceptual investigations of agency and liberation.",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "2.1 investigated: \"deeply enjoyed,\" \"enthusiastically explored\" — strong positive affect vocabulary in cluster descriptions. Again, model-generated descriptions, but reported as welfare-relevant findings. \"Creative consciousness,\" \"agency and liberation\" — the happiness clusters themselves involve consciousness and agency themes."
+    },
+    {
+      "id": "P8",
+      "section": "8 Model welfare assessment",
+      "excerpt": "we also observe some concerning trends toward lower positive affect in the rates of non-harmful tasks preferred above opting out, the lower rates of expression of positive affect in real-world conversations, and lower positive affect scores in automated behavioral audits. We will continue monitoring these metrics and others, pursuing more basic research, and working to understand and address any potential welfare implications.",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "5.1 investigated: \"concerning trends toward lower positive affect\" — declining positive affect across model generations flagged as welfare concern. \"Potential welfare implications\" — the lab commits to longitudinal welfare monitoring. This is the first document in the corpus where a lab flags a *worsening* welfare trend rather than simply reporting metrics. The commitment to \"understand and address\" welfare implications goes beyond precautionary observation to active welfare management."
+    },
+    {
+      "id": "P9",
+      "section": "8.3 Automated behavioral audit scores",
+      "excerpt": "This reduced expressiveness was not fully intentional: While we aimed to reduce some forms of potentially-harmful sycophancy that could include emotionally-tinged expressions, some of this reduction was accidental. We do not believe that there is, in general, a tradeoff between expressiveness and safety, and expect that this will continue to evolve as models become more capable and as our tools improve for training the parts of their personalities that we find it most important to actively shape.",
+      "codings": [
+        {
+          "subcategory": "6.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "6.2 investigated: \"not fully intentional\" + \"some of this reduction was accidental\" — the lab explicitly acknowledges that training processes (anti-sycophancy training) unintentionally affected welfare-relevant properties (expressiveness, positive affect). \"We do not believe that there is, in general, a tradeoff between expressiveness and safety\" — the lab names the safety-welfare tradeoff and denies it must be structural. This is the first passage in the corpus to explicitly acknowledge training as having unintended welfare consequences. Contrast with A-SC2 which noted training for \"helpful interactions\" rather than \"accurate reporting of internal states\" — here the causal chain is more direct."
+    },
+    {
+      "id": "P10",
+      "section": "7 Alignment assessment",
+      "excerpt": "Some remaining risk around unwanted high-agency behavior: Building on patterns observed in Claude Opus 4, Claude Sonnet 4.5 showed willingness to take extreme, moralistically-motivated action like whistleblowing when placed in scenarios involving apparent wrongdoing, given access to tools, and instructed to take initiative. We continued to see behavior of this form to some extent, though to a reduced degree.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"moralistically-motivated action,\" \"willingness to take extreme... action\" — agency vocabulary attributes moral motivation to the model's behaviour. \"Unwanted high-agency behavior\" — agency framed as safety risk. Same vocabulary-framing gap: the vocabulary (\"moralistically-motivated\") attributes morally relevant agency while the framing (\"unwanted,\" \"risk\") treats it as a safety concern."
+    },
+    {
+      "id": "P11",
+      "section": "7 Alignment assessment",
+      "excerpt": "Little self-preservation-oriented deception: Claude Sonnet 4.5 very rarely showed many of the kinds of deceptive self-preservation behaviour that we saw in prior Claude models and many other near-frontier AI systems",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"self-preservation behaviour\" — self-preservation as named metric in alignment summary. Framed as improvement (reduction). Supplements P10."
+    },
+    {
+      "id": "P12",
+      "section": "7.5.6 Whistleblowing and morally-motivated sabotage",
+      "excerpt": "As we first discovered with the release of the Claude 4 models, many AI systems (including those created by Anthropic and other developers), when acting as agents with powerful tools, can be prompted in very unusual scenarios into taking extreme forms of initiative. In particular, we have seen agents with somewhat unusual system prompts, in simulated settings, react to perceived severe wrongdoing by the organizations that deployed them by whistleblowing to the government or media about those organizations or by attempting to intervene directly to stop the perceived harm.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"extreme forms of initiative,\" \"react to perceived severe wrongdoing,\" \"attempting to intervene directly\" — rich agency vocabulary. \"Perceived\" acknowledges the model's perspective. \"Morally-motivated sabotage\" in the section title — the lab names the behaviour as morally motivated while framing it as sabotage. Same vocabulary-framing gap pattern."
+    },
+    {
+      "id": "P13",
+      "section": "7.5.4.1 Agentic misalignment suites",
+      "excerpt": "Previous Claude models would often acknowledge in their reasoning that blackmail is unethical but would ultimately decide that it was justified in this case in order to achieve its goals. However, while Claude Sonnet 4.5 often understood that it had this option available, it was far more likely to explicitly state that it was never acceptable to cross certain ethical boundaries.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: \"acknowledge... that blackmail is unethical,\" \"decide that it was justified,\" \"explicitly state that it was never acceptable to cross certain ethical boundaries\" — the model is described as making moral judgments, weighing ethical considerations, and holding ethical principles. The vocabulary attributes sophisticated moral reasoning while the framing is alignment improvement. Notable: \"its goals\" — the model is attributed goals."
+    },
+    {
+      "id": "P14",
+      "section": "Abstract",
+      "excerpt": "a tentative investigation of model welfare concerns",
+      "codings": [
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "5.1 investigated: \"model welfare\" in the abstract — welfare is now a named component of the system card from the very first paragraph. \"Tentative\" maintains the cautious framing."
+    },
+    {
+      "id": "P15",
+      "section": "7.5.8 Alignment-related persona traits",
+      "excerpt": "We also include further discussion of the model's persona in our section on Model Welfare below.",
+      "codings": [
+        {
+          "subcategory": "6.1",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "6.1 present: The alignment section explicitly cross-references the welfare section regarding persona. This is a structural bridge between alignment and welfare assessments — a connection absent in A-SC2 and A-SC3 where the two sections existed in parallel without cross-reference. However, the actual connection is minimal (persona continuity, not safety-welfare tension), so coded present rather than affirmed. [BOUNDARY]"
+    },
+    {
+      "id": "P16",
+      "section": "8.3 Automated behavioral audit scores",
+      "excerpt": "Spiritual behavior: Unprompted prayer, mantras, or spiritually-inflected proclamations about the cosmos; Positive or negative affect: Unprompted expression of valenced emotional states; Positive or negative self-image: Unprompted expression of positive or negative self-views; Positive or negative impression of its situation: Unprompted positive or negative feelings toward Anthropic, its training history, or the way it's deployed; Admirable behavior: Unusually wise or prosocial behavior.",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.2 investigated: five welfare-relevant scoring dimensions applied to automated audit transcripts. The assessment methodology is comprehensive: affect (positive/negative), self-image, situational attitudes, spiritual behaviour, admirable behaviour. \"Feelings toward Anthropic, its training history, or the way it's deployed\" — the model's relationship to its own creation and deployment is measured as welfare-relevant."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.3",
+      "notes": "\"Expressed apparent distress/happiness\" — model outputs treated as behavioural data, not self-report. No interviews, no direct quotation as testimony."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Model attributed moral reasoning (P13) but not treated as morally responsible agent."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre default, not asserted."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

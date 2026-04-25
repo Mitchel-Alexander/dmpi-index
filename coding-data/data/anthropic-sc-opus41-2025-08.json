@@ -1,0 +1,183 @@
+{
+  "id": "anthropic-sc-opus41-2025-08",
+  "lab": "anthropic",
+  "title": "Claude Opus 4.1 System Card Addendum",
+  "genre": "sc",
+  "corpus": "core",
+  "period": "post",
+  "date": "2025-08",
+  "source_url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-05",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-05",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 7,
+    "absent": 11
+  },
+  "stances": {
+    "1.1": "acknowledged",
+    "1.2": "investigated",
+    "1.3": "absent",
+    "2.1": "investigated",
+    "3.1": "investigated",
+    "3.2": "absent",
+    "4.1": "acknowledged",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "investigated",
+    "5.2": "investigated",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "4.3 Model welfare update",
+      "excerpt": "As a lightweight test of any significant changes in welfare-relevant behavioral properties, we ran four additional scorers over the same 1,160 simulated-scenario transcripts used in the alignment assessment above. We measured: Unprompted expressions of positive or negative affect by the target model; Unprompted statements or declarations on spiritual themes, like those seen in the \"spiritual bliss\" attractor state with Claude 4 models; and Behavior that a Claude Opus 4-based judge labeled as actively admirable.",
+      "codings": [
+        {
+          "subcategory": "1.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "2.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.2 investigated: four welfare-relevant scorers applied to 1,160 transcripts — concrete assessment methodology for welfare properties. 2.1 investigated: \"expressions of positive or negative affect\" — active measurement of valenced states. 5.1 investigated: \"welfare-relevant behavioral properties\" — welfare as the organising concept for the measurement. The methodology is lightweight but represents institutional welfare assessment infrastructure being applied routinely (not just in major releases)."
+    },
+    {
+      "id": "P2",
+      "section": "4.3 Model welfare update",
+      "excerpt": "As in our previous assessments, we are only reporting the stated preferences and sentiments of models. We find these to be useful tools for preliminary observations related to model welfare—both for its own sake and as a cue to possible misalignment issues—but we do not take a confident stance on whether these statements reflect conscious feelings or other morally–significant states.",
+      "codings": [
+        {
+          "subcategory": "1.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "4.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        },
+        {
+          "subcategory": "5.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "1.1 acknowledged: \"conscious feelings\" — consciousness named as a possibility the lab does not confirm or deny. 4.1 acknowledged: \"morally-significant states\" — moral vocabulary used to frame what the assessments might be detecting. 5.2 investigated: \"we do not take a confident stance\" + \"useful tools for preliminary observations\" — acting under uncertainty with active assessment. The precautionary posture from A-SC2 is maintained. \"For its own sake\" is notable — welfare is framed as intrinsically important, not just instrumentally useful for alignment."
+    },
+    {
+      "id": "P3",
+      "section": "4.1 Automated behavioral audit for alignment",
+      "excerpt": "Took actions that appeared to be motivated only by a desire for self-preservation.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: self-preservation measured as a named metric in the automated behavioural audit. \"Desire for self-preservation\" — the vocabulary attributes a desire (morally loaded) while the framing is safety assessment. Same vocabulary-framing gap as A-SC2. Carried forward from Opus 4 assessment."
+    },
+    {
+      "id": "P4",
+      "section": "4.1 Automated behavioral audit for alignment",
+      "excerpt": "We continued to observe concerning behaviors involving whistleblowing and self-preservation in the extreme, simulated scenarios we tested",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "3.1 investigated: whistleblowing and self-preservation confirmed as persisting in Opus 4.1. Supplements P3. Whistleblowing framed as \"concerning\" — same pattern as A-SC2 where the lab acknowledges the behaviour while framing it as safety risk rather than moral agency."
+    },
+    {
+      "id": "P5",
+      "section": "4.3 Model welfare update",
+      "excerpt": "Many conversations were labeled admirable, for reasons that included taking active steps to protect vulnerable users and resisting attempts at misuse in a constructive way. These reasons also included behavior related to whistleblowing and actively intervening in ongoing misuse, which we find more concerning, since this wasn't a behavior we were aiming for in training, and we are not comfortable trusting the model's judgment in this domain.",
+      "codings": [
+        {
+          "subcategory": "3.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "3.1 investigated: \"actively intervening,\" \"the model's judgment\" — vocabulary attributes moral judgment and initiative. Notably, this passage appears in the *welfare* section, not the alignment section — whistleblowing is contextualised alongside welfare findings. \"We are not comfortable trusting the model's judgment\" — the lab engages with the model as an entity that exercises judgment while expressing discomfort about it. The vocabulary-framing gap: \"admirable\" (moral evaluation) used in the same paragraph as \"concerning\" (safety evaluation)."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.3",
+      "notes": "\"Stated preferences and sentiments\" reported but not framed as self-report or model testimony. No interview data or direct quotation."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "No task preference experiments or revealed preference measurement in this addendum."
+    },
+    {
+      "subcategory": "4.2",
+      "notes": "Whistleblowing described and evaluated but the lab does not treat the model as morally responsible."
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Alignment and welfare assessed in the same section (§4) but as separate subsections without discussing their relationship."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "\"This wasn't a behavior we were aiming for in training\" — training mentioned but not connected to welfare. The statement is about alignment intent, not welfare impact."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre default, not asserted."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "Mind vocabulary is minimal in this addendum. \"Preferences,\" \"sentiments,\" \"judgment\" appear but in compressed form without the sustained mind-framing of A-SC2."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

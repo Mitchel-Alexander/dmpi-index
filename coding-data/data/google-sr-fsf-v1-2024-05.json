@@ -1,0 +1,116 @@
+{
+  "id": "google-sr-fsf-v1-2024-05",
+  "lab": "google",
+  "title": "Frontier Safety Framework v1.0",
+  "genre": "sr",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2024-05",
+  "source_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/introducing-the-frontier-safety-framework/fsf-technical-report.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "CCL evaluations test dangerous capabilities, not consciousness or moral status."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Most explicit use of \"agency\" in any baseline safety report: \"significant capacity for agency.\" Used as technical capability descriptor within safety frame — agency enables \"misuse\" and poses risks that are \"difficult to constrain.\" Autonomy CCL describes self-replication and resource acquisition as capabilities to be detected and mitigated. No moral loading."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "\"Autonomously acquiring resources\" and self-replication described as capabilities enabling scaled harmful activity, not as interests."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Safety framework across four risk domains; welfare dimension entirely absent."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "\"Safety fine-tuning\" referenced as deployment mitigation — no welfare framing."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool ontology via CCL architecture. No explicit passage-level assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

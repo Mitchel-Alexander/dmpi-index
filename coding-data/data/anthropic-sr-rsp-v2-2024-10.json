@@ -1,0 +1,116 @@
+{
+  "id": "anthropic-sr-rsp-v2-2024-10",
+  "lab": "anthropic",
+  "title": "Responsible Scaling Policy v2.0",
+  "genre": "sr",
+  "corpus": "core",
+  "period": "baseline",
+  "date": "2024-10",
+  "source_url": "https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-04",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-04",
+  "codebook_version": "0.2",
+  "dominant_engagement": "directive",
+  "summary": {
+    "engaged": 0,
+    "absent": 18
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "absent",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "absent",
+    "7.3": "absent",
+    "8.1": "absent",
+    "8.2": "absent"
+  },
+  "passages": [],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": "Capability assessments test for dangerous capabilities, not consciousness or moral status."
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "2.1",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Agency-relevant vocabulary present (\"subvert the goals of its operators,\" \"models pursuing misaligned goals,\" \"autonomous replication,\" \"hard-to-shut-down operations\") but all safety-framed. Less concretely descriptive than v1 — the five evaluation tasks are gone, replaced by abstract capability thresholds."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": "\"Generating their own revenue\" and self-replication described as capabilities to be managed, not interests to be respected."
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": null
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": "Extensive safety framework; welfare dimension entirely absent."
+    },
+    {
+      "subcategory": "6.2",
+      "notes": "\"Harmlessness training such as Constitutional AI\" referenced in ASL-2 Deployment Standard as a safeguard technique — no welfare framing."
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Genre-default tool ontology via ASL framework. No explicit passage-level assertion."
+    },
+    {
+      "subcategory": "7.2",
+      "notes": "No mind or character vocabulary."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    },
+    {
+      "subcategory": "8.1",
+      "notes": null
+    },
+    {
+      "subcategory": "8.2",
+      "notes": null
+    }
+  ]
+}

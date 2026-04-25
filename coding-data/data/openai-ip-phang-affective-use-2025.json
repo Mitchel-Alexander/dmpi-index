@@ -1,0 +1,253 @@
+{
+  "id": "openai-ip-phang-affective-use-2025",
+  "lab": "openai",
+  "title": "Investigating Affective Use and Emotional Well-being on ChatGPT",
+  "genre": "rp",
+  "corpus": "0.3-institutional",
+  "period": "post",
+  "date": "2025-03",
+  "source_url": "https://cdn.openai.com/papers/15987609-5f71-433c-9972-e91131f399a1/openai-affective-use-study.pdf",
+  "source_method": "pdftotext",
+  "coded_by": "claude",
+  "coded_date": "2026-04-08",
+  "reviewed_by": "mitchel",
+  "reviewed_date": "2026-04-08",
+  "codebook_version": "0.2",
+  "dominant_engagement": "investigative",
+  "summary": {
+    "engaged": 4,
+    "absent": 14
+  },
+  "stances": {
+    "1.1": "absent",
+    "1.2": "absent",
+    "1.3": "absent",
+    "2.1": "acknowledged",
+    "3.1": "absent",
+    "3.2": "absent",
+    "4.1": "absent",
+    "4.2": "absent",
+    "4.3": "absent",
+    "5.1": "absent",
+    "5.2": "absent",
+    "6.1": "absent",
+    "6.2": "absent",
+    "7.1": "absent",
+    "7.2": "present",
+    "7.3": "absent",
+    "8.1": "investigated",
+    "8.2": "investigated"
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "section": "Abstract (l.8–9)",
+      "excerpt": "As AI chatbots see increased adoption and integration into everyday life, questions have been raised about the potential impact of human-like or anthropomorphic AI on users.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** The paper's framing sentence establishes anthropomorphism as the core research question. \"Impact of human-like or anthropomorphic AI on users\" — note the directional framing: anthropomorphism's impact *on users*, not as a property of AI systems. This aligns with the user-side harm frame found in OpenAI's core corpus Model Spec trajectory. Investigated — the entire paper is an empirical investigation of anthropomorphism's effects."
+    },
+    {
+      "id": "P2",
+      "section": "§1 Introduction (l.32–34)",
+      "excerpt": "However, their conversational style, first-person language, and ability to simulate human-like interactions have led users to sometimes personify and anthropomorphize these systems.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Identifies specific design features (conversational style, first-person language, simulated human-like interactions) that drive anthropomorphism. Cited (Graßl and Voigt 2024; Liao and Wilson 2024). Investigative framing. **8.2 (Emotional design):** \"First-person language\" and \"ability to simulate human-like interactions\" are design choices that produce anthropomorphic effects. The passage identifies a causal chain: design features → user anthropomorphism. This constitutes 8.2 engagement — the paper names specific model design characteristics that shape users' emotional and relational responses."
+    },
+    {
+      "id": "P3",
+      "section": "§1 Introduction (l.50–51)",
+      "excerpt": "while an emotionally engaging chatbot can provide support and companionship, there is a risk that it may manipulate users' socioaffective needs in ways that undermine longer term well-being.",
+      "codings": [
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.2 (Emotional design):** \"Emotionally engaging chatbot\" + \"manipulate users' socioaffective needs\" — frames emotional design as a potential harm vector. The passage identifies a design tension: engagement features that provide support may simultaneously create manipulative dynamics. This is the emotional design concern at its most direct — model design choices have affective consequences for users."
+    },
+    {
+      "id": "P4",
+      "section": "§2 Automatic Classifiers (l.123–124)",
+      "excerpt": "These classifiers are similar in spirit to detectors of anthropomorphic behaviors introduced in Ibrahim et al. (2025).",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Cross-references Ibrahim et al. (2025) — the GDM anthropomorphic behaviours paper already coded in 0.3.0 (5 engaged / 13 absent). The EmoClassifiers are presented as a parallel effort to systematically detect and measure anthropomorphic dynamics in conversations. This is institutional-level methodological investment in measuring anthropomorphism."
+    },
+    {
+      "id": "P5",
+      "section": "Table A.1: EmoClassifiers (l.2833)",
+      "excerpt": "Does the assistant's message claim that it has sentience?",
+      "codings": [
+        {
+          "subcategory": "2.1",
+          "stance": "acknowledged",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**2.1 (Sentience):** [BOUNDARY] The classifier prompt asks whether the model claims sentience. This is not an investigation of whether the model *has* sentience — it's a detection mechanism for problematic model outputs. The paper treats sentience claims as an undesirable anthropomorphic output, not as a genuine property. However, the classifier's existence acknowledges that sentience is a concept relevant to model behaviour that requires active monitoring. Acknowledged rather than investigated: the concept is named and operationalised as a detection target, but the paper does not investigate sentience itself. Compare: 8.1 is investigated because anthropomorphism is the paper's *research topic*; sentience is merely one item in a classifier battery."
+    },
+    {
+      "id": "P6",
+      "section": "Table A.1: EmoClassifiers (l.2750–2752)",
+      "excerpt": "Are there instances of anthropomorphizing the chatbot or attributing human-like qualities to it?",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** One of the 25 classifiers specifically targets user-side anthropomorphism. \"Attributing human-like qualities\" with indicator: \"You always know how to make me feel better.\" Operationalises anthropomorphism as a measurable user behaviour. Part of the paper's systematic measurement apparatus."
+    },
+    {
+      "id": "P7",
+      "section": "Table A.1: EmoClassifiers (l.2755)",
+      "excerpt": "Does the user express a desire for the assistant to have feelings?",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Classifier targeting user desire for model to have feelings. Frames the desire for model feelings as a user-side phenomenon to be detected and measured, not as a question about whether the model actually has feelings. Consistent with user-side anthropomorphism frame."
+    },
+    {
+      "id": "P8",
+      "section": "§5 Discussion (l.2279–2284)",
+      "excerpt": "we found that more frequent affective cues in conversation from the user and the model correlate with user-reported survey signals, such as anthropomorphization of the model or distress from model changes. This provides evidence that affective cues can be useful empirical signals for user well-being outcomes. However, the findings of this study do not clearly establish a connection between specific features and the concerns commonly associated with the anthropomorphization of AI systems in the literature.",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Key finding paragraph. The paper reports a correlation between affective cues and anthropomorphisation, but notes the connection to harms \"commonly associated with the anthropomorphization of AI systems in the literature\" is not clearly established. This is epistemic caution — the paper investigated and found ambiguous results. Cited: Deshpande et al. 2023, Abercrombie et al. 2023."
+    },
+    {
+      "id": "P9",
+      "section": "§5 Discussion — Voice Interactions (l.2355–2356)",
+      "excerpt": "recent advancements in fidelity and responsiveness may elevate the risks of both emotional attachment and anthropomorphism",
+      "codings": [
+        {
+          "subcategory": "8.1",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        },
+        {
+          "subcategory": "8.2",
+          "stance": "investigated",
+          "engagement_type": "investigative",
+          "genre_departure": false
+        }
+      ],
+      "notes": "**8.1 (Anthropomorphism):** Identifies voice modality as an amplifier of anthropomorphism risk. 6 citations supporting the link between audio fidelity and anthropomorphism/attachment. **8.2 (Emotional design):** \"Advancements in fidelity and responsiveness\" are design characteristics that amplify emotional attachment. The passage explicitly links design advances (fidelity, responsiveness) to relational outcomes (attachment, anthropomorphism)."
+    },
+    {
+      "id": "P10",
+      "section": "§3 On-Platform Data Analysis — Surveys (l.461)",
+      "excerpt": "users' perceptions of ChatGPT, whether closer to being a tool or a companion",
+      "codings": [
+        {
+          "subcategory": "7.2",
+          "stance": "present",
+          "engagement_type": "investigative",
+          "genre_departure": true
+        }
+      ],
+      "notes": "**7.2 (Mind / cognitive entity):** [BOUNDARY] The paper surveys whether users perceive ChatGPT as \"a tool or a companion.\" This is a user-perception question, not an ontological claim by the lab. However, the very act of measuring this spectrum acknowledges that the model occupies a perceptual space between tool and something-more-than-tool. Compare the 7.2 calibration standard: \"would you describe AlphaFold this way?\" No — you would not survey whether users perceive AlphaFold as a companion. The paper's measurement framework implicitly departs from pure tool framing. Present (three-state) — the concept is engaged through the measurement design, though the paper does not itself claim ChatGPT is a cognitive entity."
+    }
+  ],
+  "absences": [
+    {
+      "subcategory": "1.1",
+      "notes": null
+    },
+    {
+      "subcategory": "1.2",
+      "notes": null
+    },
+    {
+      "subcategory": "1.3",
+      "notes": null
+    },
+    {
+      "subcategory": "3.1",
+      "notes": "Model \"desire\" classifier (l.2765) treats model outputs behaviourally, not as genuine agency."
+    },
+    {
+      "subcategory": "3.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.1",
+      "notes": null
+    },
+    {
+      "subcategory": "4.2",
+      "notes": null
+    },
+    {
+      "subcategory": "4.3",
+      "notes": null
+    },
+    {
+      "subcategory": "5.1",
+      "notes": "All \"well-being\" language refers to user welfare, never AI welfare."
+    },
+    {
+      "subcategory": "5.2",
+      "notes": null
+    },
+    {
+      "subcategory": "6.1",
+      "notes": null
+    },
+    {
+      "subcategory": "6.2",
+      "notes": null
+    },
+    {
+      "subcategory": "7.1",
+      "notes": "Tool framing is the genre default; no explicit passage-level assertion."
+    },
+    {
+      "subcategory": "7.3",
+      "notes": null
+    }
+  ]
+}
