@@ -139,13 +139,12 @@ export function renderGrid(cells, selectedKey) {
   </table>`;
 }
 
-// --- Render the detail panel below the grid ---
+// --- Render the cell-detail modal (native <dialog>) ---
 
 export function renderCellPanel(selectedKey, cells, passages, documents) {
   if (!selectedKey) {
-    return html`<div class="cell-panel cell-panel--hint">
-      <p>Click any cell to see contributing documents and excerpts.</p>
-    </div>`;
+    // Empty placeholder — keeps the layout slot stable when no cell selected.
+    return html`<span style="display: none;"></span>`;
   }
   const [lab, subcat] = selectedKey.split("|");
   const labLabel = LABS.find(([id]) => id === lab)?.[1] ?? lab;
@@ -161,56 +160,72 @@ export function renderCellPanel(selectedKey, cells, passages, documents) {
     if (!byDoc.has(p.doc_id)) byDoc.set(p.doc_id, {doc: documents.find((d) => d.file === p.doc_id), passages: []});
     byDoc.get(p.doc_id).passages.push(p);
   }
-  // Sort by date asc.
   const groups = [...byDoc.values()].sort((a, b) => String(a.doc?.date ?? "").localeCompare(String(b.doc?.date ?? "")));
 
-  const closeBtn = html`<button class="cell-panel-close" type="button" aria-label="Close panel">×</button>`;
-  closeBtn.addEventListener("click", () => setParam("cell", null));
+  const closeBtn = html`<button class="cell-modal-close" type="button" aria-label="Close">×</button>`;
 
+  let body;
   if (cell.count === 0) {
-    return html`<div class="cell-panel cell-panel--empty">
-      <header class="cell-panel-header">
-        <h3><span class="pill pill-${lab}">${labLabel}</span> · ${subcat} ${subcatLabel}</h3>
-        ${closeBtn}
-      </header>
-      <p>No documents in this lab engage this subcategory. Coded as <code>absent</code> across all <strong>${documents.filter((d) => d.lab === lab).length}</strong> ${labLabel} documents.</p>
+    body = html`<p>No documents in this lab engage this subcategory. Coded as <code>absent</code> across all <strong>${documents.filter((d) => d.lab === lab).length}</strong> ${labLabel} documents.</p>`;
+  } else {
+    const stanceBreakdown = [...cell.stances.entries()]
+      .sort((a, b) => (STANCE_RANK[b[0]] ?? 0) - (STANCE_RANK[a[0]] ?? 0))
+      .map(([s, n]) => `${s} (${n})`)
+      .join(" · ");
+
+    body = html`<div>
+      <p class="cell-modal-summary"><strong>${cell.count}</strong> document${cell.count === 1 ? "" : "s"} engaged · ${stanceBreakdown} · <strong>${matching.length}</strong> passage-codings</p>
+      <ol class="cell-modal-docs">
+        ${groups.map(({doc, passages: ps}) => html`
+          <li class="cell-modal-doc">
+            <header class="cell-modal-doc-header">
+              <a href="./document?id=${doc?.file ?? ""}"><strong>${doc?.title ?? ps[0].title}</strong></a>
+              <span class="cell-modal-doc-meta">
+                <span class="pill pill-${doc?.genre ?? ps[0].genre}">${doc?.genre ?? ps[0].genre}</span>
+                · ${doc?.date ?? ps[0].date}
+                · ${ps.length} passage${ps.length === 1 ? "" : "s"}
+              </span>
+            </header>
+            ${ps.map((p) => html`
+              <blockquote class="cell-modal-passage">
+                <p class="cell-modal-excerpt">${p.excerpt && p.excerpt.length > 480 ? p.excerpt.slice(0, 477) + "…" : p.excerpt}</p>
+                <footer>
+                  <span class="pill stance--${p.stance}">${p.stance}</span>
+                  <span class="pill pill-engagement">${p.engagement_type}</span>
+                  ${p.section ? html`<span class="cell-modal-passage-section">${p.section}</span>` : ""}
+                </footer>
+              </blockquote>
+            `)}
+          </li>
+        `)}
+      </ol>
     </div>`;
   }
 
-  const stanceBreakdown = [...cell.stances.entries()]
-    .sort((a, b) => (STANCE_RANK[b[0]] ?? 0) - (STANCE_RANK[a[0]] ?? 0))
-    .map(([s, n]) => `${s} (${n})`)
-    .join(" · ");
-
-  return html`<div class="cell-panel">
-    <header class="cell-panel-header">
-      <h3><span class="pill pill-${lab}">${labLabel}</span> · ${subcat} ${subcatLabel}</h3>
+  const dialog = html`<dialog class="cell-modal" aria-labelledby="cell-modal-title">
+    <header class="cell-modal-header">
+      <h3 id="cell-modal-title"><span class="pill pill-${lab}">${labLabel}</span> · ${subcat} ${subcatLabel}</h3>
       ${closeBtn}
     </header>
-    <p class="cell-panel-summary"><strong>${cell.count}</strong> document${cell.count === 1 ? "" : "s"} engaged · ${stanceBreakdown} · <strong>${matching.length}</strong> passage-codings</p>
-    <ol class="cell-panel-docs">
-      ${groups.map(({doc, passages: ps}) => html`
-        <li class="cell-panel-doc">
-          <header class="cell-panel-doc-header">
-            <a href="./document?id=${doc?.file ?? ""}"><strong>${doc?.title ?? ps[0].title}</strong></a>
-            <span class="cell-panel-doc-meta">
-              <span class="pill pill-${doc?.genre ?? ps[0].genre}">${doc?.genre ?? ps[0].genre}</span>
-              · ${doc?.date ?? ps[0].date}
-              · ${ps.length} passage${ps.length === 1 ? "" : "s"}
-            </span>
-          </header>
-          ${ps.map((p) => html`
-            <blockquote class="cell-panel-passage">
-              <p class="cell-panel-excerpt">${p.excerpt && p.excerpt.length > 360 ? p.excerpt.slice(0, 357) + "…" : p.excerpt}</p>
-              <footer>
-                <span class="pill stance--${p.stance}">${p.stance}</span>
-                <span class="pill pill-engagement">${p.engagement_type}</span>
-                ${p.section ? html`<span class="cell-panel-passage-section">${p.section}</span>` : ""}
-              </footer>
-            </blockquote>
-          `)}
-        </li>
-      `)}
-    </ol>
-  </div>`;
+    ${body}
+  </dialog>`;
+
+  // Wire up dismissal: X button, backdrop click, Escape (built-in via <dialog>).
+  // All routes converge on clearing the URL param.
+  closeBtn.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (e) => {
+    // Backdrop click — only fires when the click target IS the dialog itself
+    // (clicks inside the content bubble through the inner elements).
+    if (e.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", () => setParam("cell", null));
+
+  // Show the modal once Framework has attached the node to the DOM.
+  // queueMicrotask runs after the current call stack but before paint,
+  // by which time the framework has inserted the returned node.
+  queueMicrotask(() => {
+    if (dialog.isConnected && !dialog.open) dialog.showModal();
+  });
+
+  return dialog;
 }

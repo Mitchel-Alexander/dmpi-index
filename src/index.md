@@ -155,34 +155,48 @@ table.dmpi-grid .grid-cell--empty {
 .stance--affirmed     { background: #dcfce7; color: #166534; }
 .stance--present      { background: #e0e7ff; color: #3730a3; }
 
-/* ===== Cell detail panel ===== */
+/* ===== Cell detail modal (native <dialog>) ===== */
 
-.cell-panel {
+dialog.cell-modal {
+  width: min(720px, calc(100% - 2rem));
+  max-height: 85vh;
+  padding: 0;
   border: 1px solid var(--theme-foreground-faintest);
-  background: var(--theme-background-alt);
-  padding: 1rem 1.25rem;
-  border-radius: 6px;
-  margin: 1rem 0 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  background: var(--theme-background);
+  color: var(--theme-foreground);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.cell-panel--hint {
-  font-size: 0.9em;
-  color: var(--theme-foreground-muted);
-  text-align: center;
-  font-style: italic;
+dialog.cell-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 }
-.cell-panel-header {
+dialog.cell-modal[open] {
+  animation: cell-modal-in 160ms ease-out;
+}
+@keyframes cell-modal-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+
+.cell-modal-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 1rem 1.25rem 0.5rem 1.25rem;
+  border-bottom: 1px solid var(--theme-foreground-faintest);
+  background: var(--theme-background-alt);
 }
-.cell-panel-header h3 {
+.cell-modal-header h3 {
   margin: 0;
   font-size: 1.05em;
   line-height: 1.4;
 }
-.cell-panel-close {
+.cell-modal-close {
   background: transparent;
   border: 1px solid var(--theme-foreground-faintest);
   border-radius: 999px;
@@ -190,56 +204,65 @@ table.dmpi-grid .grid-cell--empty {
   font-size: 1.1em;
   cursor: pointer;
   line-height: 1;
+  flex-shrink: 0;
 }
-.cell-panel-close:hover { background: var(--theme-background); }
-.cell-panel-summary {
+.cell-modal-close:hover { background: var(--theme-background); }
+
+.cell-modal > div,
+dialog.cell-modal > p {
+  padding: 1rem 1.25rem 1.25rem 1.25rem;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.cell-modal-summary {
   margin: 0 0 1rem 0;
   font-size: 0.9em;
   color: var(--theme-foreground-muted);
 }
-.cell-panel-docs {
+.cell-modal-docs {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.cell-panel-doc {
+.cell-modal-doc {
   border-top: 1px solid var(--theme-foreground-faintest);
   padding: 0.75rem 0;
 }
-.cell-panel-doc:first-child { border-top: none; padding-top: 0; }
-.cell-panel-doc-header {
+.cell-modal-doc:first-child { border-top: none; padding-top: 0; }
+.cell-modal-doc-header {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.cell-panel-doc-header a { text-decoration: none; }
-.cell-panel-doc-header a:hover { text-decoration: underline; }
-.cell-panel-doc-meta {
+.cell-modal-doc-header a { text-decoration: none; }
+.cell-modal-doc-header a:hover { text-decoration: underline; }
+.cell-modal-doc-meta {
   font-size: 0.85em;
   color: var(--theme-foreground-muted);
 }
-.cell-panel-passage {
+.cell-modal-passage {
   margin: 0.5rem 0 0.75rem 0;
   padding: 0.5rem 0.75rem;
   border-left: 3px solid var(--theme-foreground-faintest);
-  background: var(--theme-background);
+  background: var(--theme-background-alt);
   border-radius: 0 4px 4px 0;
 }
-.cell-panel-excerpt {
+.cell-modal-excerpt {
   margin: 0 0 0.5rem 0;
   font-style: italic;
   font-size: 0.95em;
 }
-.cell-panel-passage footer {
+.cell-modal-passage footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.4rem;
   font-size: 0.85em;
 }
-.cell-panel-passage-section {
+.cell-modal-passage-section {
   color: var(--theme-foreground-muted);
   font-size: 0.85em;
 }
