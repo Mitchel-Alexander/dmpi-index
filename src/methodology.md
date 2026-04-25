@@ -24,8 +24,8 @@ denied / acknowledged / investigated / affirmed). See
 ## Source data
 
 ```js
-const documents = FileAttachment("data/documents.csv").csv({typed: true});
-const passages = FileAttachment("data/passages.csv").csv({typed: true});
+const documents = FileAttachment("data/documents.csv").csv();
+const passages = FileAttachment("data/passages.csv").csv();
 const schema = FileAttachment("data/schema.json").json();
 ```
 

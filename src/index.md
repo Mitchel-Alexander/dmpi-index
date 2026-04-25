@@ -11,8 +11,8 @@ AI welfare. Built via [directed content analysis](./methodology) of the labs'
 own public documents.
 
 ```js
-const documents = await FileAttachment("data/documents.csv").csv({typed: true});
-const passages = await FileAttachment("data/passages.csv").csv({typed: true});
+const documents = await FileAttachment("data/documents.csv").csv();
+const passages = await FileAttachment("data/passages.csv").csv();
 import {searchParams} from "./components/url-state.js";
 import {SUBCATS, LABS, buildCellSummary, renderGrid, renderCellPanel} from "./components/grid.js";
 ```

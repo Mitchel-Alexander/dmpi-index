@@ -12,7 +12,7 @@ Filter passages by lab, subcategory, and free-text. Filters persist in the URL
 import * as Plot from "npm:@observablehq/plot";
 import {Inputs} from "npm:@observablehq/inputs";
 import {searchParams, setParams, getList} from "./components/url-state.js";
-const passages = await FileAttachment("data/passages.csv").csv({typed: true});
+const passages = await FileAttachment("data/passages.csv").csv();
 ```
 
 ```js

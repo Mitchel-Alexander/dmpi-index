@@ -6,7 +6,7 @@ toc: false
 ```js
 import * as Plot from "npm:@observablehq/plot";
 import {searchParams} from "./components/url-state.js";
-const documents = await FileAttachment("data/documents.csv").csv({typed: true});
+const documents = await FileAttachment("data/documents.csv").csv();
 ```
 
 ```js
