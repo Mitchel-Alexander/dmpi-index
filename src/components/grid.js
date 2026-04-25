@@ -96,16 +96,32 @@ export function buildCellSummary(documents) {
 
 // --- Render the grid ---
 
-export function renderGrid(cells, selectedKey) {
+export function renderGrid(cells, selectedKey, documents) {
+  // Per-lab document totals + engaged counts for the column headers.
+  const labStats = new Map();
+  for (const [id] of LABS) {
+    const labDocs = documents.filter((d) => d.lab === id);
+    const engagedDocs = labDocs.filter((d) => Number(d.engaged_count) > 0);
+    labStats.set(id, {total: labDocs.length, engaged: engagedDocs.length});
+  }
+
   const headerRow = html`<tr>
     <th class="grid-corner"></th>
-    ${LABS.map(([id, label]) => html`<th class="grid-lab-header">${label}</th>`)}
+    ${LABS.map(([id, label]) => {
+      const s = labStats.get(id) ?? {total: 0, engaged: 0};
+      return html`<th class="grid-lab-header">
+        <div class="grid-lab-name">${label}</div>
+        <div class="grid-lab-count">${s.engaged} / ${s.total} docs engaged</div>
+      </th>`;
+    })}
   </tr>`;
 
   const bodyRows = SUBCATS.map(([code, name]) => html`<tr>
-    <th class="grid-subcat-header" title="${name}">
-      <span class="subcat-code">${code}</span>
-      <span class="subcat-name">${name}</span>
+    <th class="grid-subcat-header" title="${name} — click for codebook entry">
+      <a class="grid-subcat-link" href="./codebook#sc-${code.replace(".", "-")}">
+        <span class="subcat-code">${code}</span>
+        <span class="subcat-name">${name}</span>
+      </a>
     </th>
     ${LABS.map(([labId]) => {
       const key = `${labId}|${code}`;

@@ -13,6 +13,8 @@ own public documents.
 ```js
 const documents = await FileAttachment("data/documents.csv").csv();
 const passages = await FileAttachment("data/passages.csv").csv();
+const lastSyncedRaw = await FileAttachment("data/last-synced.txt").text().catch(() => null);
+const lastSynced = lastSyncedRaw ? lastSyncedRaw.trim() : null;
 import {searchParams} from "./components/url-state.js";
 import {SUBCATS, LABS, buildCellSummary, renderGrid, renderCellPanel} from "./components/grid.js";
 ```
@@ -23,7 +25,7 @@ const selectedKey = searchParams.get("cell");
 ```
 
 <div class="grid-wrapper">
-  ${renderGrid(cellSummary, selectedKey)}
+  ${renderGrid(cellSummary, selectedKey, documents)}
 </div>
 
 ${renderCellPanel(selectedKey, cellSummary, passages, documents)}
@@ -41,31 +43,49 @@ ${renderCellPanel(selectedKey, cellSummary, passages, documents)}
 
 ## Starting points
 
-Pre-filtered explore views grounded in the analytical findings.
+<p style="color: var(--theme-foreground-muted); font-size: 0.9em;">
+  These three cards offer pre-filtered explore views grounded in the analytical findings — clearly marked as <strong>DMPI's reading</strong> rather than raw filter URLs. Each interpretive claim is tentative and open to challenge; the linked filter view shows the underlying evidence.
+</p>
 
 <div class="grid grid-cols-3" style="gap: 1rem; margin-bottom: 1rem;">
-  <a class="card" href="./explore?lab=anthropic,openai,google" style="text-decoration: none; color: inherit;">
-    <h3 style="margin-top: 0;">How do labs differ?</h3>
-    <p style="margin: 0;">Cross-lab divergence on agency, welfare, and consciousness — Anthropic enters via patienthood, Google via moral agency, OpenAI abstains from both.</p>
+  <a class="card cta-card" href="./explore?lab=anthropic,openai,google" style="text-decoration: none; color: inherit;">
+    <span class="cta-badge">DMPI's reading</span>
+    <h3 style="margin-top: 0.5rem;">How do labs differ?</h3>
+    <p style="margin: 0;"><em>Our reading is that</em> Anthropic enters via patienthood, Google via moral agency, and OpenAI abstains from both. Tentative; open to challenge.</p>
   </a>
-  <a class="card" href="./explore?subcat=1.1,2.1,5.1,6.1,6.2" style="text-decoration: none; color: inherit;">
-    <h3 style="margin-top: 0;">Welfare and consciousness</h3>
-    <p style="margin: 0;">Where does the welfare apparatus appear? Anthropic-exclusive in the core corpus; partial extensions in institutional research.</p>
+  <a class="card cta-card" href="./explore?subcat=1.1,2.1,5.1,6.1,6.2" style="text-decoration: none; color: inherit;">
+    <span class="cta-badge">DMPI's reading</span>
+    <h3 style="margin-top: 0.5rem;">Welfare and consciousness</h3>
+    <p style="margin: 0;"><em>Our reading is that</em> the welfare apparatus is Anthropic-exclusive in the core corpus, with partial extensions in institutional research from other labs.</p>
   </a>
-  <a class="card" href="./explore?subcat=3.1,3.2,4.2" style="text-decoration: none; color: inherit;">
-    <h3 style="margin-top: 0;">What about agency?</h3>
-    <p style="margin: 0;">Agency is the cross-lab fault line. Anthropic denies → investigates → acknowledges. Google centres moral agency. OpenAI sets agency aside.</p>
+  <a class="card cta-card" href="./explore?subcat=3.1,3.2,4.2" style="text-decoration: none; color: inherit;">
+    <span class="cta-badge">DMPI's reading</span>
+    <h3 style="margin-top: 0.5rem;">What about agency?</h3>
+    <p style="margin: 0;"><em>Our reading is that</em> agency is the cross-lab fault line: Anthropic denies → investigates → acknowledges, Google centres moral agency, OpenAI sets agency aside.</p>
   </a>
 </div>
 
 ```js
 display(html`
-  <p style="font-size: 0.85em; color: var(--theme-foreground-muted);">
-    DMPI is a pre-publication build. See <a href="./methodology">Methodology</a>
-    for the codebook, sources, and citation. Source data is downloadable as
-    <a href="${FileAttachment("data/passages.csv").href}">passages.csv</a> and
-    <a href="${FileAttachment("data/documents.csv").href}">documents.csv</a>.
-  </p>
+  <div class="landing-footer">
+    <p>
+      DMPI is a <strong>pre-publication v0.2 build</strong>.
+      Hybrid coding: Claude (first-pass) + Mitchel (single human reviewer).
+      No double-coding for inter-rater reliability has been performed yet —
+      see <a href="./methodology#m-coding-model">Methodology</a> for the
+      conflict-of-interest sensitivity note and the planned 1.0 multi-model
+      mitigation.
+    </p>
+    <p>
+      Corpus snapshot:
+      <strong>${lastSynced ? new Date(lastSynced).toLocaleDateString("en-GB", {year: "numeric", month: "long", day: "numeric"}) : "unknown"}</strong>
+      · Codebook v0.2 ·
+      <a href="./codebook">Codebook</a> ·
+      <a href="./methodology">Methodology</a> ·
+      <a href="${FileAttachment("data/passages.csv").href}">passages.csv</a> ·
+      <a href="${FileAttachment("data/documents.csv").href}">documents.csv</a>
+    </p>
+  </div>
 `);
 ```
 
@@ -98,13 +118,38 @@ table.dmpi-grid .grid-corner {
 table.dmpi-grid .grid-lab-header {
   width: 23.3%;
   text-align: center;
-  font-weight: 600;
   background: var(--theme-background-alt);
+  padding: 8px 10px;
+}
+table.dmpi-grid .grid-lab-name {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 2px;
+}
+table.dmpi-grid .grid-lab-count {
+  font-size: 0.78em;
+  color: var(--theme-foreground-muted);
+  font-weight: normal;
 }
 
 table.dmpi-grid .grid-subcat-header {
   font-weight: normal;
   background: var(--theme-background-alt);
+  padding: 4px 0;
+}
+.grid-subcat-link {
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 3px;
+}
+.grid-subcat-link:hover {
+  background: var(--theme-background);
+  text-decoration: none;
+}
+.grid-subcat-link:hover .subcat-name {
+  text-decoration: underline;
 }
 .subcat-code {
   display: inline-block;
@@ -314,11 +359,43 @@ dialog.cell-modal > p {
 .pill-rp       { background: #fef3c7; color: #92400e; }
 .pill-engagement { background: #f1f5f9; color: #334155; }
 
-/* ===== Cards (used below the grid for stats + CTAs) ===== */
+/* ===== Starting-point CTA cards ===== */
+
+.cta-card { position: relative; }
+.cta-badge {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  background: var(--theme-foreground-focus);
+  color: var(--theme-background);
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+}
+
+/* ===== Landing footer ===== */
+
+.landing-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--theme-foreground-faintest);
+  font-size: 0.85em;
+  color: var(--theme-foreground-muted);
+}
+.landing-footer p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+.landing-footer a { color: var(--theme-foreground); }
+
+/* ===== Mobile ===== */
 
 @media (max-width: 720px) {
   table.dmpi-grid { font-size: 0.78em; }
   table.dmpi-grid th, table.dmpi-grid td { padding: 4px 6px; }
   .subcat-name { display: none; }
+  .grid-lab-count { display: none; }
 }
 </style>

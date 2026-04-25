@@ -6,6 +6,7 @@ export default {
   pages: [
     {name: "Overview", path: "/"},
     {name: "Explore", path: "/explore"},
+    {name: "Codebook", path: "/codebook"},
     {name: "Methodology", path: "/methodology"},
   ],
   search: false,

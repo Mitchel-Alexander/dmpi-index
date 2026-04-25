@@ -12,7 +12,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-VAULT_CODING="$(cd "$REPO_ROOT/.." && pwd)/coding"
+VAULT_DMPI="$(cd "$REPO_ROOT/.." && pwd)"
+VAULT_CODING="$VAULT_DMPI/coding"
 DEST="$REPO_ROOT/coding-data"
 
 if [[ ! -d "$VAULT_CODING" ]]; then
@@ -34,6 +35,12 @@ cp "$VAULT_CODING/schema.json" "$DEST/schema.json"
 
 echo "==> Syncing index.csv"
 cp "$VAULT_CODING/index.csv" "$DEST/index.csv"
+
+echo "==> Syncing codebook (ref-codebook.md)"
+cp "$VAULT_DMPI/ref-codebook.md" "$DEST/codebook.md"
+
+echo "==> Syncing methodology notes (finding-methodology-notes.md)"
+cp "$VAULT_DMPI/finding-methodology-notes.md" "$DEST/methodology-notes.md"
 
 # Stamp the sync time so the methodology page can show last-synced.
 date -u +"%Y-%m-%dT%H:%M:%SZ" > "$DEST/.last-synced"

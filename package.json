@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.0",
-    "@observablehq/plot": "^0.6.16"
+    "@observablehq/plot": "^0.6.16",
+    "marked": "^15.0.12"
   },
   "devDependencies": {
     "vercel": "^52.0.0"
