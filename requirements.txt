@@ -1,4 +1,8 @@
 # Python deps for data loaders.
-# Pinned to match the canonical pipeline's coding/requirements.txt where
-# overlapping (we re-import _codebook.py from coding-data/).
-PyYAML~=6.0
+#
+# Currently empty: the loaders (src/data/*.py) use stdlib only. _codebook.py
+# imports nothing external. If a future loader adds an external dep, install
+# locally with `pip install --user <pkg>` and add it here pinned by minor
+# version. Vercel's build image uses uv-managed Python (PEP 668); to install
+# Python deps in the buildCommand, prefix with `uv pip install --system` or
+# pass `pip3 install --break-system-packages`.
