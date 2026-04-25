@@ -158,8 +158,18 @@ table.dmpi-grid .grid-cell--empty {
 /* ===== Cell detail modal (native <dialog>) ===== */
 
 dialog.cell-modal {
-  width: min(720px, calc(100% - 2rem));
-  max-height: 85vh;
+  /* Pin to the right edge of the viewport, full-height side panel.
+     Override the browser's centring default for showModal() via fixed
+     positioning + auto-margin reset. */
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: auto;
+  margin: 0;
+  width: min(560px, calc(100vw - 2rem));
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
   padding: 0;
   border: 1px solid var(--theme-foreground-faintest);
   border-radius: 8px;
@@ -171,15 +181,34 @@ dialog.cell-modal {
   flex-direction: column;
 }
 dialog.cell-modal::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(1px);
 }
 dialog.cell-modal[open] {
-  animation: cell-modal-in 160ms ease-out;
+  animation: cell-modal-in 180ms ease-out;
 }
 @keyframes cell-modal-in {
-  from { opacity: 0; transform: translateY(8px) scale(0.98); }
-  to   { opacity: 1; transform: translateY(0)   scale(1); }
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* On narrow viewports (≤ 720px wide, e.g. phones in portrait), let the
+   panel span the full width so it remains usable. */
+@media (max-width: 720px) {
+  dialog.cell-modal {
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 80vh;
+    border-radius: 8px 8px 0 0;
+  }
+  @keyframes cell-modal-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 }
 
 .cell-modal-header {
